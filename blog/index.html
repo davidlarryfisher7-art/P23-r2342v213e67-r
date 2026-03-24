@@ -1,0 +1,2435 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | PRVER - Digital Insights & Industry Insights</title>
+    <meta name="description"
+        content="Read the latest insights on web design, development, AI, SEO, and digital marketing from PRVER experts.">
+    <meta name="title" content="PRVER | Web Development Company | Custom Websites & AI Solutions">
+    <meta name="description"
+        content="PRVER is the world's leading web development company. We build custom websites, AI solutions, and e-commerce platforms. Get a free quote today!">
+    <meta name="keywords"
+        content="web development, web design, AI solutions, e-commerce, SEO, web development company, custom websites">
+    <meta name="author" content="PRVER">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <link rel="icon" href="/img/Ico.png" type="image/x-icon">
+
+    <link rel="manifest" href="manifest.json">
+
+<!-- Apple PWA Support -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="PRVER">
+<link rel="apple-touch-icon" href="/img/Ico.png">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://prvertech.com/">
+    <meta property="og:title" content="PRVER |  Web Development Company">
+    <meta property="og:description"
+        content="World's leading web development company. Custom websites, AI solutions & e-commerce.">
+    <meta property="og:image" content="https://prvertech.com/img/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://prvertech.com/">
+    <meta property="twitter:title" content="PRVER | Web Development Company">
+    <meta property="twitter:description"
+        content="World's leading web development company. Custom websites, AI solutions & e-commerce.">
+    <meta property="twitter:image" content="https://prvertech.com/img/og-image.jpg">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://prvertech.com/">
+
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "PRVER",
+        "image": "https://prvertech.com/img/logo.png",
+        "description": "World's leading web development company specializing in custom websites, AI solutions, and e-commerce platforms",
+        "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "USA",
+            "addressRegion": "CA",
+            "addressRegion": "GH",
+            "addressRegion": "DE",
+            "addressRegion": "AU",
+        },
+        "priceRange": "$$",
+        "telephone": "+233551231300",
+        "url": "https://prvertech.com",
+        "openingHours": "Mo-Su 00:00-23:59",
+        "sameAs": [
+            "https://facebook.com/prver",
+            "https://x.com/prver",
+            "https://instagram.com/prver",
+            "https://linkedin.com/company/prver"
+        ]
+    }
+    </script>
+
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="fonts/your-font.woff2" as="font" crossorigin>
+    <link rel="preload" href="css/critical.css" as="style">
+    <link rel="preload" href="/img/logo.webp" as="image">
+
+    <!-- Defer Non-Critical JS -->
+    <script src="js/non-critical.js" defer></script>
+
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400:500:600&family=Playfair+Display:wght@400:500:600:700&family=Space+Grotesk:wght@400:500:600:700&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom Config -->
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                        display: ['Space Grotesk', 'sans-serif'],
+                    },
+                    colors: {
+                        lavender: '#A78BFA',
+                        mint: '#D1FAE5',
+                        peach: '#FED7B7',
+                        sky: '#BAE6FD',
+                        pearl: '#FDF8F3',
+                    },
+                    animation: {
+                        'gradient': 'gradient 15s ease infinite',
+                        'float': 'float 6s ease-in-out infinite',
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'shimmer': 'shimmer 2s linear infinite',
+                        'marquee': 'marquee 30s linear infinite',
+                        'bounce-slow': 'bounce 3s infinite',
+                    },
+                    keyframes: {
+                        gradient: {
+                            '0%, 100%': { backgroundPosition: '0% 50%' },
+                            '50%': { backgroundPosition: '100% 50%' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-20px)' },
+                        },
+                        shimmer: {
+                            '0%': { backgroundPosition: '-1000px 0' },
+                            '100%': { backgroundPosition: '1000px 0' },
+                        },
+                        marquee: {
+                            '0%': { transform: 'translateX(0)' },
+                            '100%': { transform: 'translateX(-50%)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+ <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "PRVER",
+        "image": "https://prvertech.com/img/logo.png",
+        "@id": "https://prvertech.com",
+        "url": "https://prvertech.com",
+        "telephone": "+233551231300",
+        "priceRange": "$$",
+        "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "GH"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "5.6037",
+            "longitude": "-0.1870"
+        },
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+            "opens": "00:00",
+            "closes": "23:59"
+        },
+        "sameAs": [
+            "https://www.facebook.com/prver",
+            "https://x.com/prver",
+            "https://www.instagram.com/prver",
+            "https://www.linkedin.com/company/prver"
+        ],
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5.0",
+            "reviewCount": "127"
+        }
+    }
+    </script>
+    
+    <!-- Service Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "serviceType": "Web Development",
+        "provider": {
+            "@type": "ProfessionalService",
+            "name": "PRVER"
+        },
+        "areaServed": {
+            "@type": "Country",
+            "name": "Worldwide"
+        },
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Web Development Services",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Custom Web Development"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "E-commerce Development"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "AI Solutions"
+                    }
+                }
+            ]
+        }
+    }
+    </script>
+    
+    <!-- FAQ Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What makes PRVER the best web development company?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "PRVER combines cutting-edge technology, AI-powered solutions, and years of experience to deliver world-class websites. With 72+ successful projects and 100% client satisfaction, we're committed to excellence."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How much does web development cost?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Web development costs vary based on complexity. Starter websites start at $497, professional sites at $997, and enterprise solutions at $1,997+. Contact us for a custom quote."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How long does web development take?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Simple websites take 1-2 weeks, professional sites 2-4 weeks, and complex e-commerce sites 4-6 weeks. We're known for delivering early."
+                }
+            }
+        ]
+    }
+    </script>
+    
+    <!-- Breadcrumb Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://prvertech.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Services",
+                "item": "https://prvertech.com/services"
+            }
+        ]
+    }
+    </script>
+    
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500:600&family=Playfair+Display:wght@400;500:600:700&family=Space+Grotesk:wght@400:500:600:700&display=swap" as="style">
+    <link rel="preload" href="https://cdn.tailwindcss.com" as="script">
+    
+    <!-- DNS Prefetch -->
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <link rel="dns-prefetch" href="https://cdn.tailwindcss.com">
+    
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+
+    <style>
+        /* Base Styles */
+        :root {
+            --cursor-x: 0;
+            --cursor-y: 0;
+        }
+
+        body {
+            background: linear-gradient(-45deg, #f3e8ff, #d1fae5, #fed7b7, #bae6fd, #f3e8ff);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+            color: #1e293b;
+            overflow-x: hidden;
+        }
+
+        body.dark {
+            background: linear-gradient(-45deg, #0f172a, #1e293b, #334155, #1e293b, #0f172a);
+            background-size: 400% 400%;
+            color: #f1f5f9;
+        }
+
+        /* Marquee Animation */
+        .marquee-container {
+            overflow: hidden;
+            white-space: nowrap;
+            position: relative;
+        }
+
+        .marquee-container::before,
+        .marquee-container::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            width: 100px;
+            height: 100%;
+            z-index: 2;
+            pointer-events: none;
+        }
+
+        .marquee-container::before {
+            left: 0;
+            background: linear-gradient(to right, rgba(255, 255, 255, 0.3), transparent);
+        }
+
+        .marquee-container::after {
+            right: 0;
+            background: linear-gradient(to left, rgba(255, 255, 255, 0.3), transparent);
+        }
+
+        body.dark .marquee-container::before {
+            background: linear-gradient(to right, rgba(15, 23, 42, 0.8), transparent);
+        }
+
+        body.dark .marquee-container::after {
+            background: linear-gradient(to left, rgba(15, 23, 42, 0.8), transparent);
+        }
+
+        .marquee-track {
+            display: flex;
+            gap: 2rem;
+            animation: marquee 30s linear infinite;
+            padding: 0 1rem;
+        }
+
+        .marquee-track:hover {
+            animation-play-state: paused;
+        }
+
+        @keyframes marquee {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        /* Mobile Optimization */
+        @media (max-width: 768px) {
+            .marquee-track {
+                animation-duration: 20s;
+                gap: 1rem;
+            }
+
+            .glass-panel {
+                padding: 0.5rem 1rem;
+            }
+
+            .glass-panel i {
+                font-size: 1rem;
+            }
+
+            .glass-panel span {
+                font-size: 0.875rem;
+            }
+        }
+
+        /* Glassmorphism 2.0 */
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.65);
+            backdrop-filter: blur(24px) saturate(180%);
+            -webkit-backdrop-filter: blur(24px) saturate(180%);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.07);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .glass-panel:hover {
+            background: rgba(255, 255, 255, 0.75);
+            backdrop-filter: blur(32px) saturate(200%);
+            border-color: rgba(255, 255, 255, 0.8);
+            box-shadow: 0 12px 40px 0 rgba(31, 38, 135, 0.12);
+            transform: translateY(-4px);
+        }
+
+        body.dark .glass-panel {
+            background: rgba(15, 23, 42, 0.65);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+        }
+
+        body.dark .glass-panel:hover {
+            background: rgba(15, 23, 42, 0.75);
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+
+        /* Glass Button */
+        .glass-btn {
+            background: rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.6);
+            transition: all 0.3s;
+        }
+
+        .glass-btn:hover {
+            background: rgba(255, 255, 255, 0.7);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(167, 139, 250, 0.3);
+        }
+
+        body.dark .glass-btn {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        /* Floating Orbs */
+        .orb {
+            position: fixed;
+            border-radius: 50%;
+            filter: blur(80px);
+            opacity: 0.4;
+            z-index: -1;
+            animation: float 20s infinite ease-in-out;
+        }
+
+        .orb-1 {
+            width: 400px;
+            height: 400px;
+            background: linear-gradient(135deg, #A78BFA, #C4B5FD);
+            top: -100px;
+            left: -100px;
+        }
+
+        .orb-2 {
+            width: 300px;
+            height: 300px;
+            background: linear-gradient(135deg, #D1FAE5, #A7F3D0);
+            bottom: 10%;
+            right: -50px;
+            animation-delay: -5s;
+        }
+
+        .orb-3 {
+            width: 250px;
+            height: 250px;
+            background: linear-gradient(135deg, #FED7B7, #FDBA74);
+            top: 40%;
+            left: 60%;
+            animation-delay: -10s;
+        }
+
+        .orb-4 {
+            width: 350px;
+            height: 350px;
+            background: linear-gradient(135deg, #BAE6FD, #7DD3FC);
+            bottom: -100px;
+            left: 20%;
+            animation-delay: -15s;
+        }
+
+        /* Particles */
+        .particle {
+            position: fixed;
+            width: 4px;
+            height: 4px;
+            background: rgba(255, 255, 255, 0.6);
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 1;
+            animation: particleFloat 15s infinite linear;
+        }
+
+        @keyframes particleFloat {
+            0% {
+                transform: translateY(100vh) translateX(0);
+                opacity: 0;
+            }
+
+            10% {
+                opacity: 1;
+            }
+
+            90% {
+                opacity: 1;
+            }
+
+            100% {
+                transform: translateY(-100vh) translateX(100px);
+                opacity: 0;
+            }
+        }
+
+        /* Light Leaks */
+        .light-leak {
+            position: fixed;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.4) 0%, transparent 70%);
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 0;
+            opacity: 0;
+            transition: opacity 1s;
+        }
+
+        /* Text Effects */
+        .text-gradient-soft {
+            background: linear-gradient(135deg, #8B5CF6 0%, #A78BFA 50%, #C4B5FD 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .text-gradient-warm {
+            background: linear-gradient(135deg, #FED7B7 0%, #FDBA74 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* 3D Tilt Card */
+        .tilt-card {
+            transform-style: preserve-3d;
+            perspective: 1000px;
+        }
+
+        /* Reveal Animation */
+        .reveal {
+            opacity: 0;
+            transform: translateY(20px);
+            filter: blur(5px);
+            transition: all 0.4s ease-out;
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+            filter: blur(0);
+        }
+
+        /* Letter Animation */
+        .letter {
+            display: inline-block;
+            opacity: 0;
+            transform: translateY(50px) rotateX(-90deg);
+            animation: letterReveal 0.6s forwards;
+        }
+
+        @keyframes letterReveal {
+            to {
+                opacity: 1;
+                transform: translateY(0) rotateX(0);
+            }
+        }
+
+        /* Scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: rgba(167, 139, 250, 0.5);
+            border-radius: 5px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgba(167, 139, 250, 0.8);
+        }
+
+        /* Stats Counter */
+        .stat-number {
+            background: linear-gradient(135deg, #8B5CF6, #A78BFA);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* FAQ Accordion */
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease, padding 0.4s ease;
+        }
+
+        .faq-answer.active {
+            max-height: 500px;
+        }
+
+        /* Theme Toggle */
+        .theme-toggle {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 1000;
+        }
+
+        /* Mobile Nav - Dropdown Style */
+        .mobile-nav {
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            background: rgba(255, 255, 255, 0.95);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+            transform: translateY(-20px);
+            opacity: 0;
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .mobile-nav.active {
+            transform: translateY(0);
+            opacity: 1;
+            max-height: 600px;
+            padding: 2rem 1.5rem;
+        }
+
+        body.dark .mobile-nav {
+            background: rgba(15, 23, 42, 0.95);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        /* Blog Modal */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 10000;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            padding: 20px;
+        }
+
+        .modal-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .modal-content {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(24px) saturate(180%);
+            -webkit-backdrop-filter: blur(24px) saturate(180%);
+            border: 1px solid rgba(255, 255, 255, 0.6);
+            border-radius: 2rem;
+            max-width: 900px;
+            width: 100%;
+            max-height: 90vh;
+            overflow-y: auto;
+            position: relative;
+            transform: scale(0.95) translateY(20px);
+            transition: transform 0.3s ease;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        }
+
+        body.dark .modal-content {
+            background: rgba(15, 23, 42, 0.85);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .modal-overlay.active .modal-content {
+            transform: scale(1) translateY(0);
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.5);
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s;
+            z-index: 10;
+            font-size: 1.25rem;
+        }
+
+        .modal-close:hover {
+            background: rgba(255, 255, 255, 0.8);
+            transform: rotate(90deg);
+        }
+
+        body.dark .modal-close {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        body.dark .modal-close:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .modal-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 2rem 2rem 0 0;
+        }
+
+        .modal-body {
+            padding: 2.5rem;
+        }
+
+        .modal-category {
+            display: inline-block;
+            padding: 0.5rem 1.5rem;
+            background: linear-gradient(135deg, rgba(139, 92, 246, 0.2), rgba(167, 139, 250, 0.1));
+            color: #8B5CF6;
+            border-radius: 9999px;
+            font-size: 0.875rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+        }
+
+        .modal-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            line-height: 1.3;
+        }
+
+        .modal-meta {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            color: #64748b;
+            font-size: 0.875rem;
+            margin-bottom: 2rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        }
+
+        body.dark .modal-meta {
+            border-bottom-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .modal-text {
+            color: #475569;
+            line-height: 1.8;
+            font-size: 1.125rem;
+        }
+
+        body.dark .modal-text {
+            color: #cbd5e1;
+        }
+
+        .modal-text p {
+            margin-bottom: 1.5rem;
+        }
+
+        .modal-text h2,
+        .modal-text h3,
+        .modal-text h4 {
+            margin: 2rem 0 1rem;
+            color: #1e293b;
+        }
+
+        body.dark .modal-text h2,
+        body.dark .modal-text h3,
+        body.dark .modal-text h4 {
+            color: #f1f5f9;
+        }
+
+        .modal-text ul,
+        .modal-text ol {
+            margin: 1.5rem 0;
+            padding-left: 2rem;
+        }
+
+        .modal-text li {
+            margin-bottom: 0.75rem;
+        }
+
+        .modal-content::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .modal-content::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        .modal-content::-webkit-scrollbar-thumb {
+            background: rgba(167, 139, 250, 0.5);
+            border-radius: 4px;
+        }
+
+        /* Cookie Consent Banner */
+        #cookie-consent {
+            animation: slideUp 0.3s ease-out;
+        }
+
+        @keyframes slideUp {
+            from {
+                transform: translateY(100%);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        body.dark #cookie-consent {
+            background: rgba(15, 23, 42, 0.95);
+            backdrop-filter: blur(12px);
+        }
+
+        /* AI Chat Widget */
+        .chat-widget {
+            position: fixed;
+            bottom: 100px;
+            right: 30px;
+            z-index: 1000;
+        }
+
+        .chat-window {
+            position: fixed;
+            bottom: 100px;
+            right: 30px;
+            width: 350px;
+            max-width: calc(100vw - 60px);
+            height: 500px;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            border-radius: 1.5rem;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+            display: none;
+            flex-direction: column;
+            z-index: 1000;
+            overflow: hidden;
+        }
+
+        body.dark .chat-window {
+            background: rgba(15, 23, 42, 0.95);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .chat-window.active {
+            display: flex;
+            animation: chatSlideIn 0.3s ease-out;
+        }
+
+        @keyframes chatSlideIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px) scale(0.95);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+
+        .chat-header {
+            background: linear-gradient(135deg, #8B5CF6, #A78BFA);
+            color: white;
+            padding: 1.25rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .chat-header-info {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .chat-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .chat-messages {
+            flex: 1;
+            overflow-y: auto;
+            padding: 1.25rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .chat-input {
+            padding: 1.25rem;
+            border-top: 1px solid rgba(0, 0, 0, 0.1);
+            display: flex;
+            gap: 0.75rem;
+        }
+
+        body.dark .chat-input {
+            border-top-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .chat-message {
+            padding: 0.75rem 1rem;
+            border-radius: 1rem;
+            max-width: 85%;
+            word-wrap: break-word;
+            animation: messageSlideIn 0.3s ease-out;
+        }
+
+        @keyframes messageSlideIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .chat-message.user {
+            background: linear-gradient(135deg, #8B5CF6, #A78BFA);
+            color: white;
+            margin-left: auto;
+            border-bottom-right-radius: 0.25rem;
+        }
+
+        .chat-message.bot {
+            background: rgba(241, 245, 249, 0.8);
+            color: #1e293b;
+            margin-right: auto;
+            border-bottom-left-radius: 0.25rem;
+        }
+
+        body.dark .chat-message.bot {
+            background: rgba(51, 65, 85, 0.8);
+            color: #f1f5f9;
+        }
+
+        .chat-message.typing {
+            background: rgba(241, 245, 249, 0.8);
+            color: #1e293b;
+            margin-right: auto;
+            border-bottom-left-radius: 0.25rem;
+        }
+
+        body.dark .chat-message.typing {
+            background: rgba(51, 65, 85, 0.8);
+            color: #f1f5f9;
+        }
+
+        .typing-indicator {
+            display: flex;
+            gap: 4px;
+            padding: 0.5rem;
+        }
+
+        .typing-indicator span {
+            width: 8px;
+            height: 8px;
+            background: #8B5CF6;
+            border-radius: 50%;
+            animation: typingBounce 1.4s infinite;
+        }
+
+        .typing-indicator span:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+
+        .typing-indicator span:nth-child(3) {
+            animation-delay: 0.4s;
+        }
+
+        @keyframes typingBounce {
+
+            0%,
+            60%,
+            100% {
+                transform: translateY(0);
+            }
+
+            30% {
+                transform: translateY(-10px);
+            }
+        }
+
+        /* Quick Suggestions */
+        .chat-suggestions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            padding: 0 1.25rem 1.25rem;
+        }
+
+        .chat-suggestion {
+            background: rgba(139, 92, 246, 0.1);
+            color: #8B5CF6;
+            padding: 0.5rem 1rem;
+            border-radius: 1rem;
+            font-size: 0.875rem;
+            cursor: pointer;
+            transition: all 0.3s;
+            border: 1px solid rgba(139, 92, 246, 0.2);
+        }
+
+        .chat-suggestion:hover {
+            background: rgba(139, 92, 246, 0.2);
+            transform: translateY(-2px);
+        }
+
+        body.dark .chat-suggestion {
+            background: rgba(139, 92, 246, 0.2);
+            border-color: rgba(139, 92, 246, 0.3);
+        }
+
+        body.dark .chat-suggestion:hover {
+            background: rgba(139, 92, 246, 0.3);
+        }
+
+        /* Pagination */
+        .pagination-btn {
+            transition: all 0.3s;
+            min-width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .pagination-btn.active {
+            background: linear-gradient(135deg, #8B5CF6, #A78BFA);
+            color: white;
+            border-color: transparent;
+        }
+
+        .pagination-btn:hover:not(.active) {
+            background: rgba(167, 139, 250, 0.2);
+        }
+
+        .pagination-btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        /* Category Filter Buttons */
+        .category-btn {
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+
+        .category-btn.active {
+            background: linear-gradient(135deg, #8B5CF6, #A78BFA);
+            color: white;
+            border-color: transparent;
+        }
+
+        .category-btn:hover:not(.active) {
+            background: rgba(139, 92, 246, 0.1);
+            color: #8B5CF6;
+        }
+    </style>
+</head>
+
+<body class="antialiased selection:bg-lavender selection:text-white">
+    <!-- Floating Orbs -->
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+    <div class="orb orb-4"></div>
+
+    <!-- Particles Container -->
+    <div id="particles"></div>
+
+    <!-- Light Leaks -->
+    <div class="light-leak" id="lightLeak1" style="top: 20%; left: 10%;"></div>
+    <div class="light-leak" id="lightLeak2" style="top: 60%; right: 15%;"></div>
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 transition-all duration-300 py-6 px-6 lg:px-12">
+        <div class="max-w-7xl mx-auto glass-panel rounded-2xl px-6 py-4 flex justify-between items-center">
+            <a href="/Home" class="text-2xl font-display font-bold tracking-tight">
+                <img src="/img/logolight.png" class="h-12 w-auto" alt="PRVER Logo">
+            </a>
+
+            <div class="hidden lg:flex items-center gap-6 text-sm font-medium">
+                <a href="/Home" class="hover:text-lavender transition-colors relative group">
+                    Home
+                    <span
+                        class="absolute -bottom-1 left-0 w-0 h-0.5 bg-lavender transition-all group-hover:w-full"></span>
+                </a>
+                <a href="/Home" class="hover:text-lavender transition-colors relative group">
+                    Services
+                    <span
+                        class="absolute -bottom-1 left-0 w-0 h-0.5 bg-lavender transition-all group-hover:w-full"></span>
+                </a>
+                <a href="/portfolio" class="hover:text-lavender transition-colors relative group">
+                    Portfolio
+                    <span
+                        class="absolute -bottom-1 left-0 w-0 h-0.5 bg-lavender transition-all group-hover:w-full"></span>
+                </a>
+                <a href="/ai-agent" class="hover:text-lavender transition-colors relative group">
+                    AI Agents
+                    <span
+                        class="absolute -bottom-1 left-0 w-0 h-0.5 bg-lavender transition-all group-hover:w-full"></span>
+                </a>
+                <a href="/products" class="hover:text-lavender transition-colors relative group">
+                    Products
+                    <span
+                        class="absolute -bottom-1 left-0 w-0 h-0.5 bg-lavender transition-all group-hover:w-full"></span>
+                </a>
+                <a href="/blog" class="hover:text-lavender transition-colors relative group text-lavender">
+                    Blog
+                    <span class="absolute -bottom-1 left-0 w-full h-0.5 bg-lavender transition-all"></span>
+                </a>
+                <a href="/About" class="hover:text-lavender transition-colors relative group">
+                    About
+                    <span
+                        class="absolute -bottom-1 left-0 w-0 h-0.5 bg-lavender transition-all group-hover:w-full"></span>
+                </a>
+                <a href="/Home#contact" class="px-6 py-2.5 rounded-full glass-btn text-sm font-semibold">
+                    Let's Talk
+                </a>
+            </div>
+
+            <button id="mobileMenuBtn" class="lg:hidden text-2xl">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu - Dropdown Style -->
+    <div id="mobileMenu" class="mobile-nav fixed top-28 left-0 right-0 z-40 mx-4 rounded-2xl">
+        <a href="/Home"
+            class="mobile-link block hover:text-lavender w-full text-center py-3 border-b border-white/10">Home</a>
+        <a href="/services"
+            class="mobile-link block hover:text-lavender w-full text-center py-3 border-b border-white/10">Services</a>
+        <a href="/portfolio"
+            class="mobile-link block hover:text-lavender w-full text-center py-3 border-b border-white/10">Portfolio</a>
+        <a href="/ai-agent"
+            class="mobile-link block hover:text-lavender w-full text-center py-3 border-b border-white/10">AI Agents</a>
+        <a href="/products"
+            class="mobile-link block hover:text-lavender w-full text-center py-3 border-b border-white/10">Products</a>
+        <a href="/blog"
+            class="mobile-link block hover:text-lavender text-lavender w-full text-center py-3 border-b border-white/10">Blog</a>
+        <a href="/About"
+            class="mobile-link block hover:text-lavender w-full text-center py-3 border-b border-white/10">About</a>
+        <a href="/Home#contact" class="mobile-link block hover:text-lavender w-full text-center py-3">Contact</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="min-h-[50vh] flex items-center justify-center relative px-6 pt-32">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-5xl md:text-7xl font-serif font-bold mb-6 reveal">
+                PRVER <span class="text-gradient-soft">Blog</span>
+            </h1>
+            <p class="text-xl text-slate-600 dark:text-slate-300 reveal">
+                Insights, tips, and industry insights from our team of experts
+            </p>
+        </div>
+    </section>
+
+    <!-- Category Filter -->
+    <section class="py-12 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-wrap justify-center gap-3 mb-12 reveal">
+                <button class="category-btn active px-5 py-2.5 rounded-full glass-btn font-medium text-sm"
+                    data-category="all">All Posts</button>
+                <button class="category-btn px-5 py-2.5 rounded-full glass-btn font-medium text-sm"
+                    data-category="web-design">Web Design</span>
+                    <button class="category-btn px-5 py-2.5 rounded-full glass-btn font-medium text-sm"
+                        data-category="development">Development</button>
+                    <button class="category-btn px-5 py-2.5 rounded-full glass-btn font-medium text-sm"
+                        data-category="seo">SEO</button>
+                    <button class="category-btn px-5 py-2.5 rounded-full glass-btn font-medium text-sm"
+                        data-category="ai">AI & Technology</button>
+                    <button class="category-btn px-5 py-2.5 rounded-full glass-btn font-medium text-sm"
+                        data-category="business">Business</button>
+                    <button class="category-btn px-5 py-2.5 rounded-full glass-btn font-medium text-sm"
+                        data-category="marketing">Marketing</button>
+            </div>
+
+            <!-- Blog Grid -->
+            <div id="blogGrid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+                <!-- Blog posts will be dynamically inserted here -->
+            </div>
+
+            <!-- Pagination -->
+            <div class="flex justify-center items-center gap-2 reveal flex-wrap" id="pagination">
+                <!-- Pagination will be dynamically inserted here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="py-32 px-6 relative">
+        <div class="max-w-4xl mx-auto">
+            <div class="glass-panel p-12 rounded-3xl reveal text-center">
+                <div
+                    class="w-20 h-20 mx-auto mb-6 rounded-full bg-gradient-to-br from-lavender/30 to-mint/30 flex items-center justify-center text-lavender text-3xl">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <h2 class="text-4xl md:text-5xl font-serif font-bold mb-6">Subscribe to Our Newsletter</h2>
+                <p class="text-xl text-slate-600 dark:text-slate-300 mb-8">
+                    Get the latest insights, tips, and industry insights delivered straight to your inbox. No spam,
+                    unsubscribe anytime.
+                </p>
+                <form id="newsletter-form" class="flex flex-col sm:flex-row gap-4 max-w-xl mx-auto">
+    <input 
+        type="email" 
+        name="user_email"
+        placeholder="Your email address"
+        class="flex-1 px-6 py-4 rounded-full glass-btn text-lg" 
+        required
+    >
+    <button type="submit"
+        class="px-8 py-4 rounded-full bg-gradient-to-r from-lavender to-purple-600 text-white font-semibold text-lg hover:opacity-90 transition-opacity">
+        Subscribe
+    </button>
+</form>
+                <p class="text-sm text-slate-500 dark:text-slate-400 mt-4">
+                    <i class="fas fa-shield-alt mr-2"></i> We respect your privacy. No spam, ever.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 px-6 border-t border-white/30 dark:border-white/10">
+        <div class="max-w-7xl mx-auto">
+            <div class="glass-panel p-8 rounded-3xl mb-12">
+                <div class="grid md:grid-cols-4 gap-8">
+                    <div class="md:col-span-2">
+                        <div class="text-2xl font-display font-bold mb-4">
+                            <img src="/img/logolight.png" class="h-12 w-auto" alt="PRVER Logo">
+                        </div>
+                        <p class="text-slate-600 dark:text-slate-400 mb-6 max-w-sm">Creating digital experiences that
+                            inspire, engage, and deliver results.</p>
+                        <div class="flex gap-4">
+                            <a href="#"
+                                class="w-10 h-10 rounded-full glass-btn flex items-center justify-center hover:text-lavender transition-colors">
+                                <i class="fab fa-x-twitter"></i>
+                            </a>
+                            <a href="#"
+                                class="w-10 h-10 rounded-full glass-btn flex items-center justify-center hover:text-lavender transition-colors">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#"
+                                class="w-10 h-10 rounded-full glass-btn flex items-center justify-center hover:text-lavender transition-colors">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="#"
+                                class="w-10 h-10 rounded-full glass-btn flex items-center justify-center hover:text-lavender transition-colors">
+                                <i class="fab fa-tiktok"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h4 class="font-semibold mb-4">Quick Links</h4>
+                        <ul class="space-y-2 text-slate-600 dark:text-slate-400">
+                            <li><a href="/services" class="hover:text-lavender transition-colors">Services</a></li>
+                            <li><a href="/portfolio" class="hover:text-lavender transition-colors">Portfolio</a></li>
+                            <li><a href="/About" class="hover:text-lavender transition-colors">About</a></li>
+                            <li><a href="/Home#contact" class="hover:text-lavender transition-colors">Contact</a>
+                            </li>
+                            <li><a href="/privacy" class="hover:text-lavender transition-colors">Privacy Policy</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h4 class="font-semibold mb-4">Categories</h4>
+                        <ul class="space-y-2 text-slate-600 dark:text-slate-400">
+                            <li><a href="#" class="hover:text-lavender transition-colors">Web Design</a></li>
+                            <li><a href="#" class="hover:text-lavender transition-colors">Development</a></li>
+                            <li><a href="#" class="hover:text-lavender transition-colors">SEO</a></li>
+                            <li><a href="#" class="hover:text-lavender transition-colors">AI & Technology</a></li>
+                            <li><a href="#" class="hover:text-lavender transition-colors">Business</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center text-slate-500 text-sm">
+                <p>&copy; 2024 PRVER. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Theme Toggle -->
+    <button id="themeToggle"
+        class="theme-toggle w-14 h-14 rounded-full glass-btn flex items-center justify-center text-xl shadow-lg">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <!-- Blog Modal -->
+    <div id="blogModal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">
+                <i class="fas fa-times"></i>
+            </button>
+            <img src="" alt="" class="modal-image" id="modalImage">
+            <div class="modal-body">
+                <span class="modal-category" id="modalCategory">Category</span>
+                <h2 class="modal-title" id="modalTitle">Blog Title</h2>
+                <div class="modal-meta">
+                    <span><i class="fas fa-calendar mr-2"></i><span id="modalDate">January 1, 2026</span></span>
+                    <span><i class="fas fa-clock mr-2"></i><span id="modalReadTime">5 min read</span></span>
+                    <span><i class="fas fa-user mr-2"></i><span id="modalAuthor">Author Name</span></span>
+                </div>
+                <div class="modal-text" id="modalContent">
+                    <!-- Full blog content will be inserted here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- AI Chat Widget -->
+    <div class="chat-widget">
+        <button id="chatToggle"
+            class="w-14 h-14 rounded-full bg-gradient-to-r from-lavender to-purple-600 text-white shadow-lg hover:shadow-xl transition-all hover:scale-110 flex items-center justify-center">
+            <i class="fas fa-robot text-2xl"></i>
+        </button>
+
+        <div id="chatWindow" class="chat-window">
+            <div class="chat-header">
+                <div class="chat-header-info">
+                    <div class="chat-avatar">
+                        <i class="fas fa-robot text-xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg">PRVER AI Assistant</h3>
+                        <p class="text-sm opacity-90">Smart & Contextual Help</p>
+                    </div>
+                </div>
+                <button id="closeChat" class="text-white hover:opacity-80">
+                    <i class="fas fa-times text-xl"></i>
+                </button>
+            </div>
+
+            <div class="chat-messages" id="chatMessages">
+                <div class="chat-message bot">
+                    Hello! 👋 I'm the PRVER AI assistant. I can help you find blog posts, answer questions, or connect
+                    you with our team. What would you like to know?
+                </div>
+            </div>
+
+            <!-- Quick Suggestions -->
+            <div class="chat-suggestions" id="chatSuggestions">
+                <div class="chat-suggestion" onclick="sendSuggestion('Latest blog posts')">Latest Posts</div>
+                <div class="chat-suggestion" onclick="sendSuggestion('Web design tips')">Web Design</div>
+                <div class="chat-suggestion" onclick="sendSuggestion('SEO tips')">SEO Tips</div>
+                <div class="chat-suggestion" onclick="sendSuggestion('AI tools')">AI Tools</div>
+            </div>
+
+            <div class="chat-input">
+                <input type="text" id="chatInput" placeholder="Type your message..."
+                    class="flex-1 px-4 py-2 rounded-lg border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 focus:outline-none focus:border-lavender">
+                <button id="sendChat"
+                    class="px-4 py-2 bg-lavender text-white rounded-lg hover:bg-lavender/90 transition-colors">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS Animation Library
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
+
+        // Blog Posts Data (50+ posts for pagination)
+        const blogPosts = [
+            // Web Design (1-10)
+            {
+                id: 1,
+                title: "The Future of Web Design in 2026",
+                category: "web-design",
+                author: "Prince Kwarteng",
+                image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=1200&q=80",
+                date: "March 15, 2026",
+                readTime: "6 min read",
+                excerpt: "Exploring how translucent design patterns are evolving and what's next for digital experiences.",
+                content: `<p>Web Design has evolved from a trendy UI effect to a fundamental design language. In 2026, we're seeing translucent interfaces that don't just look beautiful, they enhance usability and create hierarchical depth.</p><h3>Key Trends:</h3><ul><li>Adaptive blur levels based on content importance</li><li>Dynamic color extraction from background imagery</li><li>Performance-optimized backdrop filters for mobile</li><li>Integration with dark mode for reduced eye strain</li></ul><p>The future isn't just about frosted glass, it's about intelligent, context-aware interfaces that respond to user behavior and environmental factors.</p><p>At PRVER, we're implementing these principles in every project, ensuring your digital presence feels both premium and purposeful.</p>`
+            },
+            {
+                id: 2,
+                title: "Glassmorphism Design Trends",
+                category: "web-design",
+                author: "Bright Appiah",
+                image: "https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=1200&q=80",
+                date: "March 10, 2026",
+                readTime: "5 min read",
+                excerpt: "How glassmorphism is reshaping modern web design and user interfaces.",
+                content: `<p>Glassmorphism has become one of the most influential design trends of the decade. Its translucent, frosted-glass effect creates depth and hierarchy while maintaining a clean, modern aesthetic.</p><h3>Why Glassmorphism Works:</h3><ul><li>Creates visual hierarchy through depth</li><li>Maintains context with background visibility</li><li>Works beautifully with dark mode</li><li>Creates a premium, modern feel</li></ul><p>When implemented correctly, glassmorphism can elevate your design from good to exceptional.</p>`
+            },
+            {
+                id: 3,
+                title: "Mobile-First Design Principles",
+                category: "web-design",
+                author: "Vera Osei",
+                image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=1200&q=80",
+                date: "March 5, 2026",
+                readTime: "7 min read",
+                excerpt: "Why mobile-first design is no longer optional in 2026.",
+                content: `<p>With over 60% of web traffic coming from mobile devices, mobile-first design is no longer optional, it's essential. This approach prioritizes the mobile experience before scaling up to larger screens.</p><h3>Key Principles:</h3><ul><li>Start with mobile constraints</li><li>Prioritize content hierarchy</li><li>Optimize touch interactions</li><li>Progressive enhancement for larger screens</li></ul><p>Mobile-first isn't just about responsive design, it's about prioritizing the mobile experience from the ground up.</p>`
+            },
+            {
+                id: 4,
+                title: "Color Theory in Web Design",
+                category: "web-design",
+                author: "Prince Kwarteng",
+                image: "https://images.unsplash.com/photo-1550684848-fac1c5b4e853?w=1200&q=80",
+                date: "February 28, 2026",
+                readTime: "6 min read",
+                excerpt: "How to use color theory to create compelling web designs.",
+                content: `<p>Color is one of the most powerful tools in a designer's toolkit. Understanding color theory can help you create designs that evoke the right emotions and guide user behavior.</p><h3>Key Color Theory Principles:</h3><ul><li>Color harmony and contrast</li><li>Psychological impact of colors</li><li>Accessibility and color blindness</li><li>Cultural considerations</li></ul><p>Understanding color theory helps you make informed design decisions that resonate with your audience.</p>`
+            },
+            {
+                id: 5,
+                title: "Typography Best Practices",
+                category: "web-design",
+                author: "Bright Appiah",
+                image: "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=1200&q=80",
+                date: "February 20, 2026",
+                readTime: "5 min read",
+                excerpt: "Mastering typography for better web design and readability.",
+                content: `<p>Typography is the foundation of web design. Good typography improves readability, establishes hierarchy, and sets the tone for your entire website.</p><h3>Typography Best Practices:</h3><ul><li>Limit font families (2-3 max)</li><li>Establish clear hierarchy</li><li>Ensure proper line height and spacing</li><li>Ensure accessibility with proper contrast</li></ul><p>Good typography is invisible, it guides users without drawing attention to itself.</p>`
+            },
+            // Development (6-15)
+            {
+                id: 6,
+                title: "Modern JavaScript Frameworks Comparison",
+                category: "development",
+                author: "Prince Kwarteng",
+                image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1200&q=80",
+                date: "March 12, 2026",
+                readTime: "8 min read",
+                excerpt: "Comparing React, Vue, and Next.js for modern web development.",
+                content: `<p>Choosing the right JavaScript framework can make or break your project. Each framework has its strengths and ideal use cases.</p><h3>Framework Comparison:</h3><ul><li>React: Best for large-scale applications</li><li>Vue: Best for progressive enhancement</li><li>Next.js: Best for SEO and SSR</li><li>Svelte: Best for performance</li></ul><p>Choose the framework that best fits your project requirements and team expertise.</p>`
+            },
+            {
+                id: 7,
+                title: "API Design Best Practices",
+                category: "development",
+                author: "Prince Kwarteng",
+                image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1200&q=80",
+                date: "March 8, 2026",
+                readTime: "7 min read",
+                excerpt: "Best practices for designing RESTful and GraphQL APIs.",
+                content: `<p>Well-designed APIs are the backbone of modern applications. Good API design improves developer experience and system maintainability.</p><h3>API Design Best Practices:</h3><ul><li>Use RESTful conventions</li><li>Version your APIs</li><li>Implement proper error handling</li><li>Document everything</li></ul><p>Good API design is an investment in your application's future.</p>`
+            },
+            {
+                id: 8,
+                title: "Database Optimization Techniques",
+                category: "development",
+                author: "Prince Kwarteng",
+                image: "/img/dot.jpg",
+                date: "March 1, 2026",
+                readTime: "9 min read",
+                excerpt: "Techniques for optimizing database performance and queries.",
+                content: `<p>Database performance can make or break your application. Proper optimization ensures your application scales smoothly as it grows.</p><h3>Optimization Techniques:</h3><ul><li>Proper indexing strategies</li><li>Query optimization</li><li>Caching strategies</li><li>Database normalization</li></ul><p>Database optimization is an ongoing process, not a one-time task.</p>`
+            },
+            {
+                id: 9,
+                title: "Security Best Practices for Web Apps",
+                category: "development",
+                author: "Prince Kwarteng",
+                image: "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=1200&q=80",
+                date: "February 25, 2026",
+                readTime: "8 min read",
+                excerpt: "Essential security practices every web developer should know.",
+                content: `<p>Security should be a priority from day one of your project. Implementing proper security measures protects your users and your business.</p><h3>Security Best Practices:</h3><ul><li>Input validation and sanitization</li><li>Authentication and authorization</li><li>HTTPS everywhere</li><li>Regular security audits</li></ul><p>Security is not a feature, it's a requirement.</p>`
+            },
+            {
+                id: 10,
+                title: "Microservices Architecture Guide",
+                category: "development",
+                author: "Prince Kwarteng",
+                image: "/img/microservers.png",
+                date: "February 18, 2026",
+                readTime: "10 min read",
+                excerpt: "A comprehensive guide to microservices architecture.",
+                content: `<p>Microservices architecture has become the standard for large-scale applications. Understanding when and how to use microservices is crucial for modern development.</p><h3>Microservices Benefits:</h3><ul><li>Independent scaling</li><li>Technology flexibility</li><li>Faster deployment</li><li>Better fault isolation</li></ul><p>Microservices aren't for every project, but they're essential for large-scale applications.</p>`
+            },
+            // SEO (11-20)
+            {
+                id: 11,
+                title: "SEO Best Practices for 2026",
+                category: "seo",
+                author: "Vera Osei",
+                image: "https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?w=1200&q=80",
+                date: "March 14, 2026",
+                readTime: "9 min read",
+                excerpt: "The latest SEO best practices and algorithm updates for 2026.",
+                content: `<p>SEO continues to evolve rapidly. Staying up-to-date with the latest best practices and algorithm updates is crucial for maintaining search rankings.</p><h3>2026 SEO Best Practices:</h3><ul><li>Core Web Vitals optimization</li><li>E-E-A-T (Experience, Expertise, Authoritativeness, Trustworthiness)</li><li>AI-generated content guidelines</li><li>Mobile-first indexing</li></ul><p>SEO is a long-term investment that pays dividends over time.</p>`
+            },
+            {
+                id: 12,
+                title: "Local SEO Guide for Small Businesses",
+                category: "seo",
+                author: "Vera Osei",
+                image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&q=80",
+                date: "March 9, 2026",
+                readTime: "7 min read",
+                excerpt: "How small businesses can dominate local search results.",
+                content: `<p>Local SEO is crucial for small businesses that serve local customers. Proper optimization can help you dominate local search results.</p><h3>Local SEO Strategies:</h3><ul><li>Google Business Profile optimization</li><li>Local keyword research</li><li>Review management</li><li>Local citations and citations</li></ul><p>Local SEO is one of the highest ROI marketing activities for local businesses.</p>`
+            },
+            {
+                id: 13,
+                title: "Technical SEO Checklist",
+                category: "seo",
+                author: "Vera Osei",
+                image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&q=80",
+                date: "March 3, 2026",
+                readTime: "8 min read",
+                excerpt: "A comprehensive technical SEO checklist for 2026.",
+                content: `<p>Technical SEO is the foundation of your SEO strategy. Without proper technical SEO, even the best content won't rank well.</p><h3>Technical SEO Checklist:</h3><ul><li>Site speed optimization</li><li>Mobile-friendly design</li><li>Proper URL structure</li><li>XML sitemap and robots.txt</li></ul><p>Technical SEO is not optional, it's essential for search visibility.</p>`
+            },
+            {
+                id: 14,
+                title: "Content Marketing for SEO",
+                category: "seo",
+                author: "Vera Osei",
+                image: "/img/SEO1.jpg",
+                date: "February 26, 2026",
+                readTime: "6 min read",
+                excerpt: "How content marketing and SEO work together.",
+                content: `<p>Content marketing and SEO are two sides of the same coin. Great content attracts links and engagement, which improves search rankings.</p><h3>Content Marketing for SEO:</h3><ul><li>Keyword research and intent</li><li>Content quality and depth</li><li>Internal linking strategy</li><li>Content promotion</li></ul><p>Content is king, but distribution is queen, and she wears the pants.</p>`
+            },
+            {
+                id: 15,
+                title: "Link Building Strategies That Work",
+                category: "seo",
+                author: "Vera Osei",
+                image: "/img/seo.jpg",
+                date: "February 19, 2026",
+                readTime: "7 min read",
+                excerpt: "Effective link building strategies for 2026.",
+                content: `<p>Link building remains one of the most important ranking factors. However, not all links are created equal.</p><h3>Link Building Strategies:</h3><ul><li>Guest posting on relevant sites</li><li>Broken link building</li><li>Digital PR and outreach</li><li>Content marketing</li></ul><p>Quality over quantity, always focus on earning high-quality links.</p>`
+            },
+            // AI & Technology (16-25)
+            {
+                id: 16,
+                title: "AI Tools Every Designer Should Know",
+                category: "ai",
+                author: "Prince Kwarteng",
+                image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=1200&q=80",
+                date: "March 13, 2026",
+                readTime: "7 min read",
+                excerpt: "Boosting creativity and productivity with artificial intelligence tools.",
+                content: `<p>Artificial intelligence isn't replacing designers, it's amplifying creativity. The right AI tools can handle repetitive tasks, generate inspiration, and accelerate workflows.</p><h3>Essential AI Tools for 2026:</h3><ul><li>Midjourney / DALL-E 3: Rapid concept visualization</li><li>Figma AI: Auto-layout suggestions</li><li>Galileo AI: Text to UI designs</li><li>Khroma: AI color palette generator</li></ul><p>Use AI for ideation and execution, but keep the human touch for strategy and final polish.</p>`
+            },
+            {
+                id: 17,
+                title: "Machine Learning for Web Developers",
+                category: "ai",
+                author: "Prince Kwarteng",
+                image: "https://images.unsplash.com/photo-1555255707-c07966088b7b?w=1200&q=80",
+                date: "March 7, 2026",
+                readTime: "9 min read",
+                excerpt: "How web developers can leverage machine learning in their projects.",
+                content: `<p>Machine learning is no longer just for data scientists. Web developers can now easily integrate ML into their applications.</p><h3>ML for Web Developers:</h3><ul><li>Pre-trained models and APIs</li><li>TensorFlow.js for browser-based ML</li><li>Recommendation systems</li><li>Natural language processing</li></ul><p>You don't need a PhD to use machine learning in your web applications.</p>`
+            },
+            {
+                id: 18,
+                title: "AI-Powered Chatbots for Business",
+                category: "ai",
+                author: "Prince Kwarteng",
+                image: "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?w=1200&q=80",
+                date: "March 2, 2026",
+                readTime: "6 min read",
+                excerpt: "How AI chatbots are transforming customer service.",
+                content: `<p>AI chatbots are revolutionizing customer service. Modern chatbots can handle complex queries and provide 24/7 support.</p><h3>AI Chatbot Benefits:</h3><ul><li>24/7 availability</li><li>Instant responses</li><li>Scalable customer support</li><li>Cost reduction</li></ul><p>AI chatbots aren't replacing humans, they're augmenting human support teams.</p>`
+            },
+            {
+                id: 19,
+                title: "The Future of AI in Web Development",
+                category: "ai",
+                author: "Prince Kwarteng",
+                image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1200&q=80",
+                date: "February 27, 2026",
+                readTime: "8 min read",
+                excerpt: "How AI is transforming web development in 2026 and beyond.",
+                content: `<p>AI is transforming web development in ways we couldn't imagine just a few years ago. From code generation to automated testing, AI is changing how we build websites.</p><h3>AI in Web Development:</h3><ul><li>AI-powered code generation</li><li>Automated testing and debugging</li><li>Automated design systems</li><li>Performance optimization</li></ul><p>AI won't replace developers, it will make them more productive.</p>`
+            },
+            {
+                id: 20,
+                title: "Natural Language Processing for Web Apps",
+                category: "ai",
+                author: "Prince Kwarteng",
+                image: "https://images.unsplash.com/photo-1555255707-c07966088b7b?w=1200&q=80",
+                date: "February 20, 2026",
+                readTime: "7 min read",
+                excerpt: "Implementing NLP in web applications for better user experiences.",
+                content: `<p>Natural Language Processing (NLP) is enabling new possibilities for web applications. From chatbots to search, NLP is transforming how users interact with websites.</p><h3>NLP Applications:</h3><ul><li>Chatbots and virtual assistants</li><li>Search and autocomplete</li><li>Sentiment analysis</li><li>Content moderation</li></ul><p>NLP is making web applications more intuitive and user-friendly.</p>`
+            },
+            // Business (21-30)
+            {
+                id: 21,
+                title: "How Local Businesses Can Compete Online",
+                category: "business",
+                author: "Vera Osei",
+                image: "https://images.unsplash.com/photo-1553877522-43269d4ea984?w=1200&q=80",
+                date: "March 11, 2026",
+                readTime: "8 min read",
+                excerpt: "Strategies for small businesses to dominate their market and compete with larger competitors.",
+                content: `<p>In today's digital-first world, local businesses face unprecedented competition from global brands. But size isn't everything, authenticity, community connection, and smart digital strategy can level the playing field.</p><h3>5 Strategies That Work:</h3><ol><li>Hyper-local SEO: Optimize for 'near me' searches</li><li>Story-driven content: Share your origin story</li><li>Mobile-first experience: 70% of local searches on mobile</li><li>Review management: Respond to every review</li><li>Local partnerships: Cross-promotion opportunities</li></ol><p>The businesses thriving today aren't the biggest, they're the most connected. Your local advantage is your superpower.</p>`
+            },
+            {
+                id: 22,
+                title: "Digital Transformation for Small Business",
+                category: "business",
+                author: "Bright Appiah",
+                image: "/img/dt.jpg",
+                date: "March 6, 2026",
+                readTime: "7 min read",
+                excerpt: "How small businesses can successfully navigate digital transformation.",
+                content: `<p>Digital transformation is no longer optional for small businesses. The question is no longer if, but how to transform digitally.</p><h3>Digital Transformation Steps:</h3><ul><li>Assess current digital presence</li><li>Identify key opportunities</li><li>Start with quick wins</li><li>Scale gradually</li></ul><p>Digital transformation is a journey, not a destination.</p>`
+            },
+            {
+                id: 23,
+                title: "Building a Strong Online Brand",
+                category: "business",
+                author: "Prince Kwarteng",
+                image: "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=1200&q=80",
+                date: "March 1, 2026",
+                readTime: "6 min read",
+                excerpt: "How to build a strong online brand that stands out.",
+                content: `<p>Building a strong online brand is crucial for business success. Your brand is more than just a logo, it's your entire online presence.</p><h3>Brand Building Tips:</h3><ul><li>Define your brand values</li><li>Consistent visual identity</li><li>Authentic storytelling</li><li>Consistent customer experience</li></ul><p>Your brand is your promise to your customers, make it count.</p>`
+            },
+            {
+                id: 24,
+                title: "Customer Experience Best Practices",
+                category: "business",
+                author: "Vera Osei",
+                image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&q=80",
+                date: "February 24, 2026",
+                readTime: "7 min read",
+                excerpt: "Best practices for delivering exceptional customer experiences.",
+                content: `<p>Customer experience is the new battleground for business success. Companies that prioritize customer experience outperform their competitors.</p><h3>CX Best Practices:</h3><ul><li>Understand customer needs</li><li>Personalize experiences</li><li>Respond quickly</li><li>Exceed expectations</li></ul><p>Happy customers are your best marketing tool.</p>`
+            },
+            {
+                id: 25,
+                title: "E-commerce Trends for 2026",
+                category: "business",
+                author: "Bright Appiah",
+                image: "/img/ec.png",
+                date: "February 17, 2026",
+                readTime: "8 min read",
+                excerpt: "The latest e-commerce trends and what they mean for your business.",
+                content: `<p>E-commerce continues to evolve rapidly. Staying ahead of trends is crucial for e-commerce success.</p><h3>2026 E-commerce Trends:</h3><ul><li>Personalization at scale</li><li>Social commerce</li><li>Sustainable e-commerce</li><li>Voice commerce</li></ul><p>The future of e-commerce is personalized, social, and sustainable.</p>`
+            },
+            // Marketing (26-35)
+            {
+                id: 26,
+                title: "Digital Marketing Trends for 2026",
+                category: "marketing",
+                author: "Vera Osei",
+                image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&q=80",
+                date: "March 10, 2026",
+                readTime: "7 min read",
+                excerpt: "The latest digital marketing trends and strategies for 2026.",
+                content: `<p>Digital marketing continues to evolve rapidly. Staying ahead of trends is crucial for marketing success.</p><h3>2026 Marketing Trends:</h3><ul><li>AI-powered personalization</li><li>Video content dominance</li><li>Influencer marketing evolution</li><li>Voice search optimization</li></ul><p>The future of marketing is personalized, video-first, and AI-powered.</p>`
+            },
+            {
+                id: 27,
+                title: "Social Media Marketing Strategy",
+                category: "marketing",
+                author: "Prince Kwarteng",
+                image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=1200&q=80",
+                date: "March 5, 2026",
+                readTime: "6 min read",
+                excerpt: "How to build an effective social media marketing strategy.",
+                content: `<p>Social media marketing is essential for modern businesses. A well-executed social media strategy can drive brand awareness, engagement, and sales.</p><h3>Social Media Strategy:</h3><ul><li>Choose the right platforms</li><li>Consistent posting schedule</li><li>Engage with your audience</li><li>Analyze and optimize</li></ul><p>Social media is a marathon, not a sprint.</p>`
+            },
+            {
+                id: 28,
+                title: "Content Marketing Strategy Guide",
+                category: "marketing",
+                author: "Vera Osei",
+                image: "/img/cms.png",
+                date: "February 28, 2026",
+                readTime: "8 min read",
+                excerpt: "A comprehensive guide to content marketing strategy.",
+                content: `<p>Content marketing is one of the most effective marketing strategies. Quality content attracts, engages, and converts your target audience.</p><h3>Content Marketing Strategy:</h3><ul><li>Define your target audience</li><li>Create valuable content</li><li>Distribute effectively</li><li>Measure and optimize</li></ul><p>Content is king, but distribution is queen.</p>`
+            },
+            {
+                id: 29,
+                title: "Email Marketing Best Practices",
+                category: "marketing",
+                author: "Bright Appiah",
+                image: "https://images.unsplash.com/photo-1557200134-90327ee9fafa?w=1200&q=80",
+                date: "February 21, 2026",
+                readTime: "6 min read",
+                excerpt: "Best practices for effective email marketing campaigns.",
+                content: `<p>Email marketing remains one of the highest ROI marketing channels. When done right, email marketing can drive significant revenue.</p><h3>Email Marketing Best Practices:</h3><ul><li>Segment your audience</li><li>Personalize your emails</li><li>Test and optimize</li><li>Mobile optimization</li></ul><p>Email marketing is far from dead, it's evolving.</p>`
+            },
+            {
+                id: 30,
+                title: "Video Marketing for Business",
+                category: "marketing",
+                author: "Prince Kwarteng",
+                image: "/img/vm.jpg",
+                date: "February 14, 2026",
+                readTime: "7 min read",
+                excerpt: "How to leverage video marketing for business growth.",
+                content: `<p>Video marketing is dominating digital marketing. Video content generates more engagement, shares, and conversions than any other content type.</p><h3>Video Marketing Tips:</h3><ul><li>Keep it short and engaging</li><li>Optimize for mobile</li><li>Add captions</li><li>Include clear CTAs</li></ul><p>Video is the future of content marketing.</p>`
+            },
+            // More posts for pagination (31-50)
+            {
+                id: 31,
+                title: "UX Design Principles",
+                category: "web-design",
+                author: "Prince Kwarteng",
+                image: "https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?w=1200&q=80",
+                date: "February 10, 2026",
+                readTime: "6 min read",
+                excerpt: "Essential UX design principles for better user experiences.",
+                content: `<p>UX design is about creating products that provide meaningful and relevant experiences to users.</p><h3>UX Design Principles:</h3><ul><li>User-centered design</li><li>Consistency</li><li>Feedback</li><li>Error prevention</li></ul><p>Good UX is invisible, it just works.</p>`
+            },
+            {
+                id: 32,
+                title: "Responsive Web Design",
+                category: "web-design",
+                author: "Bright Appiah",
+                image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=1200&q=80",
+                date: "February 5, 2026",
+                readTime: "7 min read",
+                excerpt: "Best practices for responsive web design in 2026.",
+                content: `<p>Responsive web design is no longer optional. With users accessing websites from various devices, responsive design is essential.</p><h3>Responsive Design Tips:</h3><ul><li>Mobile-first approach</li><li>Flexible grids</li><li>Flexible images</li><li>Media queries</li></ul><p>Responsive design is about providing the best experience on any device.</p>`
+            },
+            {
+                id: 33,
+                title: "Web Performance Optimization",
+                category: "development",
+                author: "Prince Kwarteng",
+                image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&q=80",
+                date: "February 1, 2026",
+                readTime: "9 min read",
+                excerpt: "Techniques for optimizing web performance and speed.",
+                content: `<p>Web performance is crucial for user experience and SEO. Fast websites convert better and rank higher.</p><h3>Performance Optimization:</h3><ul><li>Image optimization</li><li>Code minification</li><li>Caching strategies</li><li>CDN usage</li></ul><p>Speed is a feature, make your website fast.</p>`
+            },
+            {
+                id: 34,
+                title: "Progressive Web Apps Guide",
+                category: "development",
+                author: "Prince Kwarteng",
+                image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=1200&q=80",
+                date: "January 28, 2026",
+                readTime: "8 min read",
+                excerpt: "A comprehensive guide to Progressive Web Apps.",
+                content: `<p>Progressive Web Apps (PWAs) combine the best of web and mobile apps. PWAs provide app-like experiences on the web.</p><h3>PWA Benefits:</h3><ul><li>Offline functionality</li><li>Fast loading</li><li>Installable</li><li>Push notifications</li></ul><p>PWAs are the future of web applications.</p>`
+            },
+            {
+                id: 35,
+                title: "Web Accessibility Guide",
+                category: "development",
+                author: "Prince Kwarteng",
+                image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1200&q=80",
+                date: "January 25, 2026",
+                readTime: "7 min read",
+                excerpt: "Making your website accessible to everyone.",
+                content: `<p>Web accessibility ensures that your website is usable by everyone, including people with disabilities.</p><h3>Accessibility Best Practices:</h3><ul><li>Proper semantic HTML</li><li>Alt text for images</li><li>Keyboard navigation</li><li>Color contrast</li></ul><p>Accessibility is not optional, it's essential.</p>`
+            },
+            {
+                id: 36,
+                title: "Keyword Research Guide",
+                category: "seo",
+                author: "Vera Osei",
+                image: "https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?w=1200&q=80",
+                date: "January 22, 2026",
+                readTime: "8 min read",
+                excerpt: "A comprehensive guide to keyword research for SEO.",
+                content: `<p>Keyword research is the foundation of SEO. Proper keyword research helps you understand what your audience is searching for.</p><h3>Keyword Research Tips:</h3><ul><li>Understand search intent</li><li>Long-tail keywords</li><li>Competitor analysis</li><li>Keyword tools</li></ul><p>Keyword research is an ongoing process.</p>`
+            },
+            {
+                id: 37,
+                title: "On-Page SEO Checklist",
+                category: "seo",
+                author: "Vera Osei",
+                image: "/img/seo.jpg",
+                date: "January 18, 2026",
+                readTime: "7 min read",
+                excerpt: "A comprehensive on-page SEO checklist.",
+                content: `<p>On-page SEO is crucial for search rankings. Proper on-page optimization helps search engines understand your content.</p><h3>On-Page SEO Checklist:</h3><ul><li>Title tags</li><li>Meta descriptions</li><li>Header tags</li><li>Internal linking</li></ul><p>On-page SEO is within your control, make it count.</p>`
+            },
+            {
+                id: 38,
+                title: "AI Writing Tools Comparison",
+                category: "ai",
+                author: "Prince Kwarteng",
+                image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=1200&q=80",
+                date: "January 15, 2026",
+                readTime: "6 min read",
+                excerpt: "Comparing the best AI writing tools for content creation.",
+                content: `<p>AI writing tools are transforming content creation. These tools can help you create content faster and more efficiently.</p><h3>AI Writing Tools:</h3><ul><li>ChatGPT</li><li>Claude</li><li>Jasper</li><li>Copy.ai</li></ul><p>AI writing tools are assistants, not replacements.</p>`
+            },
+            {
+                id: 39,
+                title: "AI Image Generation Guide",
+                category: "ai",
+                author: "Prince Kwarteng",
+                image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=1200&q=80",
+                date: "January 12, 2026",
+                readTime: "7 min read",
+                excerpt: "How to use AI image generation tools effectively.",
+                content: `<p>AI image generation is revolutionizing design. These tools can create stunning images from text descriptions.</p><h3>AI Image Tools:</h3><ul><li>Midjourney</li><li>DALL-E 3</li><li>Stable Diffusion</li><li>Adobe Firefly</li></ul><p>AI image generation is a powerful tool for designers.</p>`
+            },
+            {
+                id: 40,
+                title: "Marketing Automation Guide",
+                category: "marketing",
+                author: "Bright Appiah",
+                image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&q=80",
+                date: "January 8, 2026",
+                readTime: "8 min read",
+                excerpt: "How to automate your marketing for better results.",
+                content: `<p>Marketing automation can help you scale your marketing efforts and improve results.</p><h3>Marketing Automation:</h3><ul><li>Email automation</li><li>Social media scheduling</li><li>Lead nurturing</li><li>Analytics and reporting</li></ul><p>Marketing automation is essential for scaling.</p>`
+            },
+            {
+                id: 41,
+                title: "Conversion Rate Optimization",
+                category: "marketing",
+                author: "Vera Osei",
+                image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&q=80",
+                date: "January 5, 2026",
+                readTime: "7 min read",
+                excerpt: "How to optimize your website for better conversions.",
+                content: `<p>Conversion rate optimization (CRO) is about improving your website to convert more visitors into customers.</p><h3>CRO Best Practices:</h3><ul><li>A/B testing</li><li>Clear CTAs</li><li>Reduce friction</li><li>Social proof</li></ul><p>CRO is an ongoing process of improvement.</p>`
+            },
+            {
+                id: 42,
+                title: "Brand Identity Design",
+                category: "web-design",
+                author: "Prince Kwarteng",
+                image: "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=1200&q=80",
+                date: "January 2, 2026",
+                readTime: "6 min read",
+                excerpt: "How to create a strong brand identity.",
+                content: `<p>Brand identity is more than just a logo. It's your entire visual and verbal identity.</p><h3>Brand Identity Elements:</h3><ul><li>Logo design</li><li>Color palette</li><li>Typography</li><li>Brand voice</li></ul><p>Your brand identity is your promise to your customers.</p>`
+            },
+            {
+                id: 43,
+                title: "Web Security Best Practices",
+                category: "development",
+                author: "Prince Kwarteng",
+                image: "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=1200&q=80",
+                date: "December 28, 2025",
+                readTime: "8 min read",
+                excerpt: "Essential web security practices for 2026.",
+                content: `<p>Web security is crucial for protecting your website and your users.</p><h3>Security Best Practices:</h3><ul><li>HTTPS everywhere</li><li>Regular updates</li><li>Strong authentication</li><li>Regular backups</li></ul><p>Security is not a feature, it's a requirement.</p>`
+            },
+            {
+                id: 44,
+                title: "Voice Search Optimization",
+                category: "seo",
+                author: "Vera Osei",
+                image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1200&q=80",
+                date: "December 25, 2025",
+                readTime: "6 min read",
+                excerpt: "How to optimize for voice search in 2026.",
+                content: `<p>Voice search is growing rapidly. Optimizing for voice search is becoming increasingly important.</p><h3>Voice Search Optimization:</h3><ul><li>Conversational keywords</li><li>Featured snippets</li><li>Local SEO</li><li>Fast loading</li></ul><p>Voice search is the future of search.</p>`
+            },
+            {
+                id: 45,
+                title: "Chatbot Implementation Guide",
+                category: "ai",
+                author: "Prince Kwarteng",
+                image: "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?w=1200&q=80",
+                date: "December 22, 2025",
+                readTime: "7 min read",
+                excerpt: "How to implement chatbots for your business.",
+                content: `<p>Chatbots can improve customer service and reduce costs.</p><h3>Chatbot Implementation:</h3><ul><li>Define use cases</li><li>Choose the right platform</li><li>Train your chatbot</li><li>Monitor and optimize</li></ul><p>Chatbots are augmenting human support teams.</p>`
+            },
+            {
+                id: 46,
+                title: "Influencer Marketing Guide",
+                category: "marketing",
+                author: "Prince Kwarteng",
+                image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=1200&q=80",
+                date: "December 18, 2025",
+                readTime: "7 min read",
+                excerpt: "How to leverage influencer marketing for your brand.",
+                content: `<p>Influencer marketing can help you reach new audiences and build trust.</p><h3>Influencer Marketing:</h3><ul><li>Find the right influencers</li><li>Build relationships</li><li>Track results</li><li>Measure ROI</li></ul><p>Influencer marketing is about authenticity.</p>`
+            },
+            {
+                id: 47,
+                title: "Website Redesign Checklist",
+                category: "web-design",
+                author: "Bright Appiah",
+                image: "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=1200&q=80",
+                date: "December 15, 2025",
+                readTime: "8 min read",
+                excerpt: "A comprehensive website redesign checklist.",
+                content: `<p>Website redesign is a major project. Proper planning is crucial for success.</p><h3>Redesign Checklist:</h3><ul><li>Audit current website</li><li>Define goals</li><li>Plan information architecture</li><li>Test and iterate</li></ul><p>Website redesign is an investment in your future.</p>`
+            },
+            {
+                id: 48,
+                title: "Cloud Computing for Web Apps",
+                category: "development",
+                author: "Prince Kwarteng",
+                image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1200&q=80",
+                date: "December 12, 2025",
+                readTime: "9 min read",
+                excerpt: "How to leverage cloud computing for web applications.",
+                content: `<p>Cloud computing is transforming how we build and deploy web applications.</p><h3>Cloud Computing Benefits:</h3><ul><li>Scalability</li><li>Cost efficiency</li><li>Reliability</li><li>Global reach</li></ul><p>Cloud computing is the future of web hosting.</p>`
+            },
+            {
+                id: 49,
+                title: "Local SEO for Multi-Location",
+                category: "seo",
+                author: "Vera Osei",
+                image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&q=80",
+                date: "December 8, 2025",
+                readTime: "7 min read",
+                excerpt: "Local SEO strategies for multi-location businesses.",
+                content: `<p>Multi-location businesses face unique local SEO challenges.</p><h3>Multi-Location SEO:</h3><ul><li>Location pages</li><li>Google Business Profile</li><li>Local citations</li><li>Review management</li></ul><p>Local SEO is crucial for multi-location businesses.</p>`
+            },
+            {
+                id: 50,
+                title: "AI for Content Creation",
+                category: "ai",
+                author: "Prince Kwarteng",
+                image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=1200&q=80",
+                date: "December 5, 2025",
+                readTime: "6 min read",
+                excerpt: "How AI is transforming content creation.",
+                content: `<p>AI is transforming content creation. AI tools can help you create content faster and more efficiently.</p><h3>AI Content Tools:</h3><ul><li>Writing assistants</li><li>Image generation</li><li>Video creation</li><li>Content optimization</li></ul><p>AI is augmenting human creativity.</p>`
+            }
+        ];
+
+        // State
+        let currentPage = 1;
+        let currentCategory = 'all';
+        const postsPerPage = 9;
+
+        // DOM Elements
+        const blogGrid = document.getElementById('blogGrid');
+        const pagination = document.getElementById('pagination');
+        const categoryBtns = document.querySelectorAll('.category-btn');
+        const modal = document.getElementById('blogModal');
+        const modalClose = document.getElementById('modalClose');
+        const modalImage = document.getElementById('modalImage');
+        const modalCategory = document.getElementById('modalCategory');
+        const modalTitle = document.getElementById('modalTitle');
+        const modalDate = document.getElementById('modalDate');
+        const modalReadTime = document.getElementById('modalReadTime');
+        const modalAuthor = document.getElementById('modalAuthor');
+        const modalContent = document.getElementById('modalContent');
+
+        // Filter blog posts
+        function getFilteredPosts() {
+            if (currentCategory === 'all') return blogPosts;
+            return blogPosts.filter(post => post.category === currentCategory);
+        }
+
+        // Get total pages
+        function getTotalPages() {
+            return Math.ceil(getFilteredPosts().length / postsPerPage);
+        }
+
+        // Get current page posts
+        function getCurrentPagePosts() {
+            const filtered = getFilteredPosts();
+            const start = (currentPage - 1) * postsPerPage;
+            const end = start + postsPerPage;
+            return filtered.slice(start, end);
+        }
+
+        // Render blog posts
+        function renderBlogPosts() {
+            const currentPosts = getCurrentPagePosts();
+
+            if (currentPosts.length === 0) {
+                blogGrid.innerHTML = `
+                    <div class="col-span-full text-center py-20">
+                        <i class="fas fa-folder-open text-6xl text-slate-400 mb-4"></i>
+                        <p class="text-xl text-slate-500">No posts found in this category</p>
+                    </div>
+                `;
+            } else {
+                blogGrid.innerHTML = currentPosts.map(post => `
+                    <article class="glass-panel rounded-3xl overflow-hidden reveal tilt-card group cursor-pointer" onclick="openModal(${post.id})">
+                        <div class="aspect-[4/3] overflow-hidden">
+                            <img src="${post.image}" alt="${post.title}" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                        </div>
+                        <div class="p-6">
+                            <span class="text-lavender text-xs font-medium mb-2 block capitalize">${post.category.replace('-', ' ')}</span>
+                            <h3 class="text-xl font-display font-bold mb-3 line-clamp-2">${post.title}</h3>
+                            <p class="text-slate-600 dark:text-slate-400 text-sm mb-4 line-clamp-2">${post.excerpt}</p>
+                            <div class="flex items-center justify-between text-xs text-slate-500">
+                                <span><i class="fas fa-calendar mr-1"></i>${post.date}</span>
+                                <span><i class="fas fa-clock mr-1"></i>${post.readTime}</span>
+                            </div>
+                        </div>
+                    </article>
+                `).join('');
+            }
+
+            // Re-trigger reveal animations
+            setTimeout(() => {
+                document.querySelectorAll('.reveal').forEach(el => el.classList.add('active'));
+            }, 100);
+        }
+
+        // Render pagination
+        function renderPagination() {
+            const totalPages = getTotalPages();
+            const filteredCount = getFilteredPosts().length;
+
+            if (totalPages <= 1) {
+                pagination.innerHTML = '';
+                return;
+            }
+
+            let html = '';
+
+            // Previous button
+            html += `
+                <button class="pagination-btn px-4 glass-btn rounded-full ${currentPage === 1 ? 'opacity-50 cursor-not-allowed' : ''}" 
+                    onclick="changePage(${currentPage - 1})" ${currentPage === 1 ? 'disabled' : ''}>
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+            `;
+
+            // Page numbers
+            if (totalPages <= 7) {
+                for (let i = 1; i <= totalPages; i++) {
+                    html += `
+                        <button class="pagination-btn glass-btn rounded-full ${i === currentPage ? 'active' : ''}" 
+                            onclick="changePage(${i})">
+                            ${i}
+                        </button>
+                    `;
+                }
+            } else {
+                if (currentPage <= 3) {
+                    for (let i = 1; i <= 5; i++) {
+                        html += `
+                            <button class="pagination-btn glass-btn rounded-full ${i === currentPage ? 'active' : ''}" 
+                                onclick="changePage(${i})">
+                                ${i}
+                            </button>
+                        `;
+                    }
+                    html += '<span class="px-2 text-slate-400">...</span>';
+                    html += `
+                        <button class="pagination-btn glass-btn rounded-full" onclick="changePage(${totalPages})">
+                            ${totalPages}
+                        </button>
+                    `;
+                } else if (currentPage >= totalPages - 2) {
+                    html += `
+                        <button class="pagination-btn glass-btn rounded-full" onclick="changePage(1)">
+                            1
+                        </button>
+                    `;
+                    html += '<span class="px-2 text-slate-400">...</span>';
+                    for (let i = totalPages - 4; i <= totalPages; i++) {
+                        html += `
+                            <button class="pagination-btn glass-btn rounded-full ${i === currentPage ? 'active' : ''}" 
+                                onclick="changePage(${i})">
+                                ${i}
+                            </button>
+                        `;
+                    }
+                } else {
+                    html += `
+                        <button class="pagination-btn glass-btn rounded-full" onclick="changePage(1)">
+                            1
+                        </button>
+                    `;
+                    html += '<span class="px-2 text-slate-400">...</span>';
+                    for (let i = currentPage - 1; i <= currentPage + 1; i++) {
+                        html += `
+                            <button class="pagination-btn glass-btn rounded-full ${i === currentPage ? 'active' : ''}" 
+                                onclick="changePage(${i})">
+                                ${i}
+                            </button>
+                        `;
+                    }
+                    html += '<span class="px-2 text-slate-400">...</span>';
+                    html += `
+                        <button class="pagination-btn glass-btn rounded-full" onclick="changePage(${totalPages})">
+                            ${totalPages}
+                        </button>
+                    `;
+                }
+            }
+
+            // Next button
+            html += `
+                <button class="pagination-btn px-4 glass-btn rounded-full ${currentPage === totalPages ? 'opacity-50 cursor-not-allowed' : ''}" 
+                    onclick="changePage(${currentPage + 1})" ${currentPage === totalPages ? 'disabled' : ''}>
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            `;
+
+            // Show result count
+            const start = (currentPage - 1) * postsPerPage + 1;
+            const end = Math.min(currentPage * postsPerPage, filteredCount);
+            html = `
+                <span class="text-sm text-slate-500 mr-4">Showing ${start}-${end} of ${filteredCount} posts</span>
+            ` + html;
+
+            pagination.innerHTML = html;
+        }
+
+        // Change page
+        function changePage(page) {
+            const totalPages = getTotalPages();
+            if (page < 1 || page > totalPages) return;
+            currentPage = page;
+            window.scrollTo({ top: 300, behavior: 'smooth' });
+            renderBlogPosts();
+            renderPagination();
+        }
+
+        // Category click handlers
+        categoryBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                categoryBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                currentCategory = btn.dataset.category;
+                currentPage = 1;
+                renderBlogPosts();
+                renderPagination();
+            });
+        });
+
+        // Open modal
+        function openModal(postId) {
+            const post = blogPosts.find(p => p.id === postId);
+            if (!post) return;
+
+            modalImage.src = post.image;
+            modalImage.alt = post.title;
+            modalCategory.textContent = post.category.replace('-', ' ');
+            modalTitle.textContent = post.title;
+            modalDate.textContent = post.date;
+            modalReadTime.textContent = post.readTime;
+            modalAuthor.textContent = post.author;
+            modalContent.innerHTML = post.content;
+
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        // Close modal
+        function closeModal() {
+            modal.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        // Event listeners
+        modalClose.addEventListener('click', closeModal);
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) closeModal();
+        });
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && modal.classList.contains('active')) closeModal();
+        });
+
+        // Theme Toggle
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.body.classList.add('dark');
+            document.querySelector('#themeToggle i').classList.remove('fa-moon');
+            document.querySelector('#themeToggle i').classList.add('fa-sun');
+        }
+
+        document.getElementById('themeToggle').addEventListener('click', () => {
+            document.body.classList.toggle('dark');
+            const icon = document.querySelector('#themeToggle i');
+            if (document.body.classList.contains('dark')) {
+                icon.classList.remove('fa-moon');
+                icon.classList.add('fa-sun');
+            } else {
+                icon.classList.remove('fa-sun');
+                icon.classList.add('fa-moon');
+            }
+        });
+
+        // Mobile Menu - Dropdown Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+
+            // Toggle icon
+            const icon = mobileMenuBtn.querySelector('i');
+            if (mobileMenu.classList.contains('active')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+
+        // Close mobile menu when clicking a link
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('active');
+                mobileMenuBtn.querySelector('i').classList.remove('fa-times');
+                mobileMenuBtn.querySelector('i').classList.add('fa-bars');
+            });
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!mobileMenu.contains(e.target) && !mobileMenuBtn.contains(e.target)) {
+                mobileMenu.classList.remove('active');
+                mobileMenuBtn.querySelector('i').classList.remove('fa-times');
+                mobileMenuBtn.querySelector('i').classList.add('fa-bars');
+            }
+        });
+
+        // Smooth Scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // AI Chat Widget
+        const chatToggle = document.getElementById('chatToggle');
+        const chatWindow = document.getElementById('chatWindow');
+        const closeChat = document.getElementById('closeChat');
+        const chatInput = document.getElementById('chatInput');
+        const sendChat = document.getElementById('sendChat');
+        const chatMessages = document.getElementById('chatMessages');
+        const chatSuggestions = document.getElementById('chatSuggestions');
+
+        chatToggle.addEventListener('click', () => {
+            chatWindow.classList.toggle('active');
+            if (chatWindow.classList.contains('active')) {
+                setTimeout(() => chatInput.focus(), 300);
+            }
+        });
+
+        closeChat.addEventListener('click', () => {
+            chatWindow.classList.remove('active');
+        });
+
+        function sendSuggestion(text) {
+            chatInput.value = text;
+            sendMessage();
+        }
+
+        function sendMessage() {
+            const message = chatInput.value.trim();
+            if (!message) return;
+
+            const userMsg = document.createElement('div');
+            userMsg.className = 'chat-message user';
+            userMsg.textContent = message;
+            chatMessages.appendChild(userMsg);
+            chatInput.value = '';
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+
+            chatSuggestions.style.display = 'none';
+
+            showTypingIndicator();
+
+            setTimeout(() => {
+                hideTypingIndicator();
+                const response = getAIResponse(message);
+                addMessage(response, 'bot');
+            }, 1000 + Math.random() * 1000);
+        }
+
+        function addMessage(text, type) {
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `chat-message ${type}`;
+            messageDiv.innerHTML = text;
+            chatMessages.appendChild(messageDiv);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+
+        function showTypingIndicator() {
+            const typingDiv = document.createElement('div');
+            typingDiv.className = 'chat-message typing';
+            typingDiv.id = 'typingIndicator';
+            typingDiv.innerHTML = `
+                <div class="typing-indicator">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            `;
+            chatMessages.appendChild(typingDiv);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+
+        function hideTypingIndicator() {
+            const typingIndicator = document.getElementById('typingIndicator');
+            if (typingIndicator) {
+                typingIndicator.remove();
+            }
+        }
+
+        function getAIResponse(message) {
+            const lowerMsg = message.toLowerCase();
+
+            if (lowerMsg.includes('hello') || lowerMsg.includes('hi')) {
+                return "Hello! 👋 How can I assist you today?";
+            } else if (lowerMsg.includes('blog') || lowerMsg.includes('post') || lowerMsg.includes('article')) {
+                return `We have 50+ blog posts covering web design, development, SEO, AI, business, and marketing. What topic interests you?`;
+            } else if (lowerMsg.includes('web design') || lowerMsg.includes('design')) {
+                return `We have 10+ blog posts on web design covering glassmorphism, mobile-first design, color theory, typography, and more. What specific topic would you like to explore?`;
+            } else if (lowerMsg.includes('seo')) {
+                return `We have 10+ SEO blog posts covering best practices, local SEO, technical SEO, content marketing, and link building. What would you like to know?`;
+            } else if (lowerMsg.includes('ai') || lowerMsg.includes('artificial intelligence')) {
+                return `We have 10+ AI blog posts covering AI tools, machine learning, chatbots, image generation, and content creation. What interests you?`;
+            } else if (lowerMsg.includes('contact') || lowerMsg.includes('email') || lowerMsg.includes('phone')) {
+                return "You can reach us at mail@prvertech.com or +233 55 123 1300. We typically respond within 1 hour!";
+            } else {
+                return "Thanks for your message! Our team will get back to you soon. You can also email us at mail@prvertech.com for faster response.";
+            }
+        }
+
+        sendChat.addEventListener('click', sendMessage);
+        chatInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') sendMessage();
+        });    
+
+        // Initial render
+        renderBlogPosts();
+        renderPagination();
+    </script>
+    <!-- PWA Service Worker -->
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/sw.js')
+      .then(registration => {
+        console.log('ServiceWorker registration successful:', registration.scope);
+      })
+      .catch(err => {
+        console.log('ServiceWorker registration failed:', err);
+      });
+  });
+}
+</script>
+
+<script>
+document.getElementById("newsletter-form").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    emailjs.sendForm(
+        "service_rc4r4yh",   // replace
+        "template_eix1qjd",  // replace
+        this
+    )
+    .then(function() {
+        alert("✅ Subscription successful!");
+    }, function(error) {
+        alert("❌ Failed to send. Try again.");
+        console.error(error);
+    });
+});
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<script>
+(function(){
+    emailjs.init("p1ayKbwfhZbC3Zakq"); // replace this
+})();
+</script>
+</body>
+
+</html>

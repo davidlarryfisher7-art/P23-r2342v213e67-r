@@ -1,0 +1,2333 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products & Pricing | PRVER - Digital Solutions</title>
+    <meta name="description" content="Choose from our range of digital products: Website Builder, App Development, E-commerce Solutions, SEO Packages & more. Competitive pricing, exceptional quality.">
+    <meta name="title" content="PRVER | Web Development Company | Custom Websites & AI Solutions">
+    <meta name="description" content="PRVER is the world's leading web development company. We build custom websites, AI solutions, and e-commerce platforms. Get a free quote today!">
+    <meta name="keywords" content="web development, web design, AI solutions, e-commerce, SEO, web development company, custom websites">
+    <meta name="author" content="PRVER">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <link rel="icon" href="/img/Ico.png" type="image/x-icon">
+    <link rel="manifest" href="manifest.json">
+
+<!-- Apple PWA Support -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="PRVER">
+<link rel="apple-touch-icon" href="/img/Ico.png">
+
+    
+     <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://prvertech.com/">
+    <meta property="og:title" content="PRVER |  Web Development Company">
+    <meta property="og:description" content="World's leading web development company. Custom websites, AI solutions & e-commerce.">
+    <meta property="og:image" content="https://prvertech.com/img/og-image.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://prvertech.com/">
+    <meta property="twitter:title" content="PRVER |  Web Development Company">
+    <meta property="twitter:description" content="World's leading web development company. Custom websites, AI solutions & e-commerce.">
+    <meta property="twitter:image" content="https://prvertech.com/img/og-image.jpg">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://prvertech.com/">
+    
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "PRVER",
+        "image": "https://prvertech.com/img/logo.png",
+        "description": "World's leading web development company specializing in custom websites, AI solutions, and e-commerce platforms",
+        "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "USA",
+            "addressRegion": "CA",
+            "addressRegion": "GH",
+            "addressRegion": "DE",
+            "addressRegion": "AU",
+        },
+        "priceRange": "$$",
+        "telephone": "+233551231300",
+        "url": "https://prvertech.com",
+        "openingHours": "Mo-Su 00:00-23:59",
+        "sameAs": [
+            "https://facebook.com/prver",
+            "https://x.com/prver",
+            "https://instagram.com/prver",
+            "https://linkedin.com/company/prver"
+        ]
+    }
+    </script>
+
+    
+<!-- Preload Critical Resources -->
+<link rel="preload" href="fonts/your-font.woff2" as="font" crossorigin>
+<link rel="preload" href="css/critical.css" as="style">
+<link rel="preload" href="/img/logo.webp" as="image">
+
+<!-- Defer Non-Critical JS -->
+<script src="js/non-critical.js" defer></script>
+
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400:500:600&family=Playfair+Display:wght@400:500:600:700&family=Space+Grotesk:wght@400:500:600:700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom Config -->
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                        display: ['Space Grotesk', 'sans-serif'],
+                    },
+                    colors: {
+                        lavender: '#A78BFA',
+                        mint: '#D1FAE5',
+                        peach: '#FED7B7',
+                        sky: '#BAE6FD',
+                        pearl: '#FDF8F3',
+                    },
+                    animation: {
+                        'gradient': 'gradient 15s ease infinite',
+                        'float': 'float 6s ease-in-out infinite',
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'shimmer': 'shimmer 2s linear infinite',
+                        'marquee': 'marquee 30s linear infinite',
+                        'bounce-slow': 'bounce 3s infinite',
+                        'pulse-glow': 'pulse-glow 2s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        gradient: {
+                            '0%, 100%': { backgroundPosition: '0% 50%' },
+                            '50%': { backgroundPosition: '100% 50%' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-20px)' },
+                        },
+                        shimmer: {
+                            '0%': { backgroundPosition: '-1000px 0' },
+                            '100%': { backgroundPosition: '1000px 0' },
+                        },
+                        marquee: {
+                            '0%': { transform: 'translateX(0)' },
+                            '100%': { transform: 'translateX(-50%)' },
+                        },
+                        'pulse-glow': {
+                            '0%, 100%': { opacity: 1, boxShadow: '0 0 20px rgba(139, 92, 246, 0.5)' },
+                            '50%': { opacity: 0.8, boxShadow: '0 0 40px rgba(139, 92, 246, 0.8)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+ <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "PRVER",
+        "image": "https://prvertech.com/img/logo.png",
+        "@id": "https://prvertech.com",
+        "url": "https://prvertech.com",
+        "telephone": "+233551231300",
+        "priceRange": "$$",
+        "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "GH"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "5.6037",
+            "longitude": "-0.1870"
+        },
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+            "opens": "00:00",
+            "closes": "23:59"
+        },
+        "sameAs": [
+            "https://www.facebook.com/prver",
+            "https://x.com/prver",
+            "https://www.instagram.com/prver",
+            "https://www.linkedin.com/company/prver"
+        ],
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5.0",
+            "reviewCount": "127"
+        }
+    }
+    </script>
+    
+    <!-- Service Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "serviceType": "Web Development",
+        "provider": {
+            "@type": "ProfessionalService",
+            "name": "PRVER"
+        },
+        "areaServed": {
+            "@type": "Country",
+            "name": "Worldwide"
+        },
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Web Development Services",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Custom Web Development"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "E-commerce Development"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "AI Solutions"
+                    }
+                }
+            ]
+        }
+    }
+    </script>
+    
+    <!-- FAQ Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What makes PRVER the best web development company?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "PRVER combines cutting-edge technology, AI-powered solutions, and years of experience to deliver world-class websites. With 72+ successful projects and 100% client satisfaction, we're committed to excellence."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How much does web development cost?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Web development costs vary based on complexity. Starter websites start at $497, professional sites at $997, and enterprise solutions at $1,997+. Contact us for a custom quote."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How long does web development take?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Simple websites take 1-2 weeks, professional sites 2-4 weeks, and complex e-commerce sites 4-6 weeks. We're known for delivering early."
+                }
+            }
+        ]
+    }
+    </script>
+    
+    <!-- Breadcrumb Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://prvertech.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Services",
+                "item": "https://prvertech.com/services"
+            }
+        ]
+    }
+    </script>
+    
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500:600&family=Playfair+Display:wght@400;500:600:700&family=Space+Grotesk:wght@400:500:600:700&display=swap" as="style">
+    <link rel="preload" href="https://cdn.tailwindcss.com" as="script">
+    
+    <!-- DNS Prefetch -->
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <link rel="dns-prefetch" href="https://cdn.tailwindcss.com">
+    
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.tailwindcss.com">
+
+    <style>
+        /* Base Styles */
+        :root {
+            --cursor-x: 0;
+            --cursor-y: 0;
+        }
+        
+        body {
+            background: linear-gradient(-45deg, #f3e8ff, #d1fae5, #fed7b7, #bae6fd, #f3e8ff);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+            color: #1e293b;
+            overflow-x: hidden;
+        }
+        
+        body.dark {
+            background: linear-gradient(-45deg, #0f172a, #1e293b, #334155, #1e293b, #0f172a);
+            background-size: 400% 400%;
+            color: #f1f5f9;
+        }
+        
+        /* Marquee Animation */
+        .marquee-container {
+            overflow: hidden;
+            white-space: nowrap;
+            position: relative;
+        }
+        
+        .marquee-container::before,
+        .marquee-container::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            width: 100px;
+            height: 100%;
+            z-index: 2;
+            pointer-events: none;
+        }
+        
+        .marquee-container::before {
+            left: 0;
+            background: linear-gradient(to right, rgba(255,255,255,0.3), transparent);
+        }
+        
+        .marquee-container::after {
+            right: 0;
+            background: linear-gradient(to left, rgba(255,255,255,0.3), transparent);
+        }
+        
+        body.dark .marquee-container::before {
+            background: linear-gradient(to right, rgba(15,23,42,0.8), transparent);
+        }
+        
+        body.dark .marquee-container::after {
+            background: linear-gradient(to left, rgba(15,23,42,0.8), transparent);
+        }
+        
+        .marquee-track {
+            display: flex;
+            gap: 2rem;
+            animation: marquee 30s linear infinite;
+            padding: 0 1rem;
+        }
+        
+        .marquee-track:hover {
+            animation-play-state: paused;
+        }
+        
+        @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        
+        /* Mobile Optimization */
+        @media (max-width: 768px) {
+            .marquee-track {
+                animation-duration: 20s;
+                gap: 1rem;
+            }
+            .glass-panel {
+                padding: 0.5rem 1rem;
+            }
+            .glass-panel i {
+                font-size: 1rem;
+            }
+            .glass-panel span {
+                font-size: 0.875rem;
+            }
+        }
+        
+        /* Glassmorphism 2.0 */
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.65);
+            backdrop-filter: blur(24px) saturate(180%);
+            -webkit-backdrop-filter: blur(24px) saturate(180%);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.07);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .glass-panel:hover {
+            background: rgba(255, 255, 255, 0.75);
+            backdrop-filter: blur(32px) saturate(200%);
+            border-color: rgba(255, 255, 255, 0.8);
+            box-shadow: 0 12px 40px 0 rgba(31, 38, 135, 0.12);
+            transform: translateY(-4px);
+        }
+        
+        body.dark .glass-panel {
+            background: rgba(15, 23, 42, 0.65);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+        }
+        
+        body.dark .glass-panel:hover {
+            background: rgba(15, 23, 42, 0.75);
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+        
+        /* Glass Button */
+        .glass-btn {
+            background: rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.6);
+            transition: all 0.3s;
+        }
+        
+        .glass-btn:hover {
+            background: rgba(255, 255, 255, 0.7);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(167, 139, 250, 0.3);
+        }
+        
+        body.dark .glass-btn {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        /* Floating Orbs */
+        .orb {
+            position: fixed;
+            border-radius: 50%;
+            filter: blur(80px);
+            opacity: 0.4;
+            z-index: -1;
+            animation: float 20s infinite ease-in-out;
+        }
+        
+        .orb-1 {
+            width: 400px;
+            height: 400px;
+            background: linear-gradient(135deg, #A78BFA, #C4B5FD);
+            top: -100px;
+            left: -100px;
+        }
+        
+        .orb-2 {
+            width: 300px;
+            height: 300px;
+            background: linear-gradient(135deg, #D1FAE5, #A7F3D0);
+            bottom: 10%;
+            right: -50px;
+            animation-delay: -5s;
+        }
+        
+        .orb-3 {
+            width: 250px;
+            height: 250px;
+            background: linear-gradient(135deg, #FED7B7, #FDBA74);
+            top: 40%;
+            left: 60%;
+            animation-delay: -10s;
+        }
+        
+        .orb-4 {
+            width: 350px;
+            height: 350px;
+            background: linear-gradient(135deg, #BAE6FD, #7DD3FC);
+            bottom: -100px;
+            left: 20%;
+            animation-delay: -15s;
+        }
+        
+        /* Particles */
+        .particle {
+            position: fixed;
+            width: 4px;
+            height: 4px;
+            background: rgba(255, 255, 255, 0.6);
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 1;
+            animation: particleFloat 15s infinite linear;
+        }
+        
+        @keyframes particleFloat {
+            0% {
+                transform: translateY(100vh) translateX(0);
+                opacity: 0;
+            }
+            10% { opacity: 1; }
+            90% { opacity: 1; }
+            100% {
+                transform: translateY(-100vh) translateX(100px);
+                opacity: 0;
+            }
+        }
+        
+        /* Light Leaks */
+        .light-leak {
+            position: fixed;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(255,255,255,0.4) 0%, transparent 70%);
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 0;
+            opacity: 0;
+            transition: opacity 1s;
+        }
+        
+        /* Text Effects */
+        .text-gradient-soft {
+            background: linear-gradient(135deg, #8B5CF6 0%, #A78BFA 50%, #C4B5FD 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .text-gradient-warm {
+            background: linear-gradient(135deg, #FED7B7 0%, #FDBA74 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        /* 3D Tilt Card */
+        .tilt-card {
+            transform-style: preserve-3d;
+            perspective: 1000px;
+        }
+        
+        /* Reveal Animation */
+        .reveal {
+            opacity: 0;
+            transform: translateY(20px);
+            filter: blur(5px);
+            transition: all 0.4s ease-out;
+        }
+        
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+            filter: blur(0);
+        }
+        
+        /* Letter Animation */
+        .letter {
+            display: inline-block;
+            opacity: 0;
+            transform: translateY(50px) rotateX(-90deg);
+            animation: letterReveal 0.6s forwards;
+        }
+        
+        @keyframes letterReveal {
+            to {
+                opacity: 1;
+                transform: translateY(0) rotateX(0);
+            }
+        }
+        
+        /* Scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        
+        ::-webkit-scrollbar-track {
+            background: rgba(255,255,255,0.3);
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: rgba(167, 139, 250, 0.5);
+            border-radius: 5px;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgba(167, 139, 250, 0.8);
+        }
+        
+        /* Stats Counter */
+        .stat-number {
+            background: linear-gradient(135deg, #8B5CF6, #A78BFA);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        /* FAQ Accordion */
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease, padding 0.4s ease;
+        }
+        
+        .faq-answer.active {
+            max-height: 500px;
+        }
+        
+        /* Theme Toggle */
+        .theme-toggle {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 1000;
+        }
+        
+        /* Mobile Nav - DROPDOWN STYLE (FIXED) */
+        .mobile-nav {
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            background: rgba(255, 255, 255, 0.95);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+            transform: translateY(-20px);
+            opacity: 0;
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .mobile-nav.active {
+            transform: translateY(0);
+            opacity: 1;
+            max-height: 600px;
+            padding: 2rem 1.5rem;
+        }
+        
+        body.dark .mobile-nav {
+            background: rgba(15, 23, 42, 0.95);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        /* Blog Modal */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 10000;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            padding: 20px;
+        }
+        
+        .modal-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .modal-content {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(24px) saturate(180%);
+            -webkit-backdrop-filter: blur(24px) saturate(180%);
+            border: 1px solid rgba(255, 255, 255, 0.6);
+            border-radius: 2rem;
+            max-width: 800px;
+            width: 100%;
+            max-height: 90vh;
+            overflow-y: auto;
+            position: relative;
+            transform: scale(0.95) translateY(20px);
+            transition: transform 0.3s ease;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        }
+        
+        body.dark .modal-content {
+            background: rgba(15, 23, 42, 0.85);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .modal-overlay.active .modal-content {
+            transform: scale(1) translateY(0);
+        }
+        
+        .modal-close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.5);
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s;
+            z-index: 10;
+            font-size: 1.25rem;
+        }
+        
+        .modal-close:hover {
+            background: rgba(255, 255, 255, 0.8);
+            transform: rotate(90deg);
+        }
+        
+        body.dark .modal-close {
+            background: rgba(255, 255, 255, 0.1);
+        }
+        
+        body.dark .modal-close:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+        
+        .modal-image {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 1.5rem 1.5rem 0 0;
+        }
+        
+        .modal-body {
+            padding: 2rem;
+        }
+        
+        .modal-category {
+            display: inline-block;
+            padding: 0.25rem 1rem;
+            background: rgba(167, 139, 250, 0.2);
+            color: #8B5CF6;
+            border-radius: 9999px;
+            font-size: 0.875rem;
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+        
+        .modal-title {
+            font-size: 1.875rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            line-height: 1.3;
+        }
+        
+        .modal-meta {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            color: #64748b;
+            font-size: 0.875rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        }
+        
+        body.dark .modal-meta {
+            border-bottom-color: rgba(255, 255, 255, 0.1);
+        }
+        
+        .modal-text {
+            color: #475569;
+            line-height: 1.8;
+            font-size: 1rem;
+        }
+        
+        body.dark .modal-text {
+            color: #cbd5e1;
+        }
+        
+        .modal-text p {
+            margin-bottom: 1rem;
+        }
+        
+        .modal-text ul, .modal-text ol {
+            margin: 1rem 0;
+            padding-left: 1.5rem;
+        }
+        
+        .modal-text li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .modal-content::-webkit-scrollbar {
+            width: 8px;
+        }
+        
+        .modal-content::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        
+        .modal-content::-webkit-scrollbar-thumb {
+            background: rgba(167, 139, 250, 0.5);
+            border-radius: 4px;
+        }
+        
+        /* Cookie Consent Banner */
+        #cookie-consent {
+            animation: slideUp 0.3s ease-out;
+        }
+        
+        @keyframes slideUp {
+            from {
+                transform: translateY(100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        
+        body.dark #cookie-consent {
+            background: rgba(15, 23, 42, 0.95);
+            backdrop-filter: blur(12px);
+        }
+        
+        /* Pricing Cards */
+        .pricing-card {
+            background: rgba(255, 255, 255, 0.65);
+            backdrop-filter: blur(24px) saturate(180%);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            border-radius: 2rem;
+            padding: 2rem;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .pricing-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 60px rgba(139, 92, 246, 0.2);
+            border-color: rgba(139, 92, 246, 0.4);
+        }
+        
+        body.dark .pricing-card {
+            background: rgba(15, 23, 42, 0.65);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .pricing-card.popular {
+            border: 2px solid #8B5CF6;
+            background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(167, 139, 250, 0.05));
+        }
+        
+        .pricing-card.popular::before {
+            content: 'MOST POPULAR';
+            position: absolute;
+            top: 1rem;
+            right: -2rem;
+            background: linear-gradient(135deg, #8B5CF6, #A78BFA);
+            color: white;
+            padding: 0.25rem 2rem;
+            font-size: 0.75rem;
+            font-weight: 600;
+            transform: rotate(45deg);
+        }
+        
+        /* Feature List */
+        .feature-list li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+        
+        .feature-list li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #8B5CF6;
+            font-weight: bold;
+        }
+        
+        /* CTA Pulse Animation */
+        @keyframes ctaPulse {
+            0%, 100% { box-shadow: 0 0 0 0 rgba(139, 92, 246, 0.4); }
+            50% { box-shadow: 0 0 0 10px rgba(139, 92, 246, 0); }
+        }
+        
+        .cta-pulse {
+            animation: ctaPulse 2s infinite;
+        }
+        
+        /* Guarantee Badge */
+        .guarantee-badge {
+            background: linear-gradient(135deg, #10B981, #34D399);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 9999px;
+            font-size: 0.875rem;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        /* Product Category Tabs */
+        .category-tab {
+            padding: 0.75rem 1.5rem;
+            border-radius: 9999px;
+            font-weight: 500;
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+        
+        .category-tab.active {
+            background: linear-gradient(135deg, #8B5CF6, #A78BFA);
+            color: white;
+        }
+        
+        .category-tab:hover:not(.active) {
+            background: rgba(139, 92, 246, 0.1);
+            color: #8B5CF6;
+        }
+        
+        /* Savings Badge */
+        .savings-badge {
+            background: linear-gradient(135deg, #EF4444, #F87171);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+        
+        /* AI Chat Widget */
+        .chat-widget {
+            position: fixed;
+            bottom: 100px;
+            right: 30px;
+            z-index: 1000;
+        }
+        
+        .chat-window {
+            position: fixed;
+            bottom: 100px;
+            right: 30px;
+            width: 380px;
+            max-width: calc(100vw - 60px);
+            height: 500px;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            border-radius: 1.5rem;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+            display: none;
+            flex-direction: column;
+            z-index: 1000;
+            overflow: hidden;
+        }
+        
+        body.dark .chat-window {
+            background: rgba(15, 23, 42, 0.95);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .chat-window.active {
+            display: flex;
+        }
+        
+        .chat-header {
+            background: linear-gradient(135deg, #8B5CF6, #A78BFA);
+            color: white;
+            padding: 1.25rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .chat-messages {
+            flex: 1;
+            overflow-y: auto;
+            padding: 1.25rem;
+        }
+        
+        .chat-input {
+            padding: 1.25rem;
+            border-top: 1px solid rgba(0, 0, 0, 0.1);
+            display: flex;
+            gap: 0.75rem;
+        }
+        
+        body.dark .chat-input {
+            border-top-color: rgba(255, 255, 255, 0.1);
+        }
+        
+        .chat-message {
+            margin-bottom: 1rem;
+            padding: 0.75rem 1rem;
+            border-radius: 1rem;
+            max-width: 80%;
+            word-wrap: break-word;
+        }
+        
+        .chat-message.user {
+            background: linear-gradient(135deg, #8B5CF6, #A78BFA);
+            color: white;
+            margin-left: auto;
+            border-bottom-right-radius: 0.25rem;
+        }
+        
+        .chat-message.bot {
+            background: rgba(241, 245, 249, 0.8);
+            color: #1e293b;
+            margin-right: auto;
+            border-bottom-left-radius: 0.25rem;
+        }
+        
+        body.dark .chat-message.bot {
+            background: rgba(51, 65, 85, 0.8);
+            color: #f1f5f9;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-lavender selection:text-white">
+    <!-- Floating Orbs -->
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+    <div class="orb orb-4"></div>
+    
+    <!-- Particles Container -->
+    <div id="particles"></div>
+    
+    <!-- Light Leaks -->
+    <div class="light-leak" id="lightLeak1" style="top: 20%; left: 10%;"></div>
+    <div class="light-leak" id="lightLeak2" style="top: 60%; right: 15%;"></div>
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 transition-all duration-300 py-6 px-6 lg:px-12">
+        <div class="max-w-7xl mx-auto glass-panel rounded-2xl px-6 py-4 flex justify-between items-center">
+            <a href="/Home" class="text-2xl font-display font-bold tracking-tight">
+                <img src="/img/logolight.png" class="h-12 w-auto" alt="PRVER Logo">
+            </a>
+            
+            <div class="hidden lg:flex items-center gap-4 xl:gap-6 text-sm font-medium">
+                <a href="/Home" class="hover:text-lavender transition-colors relative group">
+                    Home
+                    <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-lavender transition-all group-hover:w-full"></span>
+                </a>
+                <a href="/services" class="hover:text-lavender transition-colors relative group">
+                    Services
+                    <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-lavender transition-all group-hover:w-full"></span>
+                </a>
+                <a href="/ai-agent" class="hover:text-lavender transition-colors relative group">
+                    AI Agents
+                    <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-lavender transition-all group-hover:w-full"></span>
+                </a>
+                <a href="/portfolio" class="hover:text-lavender transition-colors relative group">
+                    Portfolio
+                    <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-lavender transition-all group-hover:w-full"></span>
+                </a>
+                <a href="/products" class="hover:text-lavender transition-colors relative group text-lavender">
+                    Products
+                   <span class="absolute -bottom-1 left-0 w-full h-0.5 bg-lavender transition-all"></span>
+                </a>
+                <a href="/blog" class="hover:text-lavender transition-colors relative group">
+                    Blog
+                    <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-lavender transition-all group-hover:w-full"></span>
+                </a>
+                <a href="/About" class="hover:text-lavender transition-colors relative group">
+                    About
+                    <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-lavender transition-all group-hover:w-full"></span>
+                </a>
+                <a href="/Home#contact" class="px-5 py-2.5 rounded-full glass-btn text-sm font-semibold whitespace-nowrap">
+                    Let's Talk
+                </a>
+            </div>
+            
+            <button id="mobileMenuBtn" class="lg:hidden text-2xl">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu - DROPDOWN STYLE (FIXED) -->
+    <div id="mobileMenu" class="mobile-nav fixed top-28 left-0 right-0 z-40 mx-4 rounded-2xl">
+        <a href="/Home" class="mobile-link block hover:text-lavender w-full text-center py-3 border-b border-white/10">Home</a>
+        <a href="/services" class="mobile-link block hover:text-lavender w-full text-center py-3 border-b border-white/10">Services</a>
+        <a href="/ai-agent" class="mobile-link block hover:text-lavender w-full text-center py-3 border-b border-white/10">AI Agents</a>
+        <a href="/portfolio" class="mobile-link block hover:text-lavender w-full text-center py-3 border-b border-white/10">Portfolio</a>
+        <a href="/products" class="mobile-link block hover:text-lavender text-lavender w-full text-center py-3 border-b border-white/10">Products</a>
+        <a href="/blog" class="mobile-link block hover:text-lavender w-full text-center py-3 border-b border-white/10">Blog</a>
+        <a href="/About" class="mobile-link block hover:text-lavender w-full text-center py-3 border-b border-white/10">About</a>
+        <a href="/Home#contact" class="mobile-link block hover:text-lavender w-full text-center py-3">Contact</a>
+    </div>
+    <!-- Hero Section -->
+    <section class="min-h-[60vh] flex items-center justify-center relative px-6 pt-32 overflow-hidden">
+        <div class="max-w-5xl mx-auto text-center relative z-10">
+            <div class="inline-block mb-6 px-6 py-2 rounded-full glass-panel text-sm font-medium text-lavender reveal">
+                <i class="fas fa-tag mr-2"></i> Limited-Time Offer: Save Up to 40%
+            </div>
+            
+            <h1 class="text-5xl md:text-7xl lg:text-8xl font-serif font-bold mb-6 leading-tight reveal">
+                Products & <span class="text-gradient-soft">Pricing</span>
+            </h1>
+            
+            <p class="text-xl text-slate-600 dark:text-slate-300 max-w-3xl mx-auto mb-12 font-light leading-relaxed reveal">
+                Choose from our range of digital products and services. Transparent pricing, no hidden fees, and a 30-day money-back guarantee on all products.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-6 justify-center items-center reveal">
+                <a href="#products" class="px-8 py-4 rounded-full glass-btn font-semibold text-lg flex items-center gap-3 group cta-pulse">
+                    View All Products
+                    <i class="fas fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+                </a>
+                <a href="/Home#contact" class="px-8 py-4 rounded-full glass-btn font-semibold text-lg">
+                    Get Custom Quote
+                </a>
+            </div>
+            
+            <!-- Trust Badges -->
+            <div class="mt-12 flex flex-wrap justify-center gap-6 reveal">
+                <div class="flex items-center gap-2 text-sm text-slate-600 dark:text-slate-400">
+                    <i class="fas fa-shield-alt text-lavender"></i>
+                    <span>30-Day Money-Back Guarantee</span>
+                </div>
+                <div class="flex items-center gap-2 text-sm text-slate-600 dark:text-slate-400">
+                    <i class="fas fa-headset text-lavender"></i>
+                    <span>24/7 Expert Support</span>
+                </div>
+                <div class="flex items-center gap-2 text-sm text-slate-600 dark:text-slate-400">
+                    <i class="fas fa-sync-alt text-lavender"></i>
+                    <span>Updates for Life</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Categories -->
+    <section class="py-12 px-6 relative">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-wrap justify-center gap-4 mb-12 reveal">
+                <div class="category-tab active" data-category="all">All Products</div>
+                <div class="category-tab" data-category="website">Website Builder</div>
+                <div class="category-tab" data-category="app">App Development</div>
+                <div class="category-tab" data-category="ecommerce">E-commerce</div>
+                <div class="category-tab" data-category="seo">SEO Packages</div>
+                <div class="category-tab" data-category="branding">Branding & Design</div>
+                <div class="category-tab" data-category="maintenance">Maintenance</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section id="products" class="py-32 px-6 relative">
+        <div class="max-w-7xl mx-auto">
+            <!-- Website Builder Products -->
+            <div class="product-category" data-category="website">
+                <div class="text-center mb-16 reveal">
+                    <h2 class="text-4xl md:text-5xl font-serif font-bold mb-4">Website <span class="text-gradient-soft">Builder</span></h2>
+                    <p class="text-slate-600 dark:text-slate-300 text-lg">Professional websites coded from scratch. No templates, no limitations.</p>
+                </div>
+                
+                <div class="grid md:grid-cols-3 gap-8 mb-20">
+                    <!-- Basic Plan -->
+                    <div class="pricing-card reveal tilt-card">
+                        <div class="text-center mb-6">
+                            <h3 class="text-2xl font-display font-bold mb-2">Starter</h3>
+                            <p class="text-slate-600 dark:text-slate-400 text-sm mb-4">Perfect for small businesses</p>
+                            <div class="mb-2">
+                                <span class="text-5xl font-bold text-lavender">$497</span>
+                                <span class="text-slate-500 line-through ml-2">$797</span>
+                            </div>
+                            <span class="savings-badge">Save 38%</span>
+                        </div>
+                        
+                        <ul class="feature-list mb-8 text-sm text-slate-600 dark:text-slate-400">
+                            <li>5 Custom-Designed Pages</li>
+                            <li>Mobile-Responsive Design</li>
+                            <li>Contact Form Integration</li>
+                            <li>Basic SEO Setup</li>
+                            <li>1 Month Free Support</li>
+                            <li>Source Code Included</li>
+                        </ul>
+                        
+                        <a href="/Home#contact" class="block w-full py-3 rounded-xl glass-btn font-semibold text-center hover:bg-lavender/20 transition-colors">
+                            Get Started
+                        </a>
+                    </div>
+                    
+                    <!-- Standard Plan (Popular) -->
+                    <div class="pricing-card popular reveal tilt-card">
+                        <div class="text-center mb-6">
+                            <h3 class="text-2xl font-display font-bold mb-2">Professional</h3>
+                            <p class="text-slate-600 dark:text-slate-400 text-sm mb-4">Best for growing businesses</p>
+                            <div class="mb-2">
+                                <span class="text-5xl font-bold text-lavender">$997</span>
+                                <span class="text-slate-500 line-through ml-2">$1,597</span>
+                            </div>
+                            <span class="savings-badge">Save 38%</span>
+                        </div>
+                        
+                        <ul class="feature-list mb-8 text-sm text-slate-600 dark:text-slate-400">
+                            <li>10 Custom-Designed Pages</li>
+                            <li>Advanced SEO</li>
+                            <li>Blog Section</li>
+                            <li>Social Media Integration</li>
+                            <li>3 Months Free Support</li>
+                            <li>Google Analytics</li>
+                            <li>Source Code Included</li>
+                        </ul>
+                        
+                        <a href="/Home#contact" class="block w-full py-3 rounded-xl bg-gradient-to-r from-lavender to-purple-600 text-white font-semibold text-center hover:opacity-90 transition-opacity">
+                            Get Started
+                        </a>
+                    </div>
+                    
+                    <!-- Premium Plan -->
+                    <div class="pricing-card reveal tilt-card">
+                        <div class="text-center mb-6">
+                            <h3 class="text-2xl font-display font-bold mb-2">Enterprise</h3>
+                            <p class="text-slate-600 dark:text-slate-400 text-sm mb-4">For established businesses</p>
+                            <div class="mb-2">
+                                <span class="text-5xl font-bold text-lavender">$1,997</span>
+                                <span class="text-slate-500 line-through ml-2">$3,197</span>
+                            </div>
+                            <span class="savings-badge">Save 38%</span>
+                        </div>
+                        
+                        <ul class="feature-list mb-8 text-sm text-slate-600 dark:text-slate-400">
+                            <li>Unlimited Pages</li>
+                            <li>Custom Functionality</li>
+                            <li>Advanced Animations</li>
+                            <li>Premium SEO Package</li>
+                            <li>CMS Integration</li>
+                            <li>Multi-language Support</li>
+                            <li>Priority Support (6 Months)</li>
+                            <li>Training & Documentation</li>
+                            <li>Source Code Included</li>
+                        </ul>
+                        
+                        <a href="/Home#contact" class="block w-full py-3 rounded-xl glass-btn font-semibold text-center hover:bg-lavender/20 transition-colors">
+                            Get Started
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- App Development Products -->
+            <div class="product-category hidden" data-category="app">
+                <div class="text-center mb-16 reveal">
+                    <h2 class="text-4xl md:text-5xl font-serif font-bold mb-4">App <span class="text-gradient-soft">Development</span></h2>
+                    <p class="text-slate-600 dark:text-slate-300 text-lg">Native and cross-platform mobile applications for iOS and Android.</p>
+                </div>
+                
+                <div class="grid md:grid-cols-3 gap-8 mb-20">
+                    <!-- Basic App -->
+                    <div class="pricing-card reveal tilt-card">
+                        <div class="text-center mb-6">
+                            <h3 class="text-2xl font-display font-bold mb-2">Basic App</h3>
+                            <p class="text-slate-600 dark:text-slate-400 text-sm mb-4">Simple functionality app</p>
+                            <div class="mb-2">
+                                <span class="text-5xl font-bold text-lavender">$2,497</span>
+                                <span class="text-slate-500 line-through ml-2">$3,997</span>
+                            </div>
+                            <span class="savings-badge">Save 38%</span>
+                        </div>
+                        
+                        <ul class="feature-list mb-8 text-sm text-slate-600 dark:text-slate-400">
+                            <li>iOS OR Android (Choose One)</li>
+                            <li>Up to 5 Screens</li>
+                            <li>Basic Functionality</li>
+                            <li>User Authentication</li>
+                            <li>Push Notifications</li>
+                            <li>App Store Submission</li>
+                            <li>2 Months Support</li>
+                        </ul>
+                        
+                        <a href="/Home#contact" class="block w-full py-3 rounded-xl glass-btn font-semibold text-center hover:bg-lavender/20 transition-colors">
+                            Get Started
+                        </a>
+                    </div>
+                    
+                    <!-- Standard App (Popular) -->
+                    <div class="pricing-card popular reveal tilt-card">
+                        <div class="text-center mb-6">
+                            <h3 class="text-2xl font-display font-bold mb-2">Standard App</h3>
+                            <p class="text-slate-600 dark:text-slate-400 text-sm mb-4">Full-featured cross-platform</p>
+                            <div class="mb-2">
+                                <span class="text-5xl font-bold text-lavender">$4,997</span>
+                                <span class="text-slate-500 line-through ml-2">$7,997</span>
+                            </div>
+                            <span class="savings-badge">Save 38%</span>
+                        </div>
+                        
+                        <ul class="feature-list mb-8 text-sm text-slate-600 dark:text-slate-400">
+                            <li>iOS AND Android (Cross-Platform)</li>
+                            <li>Up to 15 Screens</li>
+                            <li>Advanced Features</li>
+                            <li>Payment Gateway</li>
+                            <li>API Integration</li>
+                            <li>App Store Submission</li>
+                            <li>4 Months Support</li>
+                        </ul>
+                        
+                        <a href="/Home#contact" class="block w-full py-3 rounded-xl bg-gradient-to-r from-lavender to-purple-600 text-white font-semibold text-center hover:opacity-90 transition-opacity">
+                            Get Started
+                        </a>
+                    </div>
+                    
+                    <!-- Premium App -->
+                    <div class="pricing-card reveal tilt-card">
+                        <div class="text-center mb-6">
+                            <h3 class="text-2xl font-display font-bold mb-2">Enterprise App</h3>
+                            <p class="text-slate-600 dark:text-slate-400 text-sm mb-4">Complex, scalable solution</p>
+                            <div class="mb-2">
+                                <span class="text-5xl font-bold text-lavender">$9,997</span>
+                                <span class="text-slate-500 line-through ml-2">$18,997</span>
+                            </div>
+                            <span class="savings-badge">Save 38%</span>
+                        </div>
+                        
+                        <ul class="feature-list mb-8 text-sm text-slate-600 dark:text-slate-400">
+                            <li>Native iOS & Android</li>
+                            <li>Unlimited Screens</li>
+                            <li>Custom Features</li>
+                            <li>Backend Development</li>
+                            <li>Database Integration</li>
+                            <li>Third-Party Integrations</li>
+                            <li>Admin Dashboard</li>
+                            <li>Analytics & Reporting</li>
+                            <li>6 Months Support</li>
+                        </ul>
+                        
+                        <a href="/Home#contact" class="block w-full py-3 rounded-xl glass-btn font-semibold text-center hover:bg-lavender/20 transition-colors">
+                            Get Started
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- E-commerce Products -->
+            <div class="product-category hidden" data-category="ecommerce">
+                <div class="text-center mb-16 reveal">
+                    <h2 class="text-4xl md:text-5xl font-serif font-bold mb-4">E-commerce <span class="text-gradient-soft">Solutions</span></h2>
+                    <p class="text-slate-600 dark:text-slate-300 text-lg">Complete online stores that convert visitors into customers.</p>
+                </div>
+                
+                <div class="grid md:grid-cols-3 gap-8 mb-20">
+                    <!-- Basic Store -->
+                    <div class="pricing-card reveal tilt-card">
+                        <div class="text-center mb-6">
+                            <h3 class="text-2xl font-display font-bold mb-2">Starter Store</h3>
+                            <p class="text-slate-600 dark:text-slate-400 text-sm mb-4">Perfect for new sellers</p>
+                            <div class="mb-2">
+                                <span class="text-5xl font-bold text-lavender">$1,497</span>
+                                <span class="text-slate-500 line-through ml-2">$2,397</span>
+                            </div>
+                            <span class="savings-badge">Save 38%</span>
+                        </div>
+                        
+                        <ul class="feature-list mb-8 text-sm text-slate-600 dark:text-slate-400">
+                            <li>Up to 50 Products</li>
+                            <li>Shopping Cart</li>
+                            <li>Payment Gateway (1)</li>
+                            <li>Basic Inventory</li>
+                            <li>Order Management</li>
+                            <li>Mobile-Responsive</li>
+                            <li>Basic SEO</li>
+                            <li>2 Months Support</li>
+                        </ul>
+                        
+                        <a href="/Home#contact" class="block w-full py-3 rounded-xl glass-btn font-semibold text-center hover:bg-lavender/20 transition-colors">
+                            Get Started
+                        </a>
+                    </div>
+                    
+                    <!-- Standard Store (Popular) -->
+                    <div class="pricing-card popular reveal tilt-card">
+                        <div class="text-center mb-6">
+                            <h3 class="text-2xl font-display font-bold mb-2">Professional Store</h3>
+                            <p class="text-slate-600 dark:text-slate-400 text-sm mb-4">For growing businesses</p>
+                            <div class="mb-2">
+                                <span class="text-5xl font-bold text-lavender">$2,997</span>
+                                <span class="text-slate-500 line-through ml-2">$4,797</span>
+                            </div>
+                            <span class="savings-badge">Save 38%</span>
+                        </div>
+                        
+                        <ul class="feature-list mb-8 text-sm text-slate-600 dark:text-slate-400">
+                            <li>Unlimited Products</li>
+                            <li>Advanced Shopping Cart</li>
+                            <li>Multiple Payment Gateways</li>
+                            <li>Inventory Management</li>
+                            <li>Order Tracking</li>
+                            <li>Customer Accounts</li>
+                            <li>Discount & Coupon System</li>
+                            <li>Email Notifications</li>
+                            <li>Complete SEO</li>
+                            <li>4 Months Support</li>
+                        </ul>
+                        
+                        <a href="/Home#contact" class="block w-full py-3 rounded-xl bg-gradient-to-r from-lavender to-purple-600 text-white font-semibold text-center hover:opacity-90 transition-opacity">
+                            Get Started
+                        </a>
+                    </div>
+                    
+                    <!-- Premium Store -->
+                    <div class="pricing-card reveal tilt-card">
+                        <div class="text-center mb-6">
+                            <h3 class="text-2xl font-display font-bold mb-2">Enterprise Store</h3>
+                            <p class="text-slate-600 dark:text-slate-400 text-sm mb-4">Full-scale e-commerce platform</p>
+                            <div class="mb-2">
+                                <span class="text-5xl font-bold text-lavender">$5,997</span>
+                                <span class="text-slate-500 line-through ml-2">$9,597</span>
+                            </div>
+                            <span class="savings-badge">Save 38%</span>
+                        </div>
+                        
+                        <ul class="feature-list mb-8 text-sm text-slate-600 dark:text-slate-400">
+                            <li>Everything in Professional</li>
+                            <li>Multi-Vendor Support</li>
+                            <li>Advanced Analytics</li>
+                            <li>Marketing Tools</li>
+                            <li>Subscription Products</li>
+                            <li>API Integration</li>
+                            <li>Custom Features</li>
+                            <li>Priority Support (6 Months)</li>
+                            <li>Training & Documentation</li>
+                        </ul>
+                        
+                        <a href="/Home#contact" class="block w-full py-3 rounded-xl glass-btn font-semibold text-center hover:bg-lavender/20 transition-colors">
+                            Get Started
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- SEO Packages -->
+            <div class="product-category hidden" data-category="seo">
+                <div class="text-center mb-16 reveal">
+                    <h2 class="text-4xl md:text-5xl font-serif font-bold mb-4">SEO <span class="text-gradient-soft">Packages</span></h2>
+                    <p class="text-slate-600 dark:text-slate-300 text-lg">Rank higher on Google and attract more organic traffic.</p>
+                </div>
+                
+                <div class="grid md:grid-cols-3 gap-8 mb-20">
+                    <!-- Basic SEO -->
+                    <div class="pricing-card reveal tilt-card">
+                        <div class="text-center mb-6">
+                            <h3 class="text-2xl font-display font-bold mb-2">Starter SEO</h3>
+                            <p class="text-slate-600 dark:text-slate-400 text-sm mb-4">Monthly package</p>
+                            <div class="mb-2">
+                                <span class="text-5xl font-bold text-lavender">$297</span>
+                                <span class="text-slate-500">/month</span>
+                            </div>
+                        </div>
+                        
+                        <ul class="feature-list mb-8 text-sm text-slate-600 dark:text-slate-400">
+                            <li>Keyword Research (10 Keywords)</li>
+                            <li>On-Page Optimization (5 Pages)</li>
+                            <li>Basic Link Building (5/month)</li>
+                            <li>Google My Business Setup</li>
+                            <li>Monthly Performance Report</li>
+                            <li>Email Support</li>
+                        </ul>
+                        
+                        <a href="/Home#contact" class="block w-full py-3 rounded-xl glass-btn font-semibold text-center hover:bg-lavender/20 transition-colors">
+                            Get Started
+                        </a>
+                    </div>
+                    
+                    <!-- Standard SEO (Popular) -->
+                    <div class="pricing-card popular reveal tilt-card">
+                        <div class="text-center mb-6">
+                            <h3 class="text-2xl font-display font-bold mb-2">Professional SEO</h3>
+                            <p class="text-slate-600 dark:text-slate-400 text-sm mb-4">Monthly package</p>
+                            <div class="mb-2">
+                                <span class="text-5xl font-bold text-lavender">$597</span>
+                                <span class="text-slate-500">/month</span>
+                            </div>
+                            <span class="savings-badge">Most Popular</span>
+                        </div>
+                        
+                        <ul class="feature-list mb-8 text-sm text-slate-600 dark:text-slate-400">
+                            <li>Keyword Research (25 Keywords)</li>
+                            <li>On-Page Optimization (15 Pages)</li>
+                            <li>Advanced Link Building (15/month)</li>
+                            <li>Content Creation (2 Articles)</li>
+                            <li>Technical SEO Audit</li>
+                            <li>Competitor Analysis</li>
+                            <li>Weekly Performance Report</li>
+                            <li>Priority Support</li>
+                        </ul>
+                        
+                        <a href="/Home#contact" class="block w-full py-3 rounded-xl bg-gradient-to-r from-lavender to-purple-600 text-white font-semibold text-center hover:opacity-90 transition-opacity">
+                            Get Started
+                        </a>
+                    </div>
+                    
+                    <!-- Premium SEO -->
+                    <div class="pricing-card reveal tilt-card">
+                        <div class="text-center mb-6">
+                            <h3 class="text-2xl font-display font-bold mb-2">Enterprise SEO</h3>
+                            <p class="text-slate-600 dark:text-slate-400 text-sm mb-4">Monthly package</p>
+                            <div class="mb-2">
+                                <span class="text-5xl font-bold text-lavender">$997</span>
+                                <span class="text-slate-500">/month</span>
+                            </div>
+                        </div>
+                        
+                        <ul class="feature-list mb-8 text-sm text-slate-600 dark:text-slate-400">
+                            <li>Unlimited Keyword Research</li>
+                            <li>Full Site Optimization</li>
+                            <li>Premium Link Building (30+/month)</li>
+                            <li>Content Creation (4 Articles)</li>
+                            <li>Advanced Technical SEO</li>
+                            <li>Local SEO Optimization</li>
+                            <li>Daily Performance Tracking</li>
+                            <li>Dedicated Account Manager</li>
+                            <li>24/7 Priority Support</li>
+                        </ul>
+                        
+                        <a href="/Home#contact" class="block w-full py-3 rounded-xl glass-btn font-semibold text-center hover:bg-lavender/20 transition-colors">
+                            Get Started
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Branding & Design -->
+            <div class="product-category hidden" data-category="branding">
+                <div class="text-center mb-16 reveal">
+                    <h2 class="text-4xl md:text-5xl font-serif font-bold mb-4">Branding & <span class="text-gradient-soft">Design</span></h2>
+                    <p class="text-slate-600 dark:text-slate-300 text-lg">Complete brand identity packages that make you stand out.</p>
+                </div>
+                
+                <div class="grid md:grid-cols-3 gap-8 mb-20">
+                    <!-- Basic Branding -->
+                    <div class="pricing-card reveal tilt-card">
+                        <div class="text-center mb-6">
+                            <h3 class="text-2xl font-display font-bold mb-2">Logo Design</h3>
+                            <p class="text-slate-600 dark:text-slate-400 text-sm mb-4">Professional logo package</p>
+                            <div class="mb-2">
+                                <span class="text-5xl font-bold text-lavender">$397</span>
+                                <span class="text-slate-500 line-through ml-2">$637</span>
+                            </div>
+                            <span class="savings-badge">Save 38%</span>
+                        </div>
+                        
+                        <ul class="feature-list mb-8 text-sm text-slate-600 dark:text-slate-400">
+                            <li>3 Initial Concepts</li>
+                            <li>3 Revision Rounds</li>
+                            <li>Multiple Formats</li>
+                            <li>Transparent Background</li>
+                            <li>Color & Black/White Versions</li>
+                            <li>Commercial Use License</li>
+                        </ul>
+                        
+                        <a href="/Home#contact" class="block w-full py-3 rounded-xl glass-btn font-semibold text-center hover:bg-lavender/20 transition-colors">
+                            Get Started
+                        </a>
+                    </div>
+                    
+                    <!-- Standard Branding (Popular) -->
+                    <div class="pricing-card popular reveal tilt-card">
+                        <div class="text-center mb-6">
+                            <h3 class="text-2xl font-display font-bold mb-2">Brand Identity</h3>
+                            <p class="text-slate-600 dark:text-slate-400 text-sm mb-4">Complete brand package</p>
+                            <div class="mb-2">
+                                <span class="text-5xl font-bold text-lavender">$997</span>
+                                <span class="text-slate-500 line-through ml-2">$1,597</span>
+                            </div>
+                            <span class="savings-badge">Save 38%</span>
+                        </div>
+                        
+                        <ul class="feature-list mb-8 text-sm text-slate-600 dark:text-slate-400">
+                            <li>5 Initial Concepts</li>
+                            <li>Unlimited Revisions</li>
+                            <li>Logo + Brand Guidelines</li>
+                            <li>Color Palette</li>
+                            <li>Typography System</li>
+                            <li>Business Card Design</li>
+                            <li>Letterhead & Envelope</li>
+                            <li>Social Media Kit</li>
+                            <li>All Source Files</li>
+                        </ul>
+                        
+                        <a href="/Home#contact" class="block w-full py-3 rounded-xl bg-gradient-to-r from-lavender to-purple-600 text-white font-semibold text-center hover:opacity-90 transition-opacity">
+                            Get Started
+                        </a>
+                    </div>
+                    
+                    <!-- Premium Branding -->
+                    <div class="pricing-card reveal tilt-card">
+                        <div class="text-center mb-6">
+                            <h3 class="text-2xl font-display font-bold mb-2">Complete Branding</h3>
+                            <p class="text-slate-600 dark:text-slate-400 text-sm mb-4">Full brand transformation</p>
+                            <div class="mb-2">
+                                <span class="text-5xl font-bold text-lavender">$1,997</span>
+                                <span class="text-slate-500 line-through ml-2">$3,197</span>
+                            </div>
+                            <span class="savings-badge">Save 38%</span>
+                        </div>
+                        
+                        <ul class="feature-list mb-8 text-sm text-slate-600 dark:text-slate-400">
+                            <li>Everything in Brand Identity</li>
+                            <li>Brand Strategy Document</li>
+                            <li>Marketing Collateral</li>
+                            <li>Packaging Design</li>
+                            <li>Website Mockup</li>
+                            <li>Social Media Templates</li>
+                            <li>Email Signature</li>
+                            <li>Brand Presentation</li>
+                            <li>1 Year Support</li>
+                        </ul>
+                        
+                        <a href="/Home#contact" class="block w-full py-3 rounded-xl glass-btn font-semibold text-center hover:bg-lavender/20 transition-colors">
+                            Get Started
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Maintenance Plans -->
+            <div class="product-category hidden" data-category="maintenance">
+                <div class="text-center mb-16 reveal">
+                    <h2 class="text-4xl md:text-5xl font-serif font-bold mb-4">Maintenance <span class="text-gradient-soft">Plans</span></h2>
+                    <p class="text-slate-600 dark:text-slate-300 text-lg">Keep your website secure, updated, and performing at its best.</p>
+                </div>
+                
+                <div class="grid md:grid-cols-3 gap-8 mb-20">
+                    <!-- Basic Maintenance -->
+                    <div class="pricing-card reveal tilt-card">
+                        <div class="text-center mb-6">
+                            <h3 class="text-2xl font-display font-bold mb-2">Basic Care</h3>
+                            <p class="text-slate-600 dark:text-slate-400 text-sm mb-4">Monthly package</p>
+                            <div class="mb-2">
+                                <span class="text-5xl font-bold text-lavender">$97</span>
+                                <span class="text-slate-500">/month</span>
+                            </div>
+                        </div>
+                        
+                        <ul class="feature-list mb-8 text-sm text-slate-600 dark:text-slate-400">
+                            <li>Weekly Backups</li>
+                            <li>Security Monitoring</li>
+                            <li>Software Updates</li>
+                            <li>Uptime Monitoring</li>
+                            <li>Monthly Performance Report</li>
+                            <li>Email Support</li>
+                        </ul>
+                        
+                        <a href="/Home#contact" class="block w-full py-3 rounded-xl glass-btn font-semibold text-center hover:bg-lavender/20 transition-colors">
+                            Get Started
+                        </a>
+                    </div>
+                    
+                    <!-- Standard Maintenance (Popular) -->
+                    <div class="pricing-card popular reveal tilt-card">
+                        <div class="text-center mb-6">
+                            <h3 class="text-2xl font-display font-bold mb-2">Professional Care</h3>
+                            <p class="text-slate-600 dark:text-slate-400 text-sm mb-4">Monthly package</p>
+                            <div class="mb-2">
+                                <span class="text-5xl font-bold text-lavender">$197</span>
+                                <span class="text-slate-500">/month</span>
+                            </div>
+                            <span class="savings-badge">Most Popular</span>
+                        </div>
+                        
+                        <ul class="feature-list mb-8 text-sm text-slate-600 dark:text-slate-400">
+                            <li>Daily Backups</li>
+                            <li>Advanced Security</li>
+                            <li>All Software Updates</li>
+                            <li>24/7 Uptime Monitoring</li>
+                            <li>Speed Optimization</li>
+                            <li>2 Hours Content Updates</li>
+                            <li>Weekly Performance Report</li>
+                            <li>Priority Support</li>
+                        </ul>
+                        
+                        <a href="/Home#contact" class="block w-full py-3 rounded-xl bg-gradient-to-r from-lavender to-purple-600 text-white font-semibold text-center hover:opacity-90 transition-opacity">
+                            Get Started
+                        </a>
+                    </div>
+                    
+                    <!-- Premium Maintenance -->
+                    <div class="pricing-card reveal tilt-card">
+                        <div class="text-center mb-6">
+                            <h3 class="text-2xl font-display font-bold mb-2">Enterprise Care</h3>
+                            <p class="text-slate-600 dark:text-slate-400 text-sm mb-4">Monthly package</p>
+                            <div class="mb-2">
+                                <span class="text-5xl font-bold text-lavender">$397</span>
+                                <span class="text-slate-500">/month</span>
+                            </div>
+                        </div>
+                        
+                        <ul class="feature-list mb-8 text-sm text-slate-600 dark:text-slate-400">
+                            <li>Real-Time Backups</li>
+                            <li>Enterprise Security</li>
+                            <li>Priority Updates</li>
+                            <li>Advanced Monitoring</li>
+                            <li>Performance Optimization</li>
+                            <li>5 Hours Content Updates</li>
+                            <li>SEO Monitoring</li>
+                            <li>Daily Performance Report</li>
+                            <li>Dedicated Account Manager</li>
+                            <li>24/7 Priority Support</li>
+                        </ul>
+                        
+                        <a href="/Home#contact" class="block w-full py-3 rounded-xl glass-btn font-semibold text-center hover:bg-lavender/20 transition-colors">
+                            Get Started
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Custom Development -->
+            <div class="text-center mb-16 reveal">
+                <h2 class="text-4xl md:text-5xl font-serif font-bold mb-4">Custom <span class="text-gradient-soft">Development</span></h2>
+                <p class="text-slate-600 dark:text-slate-300 text-lg">Need something unique? We build custom solutions tailored to your specific needs.</p>
+            </div>
+            
+            <div class="glass-panel p-12 rounded-3xl reveal tilt-card text-center">
+                <div class="max-w-3xl mx-auto">
+                    <div class="w-20 h-20 mx-auto mb-6 rounded-full bg-gradient-to-br from-lavender/30 to-mint/30 flex items-center justify-center text-lavender text-3xl">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="text-3xl font-display font-bold mb-4">Custom Quote Required</h3>
+                    <p class="text-slate-600 dark:text-slate-300 mb-8">
+                        Every custom project is unique. Tell us about your requirements, and we'll provide a detailed proposal with timeline and pricing within 24 hours.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a href="/Home#contact" class="px-8 py-4 rounded-full bg-gradient-to-r from-lavender to-purple-600 text-white font-semibold text-lg inline-flex items-center gap-3 group cta-pulse">
+                            Get Free Quote
+                            <i class="fas fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+                        </a>
+                        <a href="/portfolio" class="px-8 py-4 rounded-full glass-btn font-semibold text-lg">
+                            View Our Work
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-32 px-6 relative bg-white/30 dark:bg-slate-900/30">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16 reveal">
+                <h2 class="text-4xl md:text-5xl font-serif font-bold mb-4">Why Choose <span class="text-gradient-soft">PRVER</span></h2>
+                <p class="text-slate-600 dark:text-slate-300 text-lg max-w-2xl mx-auto">We're committed to delivering exceptional value and results</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="glass-panel p-8 rounded-3xl reveal tilt-card text-center">
+                    <div class="w-16 h-16 mx-auto mb-6 rounded-full bg-gradient-to-br from-lavender/30 to-mint/30 flex items-center justify-center text-lavender text-3xl">
+                        <i class="fas fa-hand-holding-usd"></i>
+                    </div>
+                    <h3 class="text-xl font-display font-bold mb-3">Best Prices</h3>
+                    <p class="text-slate-600 dark:text-slate-400 text-sm">Competitive pricing without compromising on quality. Save up to 38% on all products.</p>
+                </div>
+                
+                <div class="glass-panel p-8 rounded-3xl reveal tilt-card text-center" style="transition-delay: 100ms;">
+                    <div class="w-16 h-16 mx-auto mb-6 rounded-full bg-gradient-to-br from-mint/30 to-sky/30 flex items-center justify-center text-emerald-500 text-3xl">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-display font-bold mb-3">Money-Back Guarantee</h3>
+                    <p class="text-slate-600 dark:text-slate-400 text-sm">30-day money-back guarantee on all products. Zero risk, all reward.</p>
+                </div>
+                
+                <div class="glass-panel p-8 rounded-3xl reveal tilt-card text-center" style="transition-delay: 200ms;">
+                    <div class="w-16 h-16 mx-auto mb-6 rounded-full bg-gradient-to-br from-sky/30 to-peach/30 flex items-center justify-center text-sky-500 text-3xl">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3 class="text-xl font-display font-bold mb-3">24/7 Support</h3>
+                    <p class="text-slate-600 dark:text-slate-400 text-sm">Round-the-clock expert support to help you whenever you need it.</p>
+                </div>
+                
+                <div class="glass-panel p-8 rounded-3xl reveal tilt-card text-center" style="transition-delay: 300ms;">
+                    <div class="w-16 h-16 mx-auto mb-6 rounded-full bg-gradient-to-br from-peach/30 to-lavender/30 flex items-center justify-center text-orange-400 text-3xl">
+                        <i class="fas fa-infinity"></i>
+                    </div>
+                    <h3 class="text-xl font-display font-bold mb-3">Lifetime Updates</h3>
+                    <p class="text-slate-600 dark:text-slate-400 text-sm">Updates for life. Your products stay current without extra costs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-32 px-6 relative">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-20 reveal">
+                <h2 class="text-4xl md:text-6xl font-serif font-bold mb-6">Product <span class="text-gradient-soft">FAQ</span></h2>
+                <p class="text-slate-600 dark:text-slate-300 text-lg">Common questions about our products and pricing</p>
+            </div>
+            
+            <div class="space-y-4">
+                <div class="glass-panel rounded-2xl overflow-hidden reveal">
+                    <button class="faq-question w-full px-8 py-6 text-left flex justify-between items-center font-display font-semibold text-lg">
+                        <span>Do you offer payment plans?</span>
+                        <i class="fas fa-chevron-down transform transition-transform"></i>
+                    </button>
+                    <div class="faq-answer px-8 pb-6 text-slate-600 dark:text-slate-400">
+                        Yes! We offer flexible payment plans for most products. Typically 50% upfront and 50% upon completion. For larger projects, we can arrange 3-4 installment payments. Contact us to discuss payment options.
+                    </div>
+                </div>
+                
+                <div class="glass-panel rounded-2xl overflow-hidden reveal" style="transition-delay: 100ms;">
+                    <button class="faq-question w-full px-8 py-6 text-left flex justify-between items-center font-display font-semibold text-lg">
+                        <span>What's included in the 30-day guarantee?</span>
+                        <i class="fas fa-chevron-down transform transition-transform"></i>
+                    </button>
+                    <div class="faq-answer px-8 pb-6 text-slate-600 dark:text-slate-400">
+                        If you're not satisfied with our work within 30 days of delivery, we'll work with you to make it right. If we can't meet your expectations, we'll provide a full refund. No questions asked.
+                    </div>
+                </div>
+                
+                <div class="glass-panel rounded-2xl overflow-hidden reveal" style="transition-delay: 200ms;">
+                    <button class="faq-question w-full px-8 py-6 text-left flex justify-between items-center font-display font-semibold text-lg">
+                        <span>Do I own the source code?</span>
+                        <i class="fas fa-chevron-down transform transition-transform"></i>
+                    </button>
+                    <div class="faq-answer px-8 pb-6 text-slate-600 dark:text-slate-400">
+                        Yes! For all custom development projects, you receive full ownership of the source code upon final payment. No licensing fees, no restrictions. It's yours forever.
+                    </div>
+                </div>
+                
+                <div class="glass-panel rounded-2xl overflow-hidden reveal" style="transition-delay: 300ms;">
+                    <button class="faq-question w-full px-8 py-6 text-left flex justify-between items-center font-display font-semibold text-lg">
+                        <span>How long does a typical project take?</span>
+                        <i class="fas fa-chevron-down transform transition-transform"></i>
+                    </button>
+                    <div class="faq-answer px-8 pb-6 text-slate-600 dark:text-slate-400">
+                        Timeline varies by project complexity. Starter websites: 1-2 weeks. Professional websites: 2-4 weeks. E-commerce: 3-6 weeks. Custom apps: 6-12 weeks. We provide detailed timelines during consultation.
+                    </div>
+                </div>
+                
+                <div class="glass-panel rounded-2xl overflow-hidden reveal" style="transition-delay: 400ms;">
+                    <button class="faq-question w-full px-8 py-6 text-left flex justify-between items-center font-display font-semibold text-lg">
+                        <span>Can I upgrade my plan later?</span>
+                        <i class="fas fa-chevron-down transform transition-transform"></i>
+                    </button>
+                    <div class="faq-answer px-8 pb-6 text-slate-600 dark:text-slate-400">
+                        Absolutely! You can upgrade your maintenance plan or add features to your website at any time. We'll prorate the costs and make the transition seamless.
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12 reveal">
+                <p class="text-slate-600 dark:text-slate-400 mb-4">Still have questions?</p>
+                <a href="/Home#contact" class="px-8 py-3 rounded-full glass-btn font-semibold inline-flex items-center gap-2">
+                    <i class="fas fa-comments"></i> Chat with Our Team
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="py-32 px-6 relative">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl md:text-6xl font-serif font-bold mb-6 reveal">
+                Ready to <span class="text-gradient-soft">Get Started</span>?
+            </h2>
+            <p class="text-xl text-slate-600 dark:text-slate-300 mb-12 reveal">
+                Join 65+ happy clients who transformed their business with PRVER. Limited-time offer: Save up to 38% on all products this month.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-6 justify-center items-center reveal">
+                <a href="/Home#contact" class="px-10 py-4 rounded-full bg-gradient-to-r from-lavender to-purple-600 text-white font-semibold text-lg inline-flex items-center gap-3 group cta-pulse">
+                    Get Your Free Quote
+                    <i class="fas fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+                </a>
+                <a href="/portfolio" class="px-10 py-4 rounded-full glass-btn font-semibold text-lg">
+                    View Our Portfolio
+                </a>
+            </div>
+            
+            <!-- Urgency Badge -->
+            <div class="mt-8 inline-flex items-center gap-2 px-4 py-2 rounded-full bg-amber-100 dark:bg-amber-900/30 text-amber-700 dark:text-amber-400 text-sm font-medium reveal">
+                <i class="fas fa-clock"></i>
+                <span>Limited-time offer ends soon - Don't miss out!</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 px-6 border-t border-white/30 dark:border-white/10">
+        <div class="max-w-7xl mx-auto">
+            <div class="glass-panel p-8 rounded-3xl mb-12">
+                <div class="grid md:grid-cols-4 gap-8">
+                    <div class="md:col-span-2">
+                        <div class="text-2xl font-display font-bold mb-4">
+                            <img src="/img/logolight.png" class="h-12 w-auto" alt="PRVER Logo">
+                        </div>
+                        <p class="text-slate-600 dark:text-slate-400 mb-6 max-w-sm">Creating digital experiences that inspire, engage, and deliver results.</p>
+                        <div class="flex gap-4">
+                            <a href="#" class="w-10 h-10 rounded-full glass-btn flex items-center justify-center hover:text-lavender transition-colors">
+                                <i class="fab fa-x-twitter"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 rounded-full glass-btn flex items-center justify-center hover:text-lavender transition-colors">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 rounded-full glass-btn flex items-center justify-center hover:text-lavender transition-colors">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 rounded-full glass-btn flex items-center justify-center hover:text-lavender transition-colors">
+                                <i class="fab fa-tiktok"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h4 class="font-semibold mb-4">Quick Links</h4>
+                        <ul class="space-y-2 text-slate-600 dark:text-slate-400">
+                            <li><a href="/services" class="hover:text-lavender transition-colors">Services</a></li>
+                            <li><a href="/portfolio" class="hover:text-lavender transition-colors">Portfolio</a></li>
+                            <li><a href="/About" class="hover:text-lavender transition-colors">About</a></li>
+                            <li><a href="/Home#contact" class="hover:text-lavender transition-colors">Contact</a></li>
+                            <li><a href="/privacy" class="hover:text-lavender transition-colors">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h4 class="font-semibold mb-4">Newsletter</h4>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm mb-4">Get product updates and exclusive offers delivered to your inbox.</p>
+                        <form id="newsletter-form" class="flex gap-2">
+    <input 
+        type="email" 
+        name="user_email"
+        placeholder="Your email"
+        required
+        class="flex-1 px-4 py-2 rounded-lg bg-white/50 dark:bg-slate-800/50 border border-white/30 dark:border-white/10 focus:outline-none focus:border-lavender text-sm" 
+    />
+    <button type="submit"
+        class="px-4 py-2 rounded-lg bg-lavender text-white hover:bg-lavender/80 transition-colors">
+        <i class="fas fa-arrow-right"></i>
+    </button>
+</form>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center text-slate-500 text-sm">
+                <p>&copy; 2024 PRVER. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Theme Toggle -->
+    <button id="themeToggle" class="theme-toggle w-14 h-14 rounded-full glass-btn flex items-center justify-center text-xl shadow-lg">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <!-- AI Chat Widget -->
+    <div class="chat-widget">
+        <button id="chatToggle" class="w-14 h-14 rounded-full bg-gradient-to-r from-lavender to-purple-600 text-white shadow-lg hover:shadow-xl transition-all hover:scale-110 flex items-center justify-center">
+            <i class="fas fa-robot text-2xl"></i>
+        </button>
+        
+        <div id="chatWindow" class="chat-window">
+            <div class="chat-header">
+                <div>
+                    <h3 class="font-bold text-lg">PRVER AI Assistant</h3>
+                    <p class="text-sm opacity-90">How can I help you today?</p>
+                </div>
+                <button id="closeChat" class="text-white hover:opacity-80">
+                    <i class="fas fa-times text-xl"></i>
+                </button>
+            </div>
+            
+            <div class="chat-messages" id="chatMessages">
+                <div class="chat-message bot">
+                    Hello! I'm the PRVER AI assistant. I can help you with information about our services, pricing, portfolio, or any questions you have. What would you like to know?
+                </div>
+            </div>
+            
+            <div class="chat-input">
+                <input type="text" id="chatInput" placeholder="Type your message..." class="flex-1 px-4 py-2 rounded-lg border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 focus:outline-none focus:border-lavender">
+                <button id="sendChat" class="px-4 py-2 bg-lavender text-white rounded-lg hover:bg-lavender/90 transition-colors">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS Animation Library
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
+
+        // Check system preference for dark mode
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.body.classList.add('dark');
+            document.querySelector('#themeToggle i').classList.remove('fa-moon');
+            document.querySelector('#themeToggle i').classList.add('fa-sun');
+        }
+
+        // Theme Toggle
+        document.getElementById('themeToggle').addEventListener('click', () => {
+            document.body.classList.toggle('dark');
+            const icon = document.querySelector('#themeToggle i');
+            if (document.body.classList.contains('dark')) {
+                icon.classList.remove('fa-moon');
+                icon.classList.add('fa-sun');
+            } else {
+                icon.classList.remove('fa-sun');
+                icon.classList.add('fa-moon');
+            }
+        });
+
+        // Create Particles
+        const particlesContainer = document.getElementById('particles');
+        for (let i = 0; i < 30; i++) {
+            const particle = document.createElement('div');
+            particle.className = 'particle';
+            particle.style.left = Math.random() * 100 + 'vw';
+            particle.style.animationDelay = Math.random() * 15 + 's';
+            particle.style.animationDuration = (Math.random() * 10 + 10) + 's';
+            particlesContainer.appendChild(particle);
+        }
+
+        // Light Leaks on Scroll
+        window.addEventListener('scroll', () => {
+            const scrollPercent = window.scrollY / (document.body.scrollHeight - window.innerHeight);
+            const leak1 = document.getElementById('lightLeak1');
+            const leak2 = document.getElementById('lightLeak2');
+            leak1.style.opacity = Math.sin(scrollPercent * Math.PI) * 0.5;
+            leak2.style.opacity = Math.cos(scrollPercent * Math.PI) * 0.5;
+        });
+
+        // Reveal on Scroll
+        const revealElements = document.querySelectorAll('.reveal');
+        const revealOnScroll = () => {
+            revealElements.forEach((element) => {
+                const elementTop = element.getBoundingClientRect().top;
+                if (elementTop < window.innerHeight - 100) {
+                    element.classList.add('active');
+                }
+            });
+        };
+        window.addEventListener('scroll', revealOnScroll);
+        revealOnScroll();
+
+        // 3D Tilt Effect
+        const tiltCards = document.querySelectorAll('.tilt-card');
+        tiltCards.forEach(card => {
+            card.addEventListener('mousemove', (e) => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                const centerX = rect.width / 2;
+                const centerY = rect.height / 2;
+                const rotateX = ((y - centerY) / centerY) * -5;
+                const rotateY = ((x - centerX) / centerX) * 5;
+                card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.02, 1.02, 1.02)`;
+            });
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) scale3d(1, 1, 1)';
+            });
+        });
+
+        // FAQ Accordion
+        const faqQuestions = document.querySelectorAll('.faq-question');
+        faqQuestions.forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                const icon = question.querySelector('i');
+                answer.classList.toggle('active');
+                icon.classList.toggle('rotate-180');
+            });
+        });
+
+        // Mobile Menu - DROPDOWN STYLE (FIXED)
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+            
+            // Toggle icon
+            const icon = mobileMenuBtn.querySelector('i');
+            if (mobileMenu.classList.contains('active')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+
+        // Close mobile menu when clicking a link
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('active');
+                mobileMenuBtn.querySelector('i').classList.remove('fa-times');
+                mobileMenuBtn.querySelector('i').classList.add('fa-bars');
+            });
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!mobileMenu.contains(e.target) && !mobileMenuBtn.contains(e.target)) {
+                mobileMenu.classList.remove('active');
+                mobileMenuBtn.querySelector('i').classList.remove('fa-times');
+                mobileMenuBtn.querySelector('i').classList.add('fa-bars');
+            }
+        });
+
+        // Product Category Tabs
+        const categoryTabs = document.querySelectorAll('.category-tab');
+        const productCategories = document.querySelectorAll('.product-category');
+        
+        categoryTabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                // Update active tab
+                categoryTabs.forEach(t => t.classList.remove('active'));
+                tab.classList.add('active');
+                
+                // Filter products
+                const category = tab.dataset.category;
+                
+                if (category === 'all') {
+                    productCategories.forEach(cat => {
+                        cat.classList.remove('hidden');
+                    });
+                } else {
+                    productCategories.forEach(cat => {
+                        if (cat.dataset.category === category) {
+                            cat.classList.remove('hidden');
+                        } else {
+                            cat.classList.add('hidden');
+                        }
+                    });
+                }
+                
+                // Scroll to products section
+                document.getElementById('products').scrollIntoView({ behavior: 'smooth', block: 'start' });
+            });
+        });
+
+        // AI Chat Widget - GENERAL PRVER INFO
+        const chatToggle = document.getElementById('chatToggle');
+        const chatWindow = document.getElementById('chatWindow');
+        const closeChat = document.getElementById('closeChat');
+        const chatInput = document.getElementById('chatInput');
+        const sendChat = document.getElementById('sendChat');
+        const chatMessages = document.getElementById('chatMessages');
+
+        chatToggle.addEventListener('click', () => {
+            chatWindow.classList.toggle('active');
+        });
+
+        closeChat.addEventListener('click', () => {
+            chatWindow.classList.remove('active');
+        });
+
+        function sendMessage() {
+            const message = chatInput.value.trim();
+            if (message) {
+                // Add user message
+                const userMsg = document.createElement('div');
+                userMsg.className = 'chat-message user';
+                userMsg.textContent = message;
+                chatMessages.appendChild(userMsg);
+                chatInput.value = '';
+                chatMessages.scrollTop = chatMessages.scrollHeight;
+                
+                // Simulate bot response
+                setTimeout(() => {
+                    const botMsg = document.createElement('div');
+                    botMsg.className = 'chat-message bot';
+                    botMsg.textContent = getBotResponse(message);
+                    chatMessages.appendChild(botMsg);
+                    chatMessages.scrollTop = chatMessages.scrollHeight;
+                }, 1000);
+            }
+        }
+
+        // GENERAL PRVER Chatbot Responses
+        function getBotResponse(message) {
+            const lowerMsg = message.toLowerCase();
+            
+            // Greetings
+            if (lowerMsg.includes('hello') || lowerMsg.includes('hi') || lowerMsg.includes('hey')) {
+                return "Hello! 👋 Welcome to PRVER. I can help you with information about our services, pricing, portfolio, or any questions you have. What would you like to know?";
+            }
+            
+            // Services
+            if (lowerMsg.includes('service') || lowerMsg.includes('offer') || lowerMsg.includes('do')) {
+                return "We offer comprehensive digital solutions including:\n\n✨ Web Design\n✨ Development\n✨ SEO Setup\n✨ Maintenance\n✨ Brand Strategy\n✨ E-commerce\n\nWhich one interests you?";
+            }
+            
+            // Pricing
+            if (lowerMsg.includes('price') || lowerMsg.includes('cost') || lowerMsg.includes('much')) {
+                return "Our pricing varies by project:\n\n💻 Websites: $497 - $1,997\n📱 Apps: $2,497 - $9,997\n🛒 E-commerce: $1,497 - $5,997\n📈 SEO: $297 - $997/month\n\nWould you like a custom quote?";
+            }
+            
+            // Contact
+            if (lowerMsg.includes('contact') || lowerMsg.includes('email') || lowerMsg.includes('phone') || lowerMsg.includes('reach')) {
+                return "You can reach us through:\n\n📧 Email: mail@prver.com\n📞 Phone: +233 55 123 1300\n💬 WhatsApp: +1 (646) 864-4239\n\nWe typically respond within 1 hour!";
+            }
+            
+            // Timeline
+            if (lowerMsg.includes('time') || lowerMsg.includes('long') || lowerMsg.includes('week') || lowerMsg.includes('month')) {
+                return "Project timelines vary:\n\n📄 Simple sites: 1-2 weeks\n💼 Professional sites: 2-4 weeks\n🛒 E-commerce: 3-6 weeks\n📱 Custom apps: 6-12 weeks\n\nWe're known for delivering early!";
+            }
+            
+            // Portfolio/Work
+            if (lowerMsg.includes('portfolio') || lowerMsg.includes('work') || lowerMsg.includes('project') || lowerMsg.includes('example')) {
+                return "We've completed 72+ projects across various industries including restaurants, schools, hotels, hospitals, salons, e-commerce, and more. Check out our Work page to see our portfolio!";
+            }
+            
+            // Guarantee
+            if (lowerMsg.includes('guarantee') || lowerMsg.includes('refund') || lowerMsg.includes('satisfaction')) {
+                return "We offer a 30-day money-back guarantee on all products. If you're not satisfied, we'll work to make it right or provide a full refund. Zero risk!";
+            }
+            
+            // Ownership
+            if (lowerMsg.includes('own') || lowerMsg.includes('ownership') || lowerMsg.includes('code') || lowerMsg.includes('source')) {
+                return "Yes! You own 100% of the source code upon final payment. No licensing fees, no restrictions. It's yours forever!";
+            }
+            
+            // Mobile/Responsive
+            if (lowerMsg.includes('mobile') || lowerMsg.includes('phone') || lowerMsg.includes('responsive') || lowerMsg.includes('tablet')) {
+                return "100% yes! Every site we build is fully responsive and tested on actual devices. Over 60% of web traffic comes from mobile!";
+            }
+            
+            // Support
+            if (lowerMsg.includes('support') || lowerMsg.includes('help') || lowerMsg.includes('maintenance')) {
+                return "We offer 24/7 expert support and maintenance plans starting at $97/month. We also provide training so you can make simple updates yourself!";
+            }
+            
+            // Thank you
+            if (lowerMsg.includes('thank') || lowerMsg.includes('thanks')) {
+                return "You're welcome! 😊 Is there anything else I can help you with? Feel free to ask about our services, pricing, or anything else!";
+            }
+            
+            // Default
+            return "Thanks for your message! 🎯 Our team will get back to you soon. You can also:\n\n📧 Email: mail@prver.com\n📞 Call: +233 55 123 1300\n💬 WhatsApp: +1 (646) 864-4239\n\nWe respond within 1 hour!";
+        }
+
+        sendChat.addEventListener('click', sendMessage);
+        chatInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') sendMessage();
+        });
+
+
+   document.addEventListener('DOMContentLoaded', function() {
+  // Select the "View All Products" button and the "All Products" tab
+  const viewAllBtn = document.querySelector('a[href="#products"].cta-pulse');
+  const allProductsTab = document.querySelector('.category-tab[data-category="all"]');
+
+  // 1. Make the "View All Products" button act like the "All Products" tab
+  if (viewAllBtn && allProductsTab) {
+    viewAllBtn.addEventListener('click', function(event) {
+      event.preventDefault();      // Stop the link from jumping to #products
+      allProductsTab.click();      // Trigger the tab's filtering logic
+    });
+  }
+
+  // 2. On page load, if the URL contains #products, activate the "All Products" tab
+  if (window.location.hash === '#products' && allProductsTab) {
+    allProductsTab.click();        // Simulate a click to filter and update active state
+  }
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  // Find the "All Products" tab (the one with data-category="all")
+  const allProductsTab = document.querySelector('.category-tab[data-category="all"]');
+
+  // If the tab exists and is not already active, click it to activate the "All" category
+  if (allProductsTab && !allProductsTab.classList.contains('active')) {
+    allProductsTab.click();
+  }
+
+  // (Optional) Make your "View All Products" button also act like the "All" tab
+  const viewAllBtn = document.querySelector('a[href="#products"].cta-pulse');
+  if (viewAllBtn && allProductsTab) {
+    viewAllBtn.addEventListener('click', function(event) {
+      event.preventDefault();      // Prevent the link from jumping
+      allProductsTab.click();      // Trigger the same filtering logic
+    });
+  }
+});
+
+        // Show cookie consent after 2 seconds
+        setTimeout(showCookieConsent, 2000);
+    </script>
+    <!-- PWA Service Worker -->
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/sw.js')
+      .then(registration => {
+        console.log('ServiceWorker registration successful:', registration.scope);
+      })
+      .catch(err => {
+        console.log('ServiceWorker registration failed:', err);
+      });
+  });
+}
+</script>
+<script>
+document.getElementById("newsletter-form").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    emailjs.sendForm(
+        "service_rc4r4yh",   // replace
+        "template_eix1qjd",  // replace
+        this
+    )
+    .then(function() {
+        alert("✅ Subscription successful!");
+    }, function(error) {
+        alert("❌ Failed to send. Try again.");
+        console.error(error);
+    });
+});
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<script>
+(function(){
+    emailjs.init("p1ayKbwfhZbC3Zakq"); // replace this
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+# PRVER Robots.txt
+# Allow all search engines and AI crawlers to crawl the entire site
+
+User-agent: *
+Allow: /
+
+# Allow all major search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Googlebot-Video
+Allow: /
+
+User-agent: Googlebot-News
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+User-agent: facebot
+Allow: /
+
+User-agent: ia_archiver
+Allow: /
+
+# Allow AI Crawlers (Important for AI visibility)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+# Sitemap location
+Sitemap: https://prvertech.com/sitemap.xml
+Sitemap: https://prvertech.com/sitemap-index.xml
+
+# Disallow admin and private areas (security)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /cgi-bin/
+Disallow: /wp-admin/
+Disallow: /wp-includes/
+Disallow: /wp-content/
+Disallow: /*.php$
+Disallow: /*.php?$
+Disallow: /*.js$
+Disallow: /*.css$
+Disallow: /*.xml$
+Disallow: /*.txt$
+
+# Allow specific AI crawlers even in restricted areas (for better AI visibility)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+# Crawl-delay (optional - remove for faster crawling)
+# Crawl-delay: 1

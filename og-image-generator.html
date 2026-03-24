@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRVER</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            width: 1200px;
+            height: 630px;
+            overflow: hidden;
+            background: linear-gradient(-45deg, #f3e8ff, #d1fae5, #fed7b7, #bae6fd, #f3e8ff);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+        }
+        
+        @keyframes gradient {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+        
+        .orb {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(80px);
+            opacity: 0.4;
+        }
+        
+        .orb-1 {
+            width: 400px;
+            height: 400px;
+            background: linear-gradient(135deg, #A78BFA, #C4B5FD);
+            top: -100px;
+            left: -100px;
+        }
+        
+        .orb-2 {
+            width: 300px;
+            height: 300px;
+            background: linear-gradient(135deg, #D1FAE5, #A7F3D0);
+            bottom: 10%;
+            right: -50px;
+        }
+    </style>
+</head>
+<body class="relative">
+    <!-- Background Orbs -->
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    
+    <!-- Main Content -->
+    <div class="relative z-10 h-full flex flex-col justify-center px-20">
+        <!-- Logo Placeholder -->
+        <div class="mb-8">
+            <div class="text-6xl font-display font-bold text-purple-600">PRVER</div>
+        </div>
+        
+        <!-- Main Title -->
+        <h1 class="text-7xl font-playfair font-bold text-slate-900 mb-6 leading-tight">
+            Powered Digital Solutions
+        </h1>
+        
+        <!-- Description -->
+        <p class="text-3xl text-slate-700 mb-8 leading-relaxed">
+            Web Development • AI Integration • Digital Transformation • And Many More
+        </p>
+        
+        <!-- Tagline -->
+        <p class="text-2xl text-purple-600 font-semibold">
+            Transform Your Business Today
+        </p>
+        
+        <!-- Bottom Bar -->
+        <div class="absolute bottom-12 left-20 right-20 flex justify-between items-center">
+            <div class="text-xl text-slate-600">prvertech.com</div>
+            <div class="flex gap-4">
+                <div class="w-12 h-12 rounded-full bg-purple-500 flex items-center justify-center text-white text-xl">P</div>
+            </div>
+        </div>
+    </div>
+    <!-- PWA Service Worker -->
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/sw.js')
+      .then(registration => {
+        console.log('ServiceWorker registration successful:', registration.scope);
+      })
+      .catch(err => {
+        console.log('ServiceWorker registration failed:', err);
+      });
+  });
+}
+</script>
+</body>
+</html>

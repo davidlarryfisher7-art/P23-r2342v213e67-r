@@ -1,0 +1,1098 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRVER - Site Under Maintenance</title>
+    <meta name="description" content="PRVER is currently undergoing scheduled maintenance. We'll be back soon with exciting updates!">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="icon" href="img/Ico.png" type="image/x-icon">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500:600:700&family=Space+Grotesk:wght@400;500:600:700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom Config -->
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                        display: ['Space Grotesk', 'sans-serif'],
+                    },
+                    colors: {
+                        lavender: '#A78BFA',
+                        mint: '#D1FAE5',
+                        peach: '#FED7B7',
+                        sky: '#BAE6FD',
+                        pearl: '#FDF8F3',
+                    },
+                    animation: {
+                        'gradient': 'gradient 20s ease infinite',
+                        'float': 'float 8s ease-in-out infinite',
+                        'pulse-glow': 'pulse-glow 3s ease-in-out infinite',
+                        'shimmer': 'shimmer 2.5s linear infinite',
+                    },
+                    keyframes: {
+                        gradient: {
+                            '0%, 100%': { backgroundPosition: '0% 50%' },
+                            '50%': { backgroundPosition: '100% 50%' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0) rotate(0deg)' },
+                            '50%': { transform: 'translateY(-25px) rotate(5deg)' },
+                        },
+                        'pulse-glow': {
+                            '0%, 100%': { 
+                                opacity: 0.6,
+                                boxShadow: '0 0 40px rgba(139, 92, 246, 0.4)'
+                            },
+                            '50%': { 
+                                opacity: 1,
+                                boxShadow: '0 0 80px rgba(139, 92, 246, 0.7)'
+                            },
+                        },
+                        shimmer: {
+                            '0%': { backgroundPosition: '-200% 0' },
+                            '100%': { backgroundPosition: '200% 0' },
+                        },
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        /* Base Styles */
+        :root {
+            --cursor-x: 0;
+            --cursor-y: 0;
+        }
+        
+        /* Premium Gradient Background - Auto Theme */
+        body {
+            background: linear-gradient(-45deg, 
+                #f3e8ff 0%, 
+                #e9d5ff 15%,
+                #d1fae5 30%,
+                #fed7b7 50%,
+                #bae6fd 70%,
+                #e9d5ff 85%,
+                #f3e8ff 100%
+            );
+            background-size: 400% 400%;
+            animation: gradient 25s ease infinite;
+            color: #1e293b;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            overflow-x: hidden;
+            position: relative;
+            font-family: 'Inter', sans-serif;
+        }
+        
+        body.dark {
+            background: linear-gradient(-45deg, 
+                #0f172a 0%, 
+                #1e1b4b 15%,
+                #1e293b 30%,
+                #334155 50%,
+                #1e293b 70%,
+                #1e1b4b 85%,
+                #0f172a 100%
+            );
+            background-size: 400% 400%;
+            animation: gradient 25s ease infinite;
+            color: #f1f5f9;
+        }
+        
+        /* Enhanced Floating Orbs */
+        .orb {
+            position: fixed;
+            border-radius: 50%;
+            filter: blur(100px);
+            opacity: 0.5;
+            z-index: -1;
+            animation: float 22s infinite ease-in-out;
+            will-change: transform;
+        }
+        
+        .orb-1 {
+            width: 600px;
+            height: 600px;
+            background: linear-gradient(135deg, #A78BFA, #C4B5FD, #8B5CF6);
+            top: -200px;
+            left: -200px;
+            animation-duration: 35s;
+        }
+        
+        .orb-2 {
+            width: 500px;
+            height: 500px;
+            background: linear-gradient(135deg, #D1FAE5, #A7F3D0, #6EE7B7);
+            bottom: 15%;
+            right: -150px;
+            animation-delay: -7s;
+            animation-duration: 40s;
+        }
+        
+        .orb-3 {
+            width: 400px;
+            height: 400px;
+            background: linear-gradient(135deg, #FED7B7, #FDBA74, #F97316);
+            top: 45%;
+            left: 65%;
+            animation-delay: -14s;
+            animation-duration: 38s;
+        }
+        
+        .orb-4 {
+            width: 550px;
+            height: 550px;
+            background: linear-gradient(135deg, #BAE6FD, #7DD3FC, #38BDF8);
+            bottom: -200px;
+            left: 25%;
+            animation-delay: -21s;
+            animation-duration: 32s;
+        }
+        
+        /* Magical Particles */
+        .particles-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+        }
+        
+        .particle {
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.3) 100%);
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 1;
+            animation: particleFloat 22s infinite linear;
+            box-shadow: 0 0 12px rgba(255, 255, 255, 0.6), 0 0 24px rgba(139, 92, 246, 0.4);
+            will-change: transform, opacity;
+        }
+        
+        @keyframes particleFloat {
+            0% {
+                transform: translateY(100vh) translateX(0) rotate(0deg) scale(1);
+                opacity: 0;
+            }
+            8% { opacity: 1; }
+            92% { opacity: 1; }
+            100% {
+                transform: translateY(-100vh) translateX(200px) rotate(1080deg) scale(0.4);
+                opacity: 0;
+            }
+        }
+        
+        /* Light Leaks - Subtle Atmospheric Glow */
+        .light-leak {
+            position: fixed;
+            width: 800px;
+            height: 800px;
+            background: radial-gradient(circle, rgba(255,255,255,0.5) 0%, rgba(255,255,255,0.2) 40%, transparent 75%);
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: -1;
+            opacity: 0;
+            transition: opacity 2s ease;
+            filter: blur(80px);
+            animation: lightLeakPulse 10s ease-in-out infinite;
+        }
+        
+        @keyframes lightLeakPulse {
+            0%, 100% { opacity: 0.25; transform: scale(1); }
+            50% { opacity: 0.5; transform: scale(1.08); }
+        }
+        
+        /* Premium Glassmorphism Card */
+        .maintenance-card {
+            background: rgba(255, 255, 255, 0.75);
+            backdrop-filter: blur(40px) saturate(200%);
+            -webkit-backdrop-filter: blur(40px) saturate(200%);
+            border: 1px solid rgba(255, 255, 255, 0.7);
+            box-shadow: 
+                0 20px 60px rgba(31, 38, 135, 0.15),
+                inset 0 1px 0 0 rgba(255, 255, 255, 0.6);
+            border-radius: 2.5rem;
+            padding: 3rem;
+            max-width: 650px;
+            width: 90%;
+            text-align: center;
+            position: relative;
+            z-index: 10;
+            animation: cardEntrance 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+        
+        body.dark .maintenance-card {
+            background: rgba(15, 23, 42, 0.75);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 
+                0 20px 60px rgba(0, 0, 0, 0.4),
+                inset 0 1px 0 0 rgba(255, 255, 255, 0.15);
+        }
+        
+        @keyframes cardEntrance {
+            from {
+                opacity: 0;
+                transform: scale(0.92) translateY(40px);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1) translateY(0);
+            }
+        }
+        
+        /* Logo Animation */
+        .logo-container {
+            margin-bottom: 2.5rem;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .logo {
+            width: 180px;
+            height: auto;
+            animation: logoPulse 4s ease-in-out infinite;
+            filter: drop-shadow(0 0 40px rgba(139, 92, 246, 0.5));
+            transition: filter 0.4s ease;
+        }
+        
+        .logo:hover {
+            filter: drop-shadow(0 0 70px rgba(139, 92, 246, 0.8));
+        }
+        
+        @keyframes logoPulse {
+            0%, 100% {
+                transform: scale(1) rotate(0deg);
+                filter: drop-shadow(0 0 40px rgba(139, 92, 246, 0.5));
+            }
+            50% {
+                transform: scale(1.06) rotate(2deg);
+                filter: drop-shadow(0 0 70px rgba(139, 92, 246, 0.8));
+            }
+        }
+        
+        /* Logo Particles */
+        .logo-particles {
+            position: absolute;
+            top: -10px;
+            right: -25px;
+            width: 70px;
+            height: 70px;
+            animation: particlesFloat 5s ease-in-out infinite;
+            pointer-events: none;
+        }
+        
+        @keyframes particlesFloat {
+            0%, 100% {
+                transform: translateY(0) rotate(0deg);
+            }
+            50% {
+                transform: translateY(-20px) rotate(12deg);
+            }
+        }
+        
+        .particle-small {
+            position: absolute;
+            background: linear-gradient(135deg, #8B5CF6, #A78BFA, #C4B5FD);
+            border-radius: 3px;
+            animation: particleSmallFloat 3s ease-in-out infinite;
+            box-shadow: 0 0 18px rgba(139, 92, 246, 0.6);
+        }
+        
+        .particle-small:nth-child(1) {
+            width: 14px;
+            height: 14px;
+            top: 0;
+            left: 0;
+            animation-delay: 0s;
+        }
+        .particle-small:nth-child(2) {
+            width: 10px;
+            height: 10px;
+            top: 18px;
+            right: 5px;
+            animation-delay: 0.5s;
+        }
+        .particle-small:nth-child(3) {
+            width: 12px;
+            height: 12px;
+            bottom: 8px;
+            left: 12px;
+            animation-delay: 1s;
+        }
+        .particle-small:nth-child(4) {
+            width: 8px;
+            height: 8px;
+            top: 28px;
+            left: 8px;
+            animation-delay: 1.5s;
+        }
+        
+        @keyframes particleSmallFloat {
+            0%, 100% {
+                transform: translateY(0) scale(1) rotate(0deg);
+                opacity: 1;
+            }
+            50% {
+                transform: translateY(-25px) scale(1.3) rotate(180deg);
+                opacity: 0.75;
+            }
+        }
+        
+        /* Maintenance Icon */
+        .maintenance-icon {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto 2rem;
+            position: relative;
+        }
+        
+        .maintenance-icon::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #8B5CF6, #A78BFA, #C4B5FD);
+            animation: pulse-glow 3s ease-in-out infinite;
+        }
+        
+        .maintenance-icon::after {
+            content: '🔧';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 3rem;
+            z-index: 1;
+        }
+        
+        /* Typography */
+        .maintenance-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1.25rem;
+            line-height: 1.2;
+        }
+        
+        .maintenance-subtitle {
+            font-size: 1.25rem;
+            color: #64748b;
+            margin-bottom: 2rem;
+            line-height: 1.7;
+        }
+        
+        body.dark .maintenance-subtitle {
+            color: #94a3b8;
+        }
+        
+        /* Countdown Timer */
+        .countdown {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin: 2rem 0;
+            flex-wrap: wrap;
+        }
+        
+        .countdown-item {
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            border-radius: 1rem;
+            padding: 1rem;
+            min-width: 80px;
+            transition: all 0.3s ease;
+        }
+        
+        body.dark .countdown-item {
+            background: rgba(15, 23, 42, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+        }
+        
+        .countdown-item:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 30px rgba(139, 92, 246, 0.2);
+        }
+        
+        .countdown-number {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 2rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #8B5CF6, #A78BFA);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .countdown-label {
+            font-size: 0.875rem;
+            color: #64748b;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-top: 0.25rem;
+        }
+        
+        body.dark .countdown-label {
+            color: #94a3b8;
+        }
+        
+        /* Progress Bar */
+        .progress-container {
+            margin: 2rem 0;
+        }
+        
+        .progress-bar {
+            height: 8px;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 4px;
+            overflow: hidden;
+            position: relative;
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+        }
+        
+        body.dark .progress-bar {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+        }
+        
+        .progress-fill {
+            height: 100%;
+            width: 0%;
+            background: linear-gradient(90deg, #8B5CF6, #A78BFA, #C4B5FD);
+            border-radius: 4px;
+            animation: progressFill 120s linear forwards;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .progress-fill::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+            animation: shimmer 2.5s infinite;
+        }
+        
+        @keyframes progressFill {
+            from { width: 0%; }
+            to { width: 100%; }
+        }
+        
+        .progress-text {
+            font-size: 0.875rem;
+            color: #64748b;
+            margin-top: 0.5rem;
+            text-align: center;
+        }
+        
+        body.dark .progress-text {
+            color: #94a3b8;
+        }
+        
+        /* Contact Section */
+        .contact-section {
+            margin-top: 2.5rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        
+        body.dark .contact-section {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .contact-title {
+            font-size: 1.125rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+        
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+        
+        .contact-link {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #64748b;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+            padding: 0.5rem 1rem;
+            border-radius: 0.75rem;
+            background: rgba(255, 255, 255, 0.4);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+        }
+        
+        body.dark .contact-link {
+            color: #94a3b8;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+        }
+        
+        .contact-link:hover {
+            color: #8B5CF6;
+            background: rgba(139, 92, 246, 0.15);
+            transform: translateY(-2px);
+            border-color: rgba(139, 92, 246, 0.4);
+        }
+        
+        body.dark .contact-link:hover {
+            background: rgba(139, 92, 246, 0.25);
+        }
+        
+        /* Social Links */
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+        
+        .social-link {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.5);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.6);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #64748b;
+            font-size: 1.25rem;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+        
+        body.dark .social-link {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            color: #94a3b8;
+        }
+        
+        .social-link:hover {
+            background: linear-gradient(135deg, #8B5CF6, #A78BFA);
+            color: white;
+            transform: translateY(-4px) scale(1.1);
+            box-shadow: 0 10px 30px rgba(139, 92, 246, 0.4);
+            border-color: transparent;
+        }
+        
+        /* Footer */
+        .footer {
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.3);
+            text-align: center;
+            font-size: 0.875rem;
+            color: #64748b;
+        }
+        
+        body.dark .footer {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #94a3b8;
+        }
+        
+        /* Theme Toggle */
+        .theme-toggle {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.7);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.25rem;
+            color: #64748b;
+            cursor: pointer;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            z-index: 100;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+        }
+        
+        body.dark .theme-toggle {
+            background: rgba(15, 23, 42, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: #94a3b8;
+        }
+        
+        .theme-toggle:hover {
+            transform: scale(1.1) rotate(15deg);
+            background: rgba(255, 255, 255, 0.8);
+            color: #8B5CF6;
+        }
+        
+        body.dark .theme-toggle:hover {
+            background: rgba(15, 23, 42, 0.8);
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .maintenance-card {
+                padding: 2rem;
+                border-radius: 2rem;
+            }
+            
+            .maintenance-title {
+                font-size: 2rem;
+            }
+            
+            .maintenance-subtitle {
+                font-size: 1.1rem;
+            }
+            
+            .countdown {
+                gap: 0.75rem;
+            }
+            
+            .countdown-item {
+                min-width: 70px;
+                padding: 0.875rem;
+            }
+            
+            .countdown-number {
+                font-size: 1.75rem;
+            }
+            
+            .logo {
+                width: 150px;
+            }
+            
+            .maintenance-icon {
+                width: 80px;
+                height: 80px;
+            }
+            
+            .maintenance-icon::after {
+                font-size: 2.5rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .maintenance-card {
+                padding: 1.75rem;
+                width: 95%;
+            }
+            
+            .maintenance-title {
+                font-size: 1.75rem;
+            }
+            
+            .maintenance-subtitle {
+                font-size: 1rem;
+            }
+            
+            .countdown {
+                gap: 0.5rem;
+            }
+            
+            .countdown-item {
+                min-width: 60px;
+                padding: 0.75rem;
+            }
+            
+            .countdown-number {
+                font-size: 1.5rem;
+            }
+            
+            .countdown-label {
+                font-size: 0.75rem;
+            }
+            
+            .logo {
+                width: 130px;
+            }
+            
+            .contact-links {
+                gap: 1rem;
+            }
+            
+            .contact-link {
+                padding: 0.4rem 0.875rem;
+                font-size: 0.85rem;
+            }
+            
+            .social-link {
+                width: 44px;
+                height: 44px;
+                font-size: 1.1rem;
+            }
+        }
+        
+        /* Reduced Motion Preference */
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+            .orb, .particle, .light-leak {
+                animation: none !important;
+            }
+        }
+        
+        /* High Contrast Mode */
+        @media (prefers-contrast: high) {
+            :root {
+                --logo-glow: rgba(139, 92, 246, 0.8);
+                --logo-glow-strong: rgba(139, 92, 246, 1);
+            }
+            .maintenance-card {
+                border-width: 2px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Floating Orbs - Premium Background -->
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+    <div class="orb orb-4"></div>
+    
+    <!-- Magical Particles -->
+    <div class="particles-container" id="particles"></div>
+    
+    <!-- Atmospheric Light Leaks -->
+    <div class="light-leak" id="lightLeak1" style="top: 25%; left: 15%;"></div>
+    <div class="light-leak" id="lightLeak2" style="top: 65%; right: 20%;"></div>
+    
+    <!-- Main Maintenance Card -->
+    <div class="maintenance-card">
+        <!-- Logo with Particles -->
+        <div class="logo-container">
+            <img src="img/logolight.png" alt="PRVER Logo" class="logo">
+            <div class="logo-particles">
+                <div class="particle-small"></div>
+                <div class="particle-small"></div>
+                <div class="particle-small"></div>
+                <div class="particle-small"></div>
+            </div>
+        </div>
+        
+        <!-- Maintenance Icon -->
+        <div class="maintenance-icon"></div>
+        
+        <!-- Title & Message -->
+        <h1 class="maintenance-title">We're Making Things Better</h1>
+        <p class="maintenance-subtitle">
+            Our website is currently undergoing scheduled maintenance to bring you an even better experience. 
+            We apologize for any inconvenience and appreciate your patience.
+        </p>
+        
+        <!-- Countdown Timer -->
+        <div class="countdown" id="countdown">
+            <div class="countdown-item">
+                <div class="countdown-number" id="hours">02</div>
+                <div class="countdown-label">Hours</div>
+            </div>
+            <div class="countdown-item">
+                <div class="countdown-number" id="minutes">30</div>
+                <div class="countdown-label">Minutes</div>
+            </div>
+            <div class="countdown-item">
+                <div class="countdown-number" id="seconds">00</div>
+                <div class="countdown-label">Seconds</div>
+            </div>
+        </div>
+        
+        <!-- Progress Bar -->
+        <div class="progress-container">
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+            <p class="progress-text">Maintenance in progress • Estimated completion in <span id="eta-text">2 hours</span></p>
+        </div>
+        
+        <!-- Contact Section -->
+        <div class="contact-section">
+            <h3 class="contact-title">Need urgent assistance?</h3>
+            <div class="contact-links">
+                <a href="mailto:mail@prver.com" class="contact-link">
+                    <i class="fas fa-envelope"></i>
+                    <span>mail@prver.com</span>
+                </a>
+                <a href="tel:+233551231300" class="contact-link">
+                    <i class="fas fa-phone"></i>
+                    <span>+233 55 123 1300</span>
+                </a>
+                <a href="https://wa.me/16468644239" target="_blank" rel="noopener" class="contact-link">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>WhatsApp</span>
+                </a>
+            </div>
+        </div>
+        
+        <!-- Social Links -->
+        <div class="social-links">
+            <a href="https://twitter.com/prver" target="_blank" rel="noopener" class="social-link" aria-label="Twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://instagram.com/prver" target="_blank" rel="noopener" class="social-link" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://facebook.com/prver" target="_blank" rel="noopener" class="social-link" aria-label="Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://linkedin.com/company/prver" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 PRVER. All rights reserved. • <a href="privacy.html" class="hover:text-lavender transition-colors">Privacy Policy</a></p>
+    </footer>
+    
+    <!-- Theme Toggle Button -->
+    <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <script>
+        // ============================================
+        // AUTO THEME DETECTION & APPLICATION
+        // ============================================
+        function detectAndApplyTheme() {
+            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            if (prefersDark) {
+                document.body.classList.add('dark');
+                const themeIcon = document.querySelector('#themeToggle i');
+                if (themeIcon) {
+                    themeIcon.classList.remove('fa-moon');
+                    themeIcon.classList.add('fa-sun');
+                }
+            }
+        }
+        
+        // Apply theme immediately
+        detectAndApplyTheme();
+        
+        // Listen for real-time theme changes
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+            document.body.classList.toggle('dark', e.matches);
+            const themeIcon = document.querySelector('#themeToggle i');
+            if (themeIcon) {
+                if (e.matches) {
+                    themeIcon.classList.remove('fa-moon');
+                    themeIcon.classList.add('fa-sun');
+                } else {
+                    themeIcon.classList.remove('fa-sun');
+                    themeIcon.classList.add('fa-moon');
+                }
+            }
+        });
+
+        // Theme Toggle (manual override)
+        document.getElementById('themeToggle').addEventListener('click', () => {
+            document.body.classList.toggle('dark');
+            const icon = document.querySelector('#themeToggle i');
+            if (document.body.classList.contains('dark')) {
+                icon.classList.remove('fa-moon');
+                icon.classList.add('fa-sun');
+            } else {
+                icon.classList.remove('fa-sun');
+                icon.classList.add('fa-moon');
+            }
+        });
+
+        // ============================================
+        // ENHANCED PARTICLES SYSTEM
+        // ============================================
+        function createParticles() {
+            const container = document.getElementById('particles');
+            const particleCount = window.innerWidth < 480 ? 20 : 
+                                 window.innerWidth < 768 ? 30 : 45;
+            
+            for (let i = 0; i < particleCount; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                
+                // Random horizontal position
+                particle.style.left = Math.random() * 100 + 'vw';
+                
+                // Random animation properties for organic movement
+                particle.style.animationDelay = Math.random() * 22 + 's';
+                particle.style.animationDuration = (Math.random() * 15 + 15) + 's';
+                
+                // Random size variation (2-6px)
+                const size = Math.random() * 4 + 2;
+                particle.style.width = size + 'px';
+                particle.style.height = size + 'px';
+                
+                container.appendChild(particle);
+            }
+        }
+
+        // ============================================
+        // LIGHT LEAKS ANIMATION
+        // ============================================
+        function animateLightLeaks() {
+            const leak1 = document.getElementById('lightLeak1');
+            const leak2 = document.getElementById('lightLeak2');
+            
+            setInterval(() => {
+                const time = Date.now() * 0.001;
+                leak1.style.opacity = Math.sin(time * 0.7) * 0.2 + 0.3;
+                leak2.style.opacity = Math.cos(time * 0.5) * 0.2 + 0.3;
+            }, 100);
+        }
+
+        // ============================================
+        // COUNTDOWN TIMER
+        // ============================================
+        function startCountdown() {
+            // Set maintenance end time (2.5 hours from now)
+            const maintenanceDuration = 2.5 * 60 * 60 * 1000; // 2.5 hours in ms
+            const endTime = Date.now() + maintenanceDuration;
+            
+            const hoursEl = document.getElementById('hours');
+            const minutesEl = document.getElementById('minutes');
+            const secondsEl = document.getElementById('seconds');
+            const etaText = document.getElementById('eta-text');
+            const progressFill = document.getElementById('progressFill');
+            
+            function updateCountdown() {
+                const now = Date.now();
+                const remaining = endTime - now;
+                
+                if (remaining <= 0) {
+                    // Maintenance complete
+                    hoursEl.textContent = '00';
+                    minutesEl.textContent = '00';
+                    secondsEl.textContent = '00';
+                    etaText.textContent = 'any moment';
+                    progressFill.style.width = '100%';
+                    return;
+                }
+                
+                // Calculate time components
+                const hours = Math.floor(remaining / (1000 * 60 * 60));
+                const minutes = Math.floor((remaining % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((remaining % (1000 * 60)) / 1000);
+                
+                // Update display with leading zeros
+                hoursEl.textContent = hours.toString().padStart(2, '0');
+                minutesEl.textContent = minutes.toString().padStart(2, '0');
+                secondsEl.textContent = seconds.toString().padStart(2, '0');
+                
+                // Update ETA text
+                if (hours > 0) {
+                    etaText.textContent = `${hours} hour${hours > 1 ? 's' : ''}`;
+                } else if (minutes > 0) {
+                    etaText.textContent = `${minutes} minute${minutes > 1 ? 's' : ''}`;
+                } else {
+                    etaText.textContent = `${seconds} second${seconds > 1 ? 's' : ''}`;
+                }
+                
+                // Update progress bar
+                const progress = ((maintenanceDuration - remaining) / maintenanceDuration) * 100;
+                progressFill.style.width = `${Math.min(progress, 100)}%`;
+                
+                // Continue updating
+                requestAnimationFrame(updateCountdown);
+            }
+            
+            // Start the countdown
+            updateCountdown();
+        }
+
+        // ============================================
+        // PERFORMANCE OPTIMIZATIONS
+        // ============================================
+        
+        // Pause animations when tab is not visible (saves battery/CPU)
+        document.addEventListener('visibilitychange', () => {
+            if (document.hidden) {
+                document.querySelectorAll('.orb, .particle, .light-leak').forEach(el => {
+                    el.style.animationPlayState = 'paused';
+                });
+            } else {
+                document.querySelectorAll('.orb, .particle, .light-leak').forEach(el => {
+                    el.style.animationPlayState = 'running';
+                });
+            }
+        });
+
+        // Reduce particle count on low-end devices
+        if (navigator.hardwareConcurrency && navigator.hardwareConcurrency < 4) {
+            // Device has fewer CPU cores, reduce animations
+            document.addEventListener('DOMContentLoaded', () => {
+                const particles = document.querySelectorAll('.particle');
+                particles.forEach((p, i) => {
+                    if (i > 15) p.remove();
+                });
+            });
+        }
+
+        // ============================================
+        // INITIALIZATION
+        // ============================================
+        document.addEventListener('DOMContentLoaded', () => {
+            // Initialize all features
+            createParticles();
+            animateLightLeaks();
+            startCountdown();
+            
+            // Add subtle entrance animation delay for elements
+            setTimeout(() => {
+                document.querySelectorAll('.countdown-item').forEach((item, index) => {
+                    item.style.animation = `fadeInUp 0.5s ease forwards ${index * 0.15}s`;
+                    item.style.opacity = '0';
+                    item.style.transform = 'translateY(20px)';
+                });
+            }, 300);
+        });
+
+        // Add fadeInUp keyframe dynamically
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes fadeInUp {
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+</body>
+</html>

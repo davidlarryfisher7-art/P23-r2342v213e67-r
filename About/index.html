@@ -1,0 +1,2098 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | PRVER - Digital Architecture Studio</title>
+    <meta name="description"
+        content="Learn about PRVER's mission, values, and the team behind your digital transformation.">
+    <meta name="title" content="PRVER | Web Development Company | Custom Websites & AI Solutions">
+    <meta name="description"
+        content="PRVER is the world's leading web development company. We build custom websites, AI solutions, and e-commerce platforms. Get a free quote today!">
+    <meta name="keywords"
+        content="web development, web design, AI solutions, e-commerce, SEO, web development company, custom websites">
+    <meta name="author" content="PRVER">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <link rel="icon" href="/img/Ico.png" type="image/x-icon">
+
+    <link rel="manifest" href="manifest.json">
+
+<!-- Apple PWA Support -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="PRVER">
+<link rel="apple-touch-icon" href="/img/Ico.png">
+
+<!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://prvertech.com/">
+    <meta property="og:title" content="PRVER | #1 Web Development Company">
+    <meta property="og:description" content="World's leading web development company. Custom websites, AI solutions & e-commerce.">
+    <meta property="og:image" content="https://prvertech.com/img/og-image.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://prvertech.com/">
+    <meta property="twitter:title" content="PRVER | #1 Web Development Company">
+    <meta property="twitter:description" content="World's leading web development company. Custom websites, AI solutions & e-commerce.">
+    <meta property="twitter:image" content="https://prvertech.com/img/og-image.jpg">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://prvertech.com/">
+    
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "PRVER",
+        "image": "https://prvertech.com/img/logo.png",
+        "description": "World's leading web development company specializing in custom websites, AI solutions, and e-commerce platforms",
+        "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "USA",
+            "addressRegion": "CA",
+            "addressRegion": "GH",
+            "addressRegion": "DE",
+            "addressRegion": "AU",
+        },
+        "priceRange": "$$",
+        "telephone": "+233551231300",
+        "url": "https://prvertech.com",
+        "openingHours": "Mo-Su 00:00-23:59",
+        "sameAs": [
+            "https://facebook.com/prver",
+            "https://x.com/prver",
+            "https://instagram.com/prver",
+            "https://linkedin.com/company/prver"
+        ]
+    }
+    </script>
+
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="fonts/your-font.woff2" as="font" crossorigin>
+    <link rel="preload" href="css/critical.css" as="style">
+    <link rel="preload" href="/img/logo.webp" as="image">
+
+    <!-- Defer Non-Critical JS -->
+    <script src="js/non-critical.js" defer></script>
+
+
+    <!-- Fonts (Fixed: removed trailing spaces) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind CSS (Fixed: removed trailing spaces) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Icons (Fixed: removed trailing spaces) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom Config -->
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                        display: ['Space Grotesk', 'sans-serif'],
+                    },
+                    colors: {
+                        lavender: '#A78BFA',
+                        mint: '#D1FAE5',
+                        peach: '#FED7B7',
+                        sky: '#BAE6FD',
+                        pearl: '#FDF8F3',
+                    },
+                    animation: {
+                        'gradient': 'gradient 15s ease infinite',
+                        'float': 'float 6s ease-in-out infinite',
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'shimmer': 'shimmer 2s linear infinite',
+                        'marquee': 'marquee 30s linear infinite',
+                        'bounce-slow': 'bounce 3s infinite',
+                    },
+                    keyframes: {
+                        gradient: {
+                            '0%, 100%': { backgroundPosition: '0% 50%' },
+                            '50%': { backgroundPosition: '100% 50%' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-20px)' },
+                        },
+                        shimmer: {
+                            '0%': { backgroundPosition: '-1000px 0' },
+                            '100%': { backgroundPosition: '1000px 0' },
+                        },
+                        marquee: {
+                            '0%': { transform: 'translateX(0)' },
+                            '100%': { transform: 'translateX(-50%)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+ <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "PRVER",
+        "image": "https://prvertech.com/img/logo.png",
+        "@id": "https://prvertech.com",
+        "url": "https://prvertech.com",
+        "telephone": "+233551231300",
+        "priceRange": "$$",
+        "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "GH"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "5.6037",
+            "longitude": "-0.1870"
+        },
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+            "opens": "00:00",
+            "closes": "23:59"
+        },
+        "sameAs": [
+            "https://www.facebook.com/prver",
+            "https://x.com/prver",
+            "https://www.instagram.com/prver",
+            "https://www.linkedin.com/company/prver"
+        ],
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5.0",
+            "reviewCount": "127"
+        }
+    }
+    </script>
+    
+    <!-- Service Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "serviceType": "Web Development",
+        "provider": {
+            "@type": "ProfessionalService",
+            "name": "PRVER"
+        },
+        "areaServed": {
+            "@type": "Country",
+            "name": "Worldwide"
+        },
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Web Development Services",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Custom Web Development"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "E-commerce Development"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "AI Solutions"
+                    }
+                }
+            ]
+        }
+    }
+    </script>
+    
+    <!-- FAQ Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What makes PRVER the best web development company?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "PRVER combines cutting-edge technology, AI-powered solutions, and years of experience to deliver world-class websites. With 72+ successful projects and 100% client satisfaction, we're committed to excellence."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How much does web development cost?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Web development costs vary based on complexity. Starter websites start at $497, professional sites at $997, and enterprise solutions at $1,997+. Contact us for a custom quote."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How long does web development take?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Simple websites take 1-2 weeks, professional sites 2-4 weeks, and complex e-commerce sites 4-6 weeks. We're known for delivering early."
+                }
+            }
+        ]
+    }
+    </script>
+    
+    <!-- Breadcrumb Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://prvertech.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Services",
+                "item": "https://prvertech.com/services"
+            }
+        ]
+    }
+    </script>
+    
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500:600&family=Playfair+Display:wght@400;500:600:700&family=Space+Grotesk:wght@400:500:600:700&display=swap" as="style">
+    <link rel="preload" href="https://cdn.tailwindcss.com" as="script">
+    
+    <!-- DNS Prefetch -->
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <link rel="dns-prefetch" href="https://cdn.tailwindcss.com">
+    
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.tailwindcss.com">
+
+    <style>
+        /* Base Styles */
+        :root {
+            --cursor-x: 0;
+            --cursor-y: 0;
+        }
+
+        body {
+            background: linear-gradient(-45deg, #f3e8ff, #d1fae5, #fed7b7, #bae6fd, #f3e8ff);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+            color: #1e293b;
+            overflow-x: hidden;
+        }
+
+        body.dark {
+            background: linear-gradient(-45deg, #0f172a, #1e293b, #334155, #1e293b, #0f172a);
+            background-size: 400% 400%;
+            color: #f1f5f9;
+        }
+
+        /* Marquee Animation */
+        .marquee-container {
+            overflow: hidden;
+            white-space: nowrap;
+            position: relative;
+        }
+
+        .marquee-container::before,
+        .marquee-container::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            width: 100px;
+            height: 100%;
+            z-index: 2;
+            pointer-events: none;
+        }
+
+        .marquee-container::before {
+            left: 0;
+            background: linear-gradient(to right, rgba(255, 255, 255, 0.3), transparent);
+        }
+
+        .marquee-container::after {
+            right: 0;
+            background: linear-gradient(to left, rgba(255, 255, 255, 0.3), transparent);
+        }
+
+        body.dark .marquee-container::before {
+            background: linear-gradient(to right, rgba(15, 23, 42, 0.8), transparent);
+        }
+
+        body.dark .marquee-container::after {
+            background: linear-gradient(to left, rgba(15, 23, 42, 0.8), transparent);
+        }
+
+        .marquee-track {
+            display: flex;
+            gap: 2rem;
+            animation: marquee 30s linear infinite;
+            padding: 0 1rem;
+        }
+
+        .marquee-track:hover {
+            animation-play-state: paused;
+        }
+
+        @keyframes marquee {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        /* Mobile Optimization */
+        @media (max-width: 768px) {
+            .marquee-track {
+                animation-duration: 20s;
+                gap: 1rem;
+            }
+
+            .glass-panel {
+                padding: 0.5rem 1rem;
+            }
+
+            .glass-panel i {
+                font-size: 1rem;
+            }
+
+            .glass-panel span {
+                font-size: 0.875rem;
+            }
+        }
+
+        /* Glassmorphism 2.0 */
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.65);
+            backdrop-filter: blur(24px) saturate(180%);
+            -webkit-backdrop-filter: blur(24px) saturate(180%);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.07);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .glass-panel:hover {
+            background: rgba(255, 255, 255, 0.75);
+            backdrop-filter: blur(32px) saturate(200%);
+            border-color: rgba(255, 255, 255, 0.8);
+            box-shadow: 0 12px 40px 0 rgba(31, 38, 135, 0.12);
+            transform: translateY(-4px);
+        }
+
+        body.dark .glass-panel {
+            background: rgba(15, 23, 42, 0.65);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+        }
+
+        body.dark .glass-panel:hover {
+            background: rgba(15, 23, 42, 0.75);
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+
+        /* Glass Button */
+        .glass-btn {
+            background: rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.6);
+            transition: all 0.3s;
+        }
+
+        .glass-btn:hover {
+            background: rgba(255, 255, 255, 0.7);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(167, 139, 250, 0.3);
+        }
+
+        body.dark .glass-btn {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        /* Floating Orbs */
+        .orb {
+            position: fixed;
+            border-radius: 50%;
+            filter: blur(80px);
+            opacity: 0.4;
+            z-index: -1;
+            animation: float 20s infinite ease-in-out;
+        }
+
+        .orb-1 {
+            width: 400px;
+            height: 400px;
+            background: linear-gradient(135deg, #A78BFA, #C4B5FD);
+            top: -100px;
+            left: -100px;
+        }
+
+        .orb-2 {
+            width: 300px;
+            height: 300px;
+            background: linear-gradient(135deg, #D1FAE5, #A7F3D0);
+            bottom: 10%;
+            right: -50px;
+            animation-delay: -5s;
+        }
+
+        .orb-3 {
+            width: 250px;
+            height: 250px;
+            background: linear-gradient(135deg, #FED7B7, #FDBA74);
+            top: 40%;
+            left: 60%;
+            animation-delay: -10s;
+        }
+
+        .orb-4 {
+            width: 350px;
+            height: 350px;
+            background: linear-gradient(135deg, #BAE6FD, #7DD3FC);
+            bottom: -100px;
+            left: 20%;
+            animation-delay: -15s;
+        }
+
+        /* Particles */
+        .particle {
+            position: fixed;
+            width: 4px;
+            height: 4px;
+            background: rgba(255, 255, 255, 0.6);
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 1;
+            animation: particleFloat 15s infinite linear;
+        }
+
+        @keyframes particleFloat {
+            0% {
+                transform: translateY(100vh) translateX(0);
+                opacity: 0;
+            }
+
+            10% {
+                opacity: 1;
+            }
+
+            90% {
+                opacity: 1;
+            }
+
+            100% {
+                transform: translateY(-100vh) translateX(100px);
+                opacity: 0;
+            }
+        }
+
+        /* Light Leaks */
+        .light-leak {
+            position: fixed;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.4) 0%, transparent 70%);
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 0;
+            opacity: 0;
+            transition: opacity 1s;
+        }
+
+        /* Text Effects */
+        .text-gradient-soft {
+            background: linear-gradient(135deg, #8B5CF6 0%, #A78BFA 50%, #C4B5FD 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .text-gradient-warm {
+            background: linear-gradient(135deg, #FED7B7 0%, #FDBA74 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* 3D Tilt Card */
+        .tilt-card {
+            transform-style: preserve-3d;
+            perspective: 1000px;
+        }
+
+        /* Reveal Animation */
+        .reveal {
+            opacity: 0;
+            transform: translateY(20px);
+            filter: blur(5px);
+            transition: all 0.4s ease-out;
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+            filter: blur(0);
+        }
+
+        /* Letter Animation */
+        .letter {
+            display: inline-block;
+            opacity: 0;
+            transform: translateY(50px) rotateX(-90deg);
+            animation: letterReveal 0.6s forwards;
+        }
+
+        @keyframes letterReveal {
+            to {
+                opacity: 1;
+                transform: translateY(0) rotateX(0);
+            }
+        }
+
+        /* Scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: rgba(167, 139, 250, 0.5);
+            border-radius: 5px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgba(167, 139, 250, 0.8);
+        }
+
+        /* Stats Counter */
+        .stat-number {
+            background: linear-gradient(135deg, #8B5CF6, #A78BFA);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* FAQ Accordion */
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease, padding 0.4s ease;
+        }
+
+        .faq-answer.active {
+            max-height: 500px;
+        }
+
+        /* Theme Toggle */
+        .theme-toggle {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 1000;
+        }
+
+        /* Mobile Nav - Dropdown Style */
+        .mobile-nav {
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            background: rgba(255, 255, 255, 0.95);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+            transform: translateY(-20px);
+            opacity: 0;
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .mobile-nav.active {
+            transform: translateY(0);
+            opacity: 1;
+            max-height: 600px;
+            padding: 2rem 1.5rem;
+        }
+
+        body.dark .mobile-nav {
+            background: rgba(15, 23, 42, 0.95);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        /* Blog Modal */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 10000;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            padding: 20px;
+        }
+
+        .modal-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .modal-content {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(24px) saturate(180%);
+            -webkit-backdrop-filter: blur(24px) saturate(180%);
+            border: 1px solid rgba(255, 255, 255, 0.6);
+            border-radius: 2rem;
+            max-width: 800px;
+            width: 100%;
+            max-height: 90vh;
+            overflow-y: auto;
+            position: relative;
+            transform: scale(0.95) translateY(20px);
+            transition: transform 0.3s ease;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        }
+
+        body.dark .modal-content {
+            background: rgba(15, 23, 42, 0.85);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .modal-overlay.active .modal-content {
+            transform: scale(1) translateY(0);
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.5);
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s;
+            z-index: 10;
+            font-size: 1.25rem;
+        }
+
+        .modal-close:hover {
+            background: rgba(255, 255, 255, 0.8);
+            transform: rotate(90deg);
+        }
+
+        body.dark .modal-close {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        body.dark .modal-close:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .modal-image {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 1.5rem 1.5rem 0 0;
+        }
+
+        .modal-body {
+            padding: 2rem;
+        }
+
+        .modal-category {
+            display: inline-block;
+            padding: 0.25rem 1rem;
+            background: rgba(167, 139, 250, 0.2);
+            color: #8B5CF6;
+            border-radius: 9999px;
+            font-size: 0.875rem;
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+
+        .modal-title {
+            font-size: 1.875rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            line-height: 1.3;
+        }
+
+        .modal-meta {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            color: #64748b;
+            font-size: 0.875rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        }
+
+        body.dark .modal-meta {
+            border-bottom-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .modal-text {
+            color: #475569;
+            line-height: 1.8;
+            font-size: 1rem;
+        }
+
+        body.dark .modal-text {
+            color: #cbd5e1;
+        }
+
+        .modal-text p {
+            margin-bottom: 1rem;
+        }
+
+        .modal-text ul,
+        .modal-text ol {
+            margin: 1rem 0;
+            padding-left: 1.5rem;
+        }
+
+        .modal-text li {
+            margin-bottom: 0.5rem;
+        }
+
+        .modal-content::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .modal-content::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        .modal-content::-webkit-scrollbar-thumb {
+            background: rgba(167, 139, 250, 0.5);
+            border-radius: 4px;
+        }
+
+        /* Cookie Consent Banner */
+        #cookie-consent {
+            animation: slideUp 0.3s ease-out;
+        }
+
+        @keyframes slideUp {
+            from {
+                transform: translateY(100%);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        body.dark #cookie-consent {
+            background: rgba(15, 23, 42, 0.95);
+            backdrop-filter: blur(12px);
+        }
+
+        /* AI Chat Widget - Enhanced */
+        .chat-widget {
+            position: fixed;
+            bottom: 100px;
+            right: 30px;
+            z-index: 1000;
+        }
+
+        .chat-window {
+            position: fixed;
+            bottom: 100px;
+            right: 30px;
+            width: 380px;
+            max-width: calc(100vw - 60px);
+            height: 500px;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            border-radius: 1.5rem;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+            display: none;
+            flex-direction: column;
+            z-index: 1000;
+            overflow: hidden;
+        }
+
+        body.dark .chat-window {
+            background: rgba(15, 23, 42, 0.95);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .chat-window.active {
+            display: flex;
+            animation: chatSlideIn 0.3s ease-out;
+        }
+
+        @keyframes chatSlideIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px) scale(0.95);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+
+        .chat-header {
+            background: linear-gradient(135deg, #8B5CF6, #A78BFA);
+            color: white;
+            padding: 1.25rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .chat-header-info {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .chat-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .chat-messages {
+            flex: 1;
+            overflow-y: auto;
+            padding: 1.25rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .chat-input {
+            padding: 1.25rem;
+            border-top: 1px solid rgba(0, 0, 0, 0.1);
+            display: flex;
+            gap: 0.75rem;
+        }
+
+        body.dark .chat-input {
+            border-top-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .chat-message {
+            padding: 0.75rem 1rem;
+            border-radius: 1rem;
+            max-width: 85%;
+            word-wrap: break-word;
+            animation: messageSlideIn 0.3s ease-out;
+        }
+
+        @keyframes messageSlideIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .chat-message.user {
+            background: linear-gradient(135deg, #8B5CF6, #A78BFA);
+            color: white;
+            margin-left: auto;
+            border-bottom-right-radius: 0.25rem;
+        }
+
+        .chat-message.bot {
+            background: rgba(241, 245, 249, 0.8);
+            color: #1e293b;
+            margin-right: auto;
+            border-bottom-left-radius: 0.25rem;
+        }
+
+        body.dark .chat-message.bot {
+            background: rgba(51, 65, 85, 0.8);
+            color: #f1f5f9;
+        }
+
+        .chat-message.typing {
+            background: rgba(241, 245, 249, 0.8);
+            color: #1e293b;
+            margin-right: auto;
+            border-bottom-left-radius: 0.25rem;
+        }
+
+        body.dark .chat-message.typing {
+            background: rgba(51, 65, 85, 0.8);
+            color: #f1f5f9;
+        }
+
+        .typing-indicator {
+            display: flex;
+            gap: 4px;
+            padding: 0.5rem;
+        }
+
+        .typing-indicator span {
+            width: 8px;
+            height: 8px;
+            background: #8B5CF6;
+            border-radius: 50%;
+            animation: typingBounce 1.4s infinite;
+        }
+
+        .typing-indicator span:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+
+        .typing-indicator span:nth-child(3) {
+            animation-delay: 0.4s;
+        }
+
+        @keyframes typingBounce {
+
+            0%,
+            60%,
+            100% {
+                transform: translateY(0);
+            }
+
+            30% {
+                transform: translateY(-10px);
+            }
+        }
+
+        /* Quick Suggestions */
+        .chat-suggestions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            padding: 0 1.25rem 1.25rem;
+        }
+
+        .chat-suggestion {
+            background: rgba(139, 92, 246, 0.1);
+            color: #8B5CF6;
+            padding: 0.5rem 1rem;
+            border-radius: 1rem;
+            font-size: 0.875rem;
+            cursor: pointer;
+            transition: all 0.3s;
+            border: 1px solid rgba(139, 92, 246, 0.2);
+        }
+
+        .chat-suggestion:hover {
+            background: rgba(139, 92, 246, 0.2);
+            transform: translateY(-2px);
+        }
+
+        body.dark .chat-suggestion {
+            background: rgba(139, 92, 246, 0.2);
+            border-color: rgba(139, 92, 246, 0.3);
+        }
+
+        body.dark .chat-suggestion:hover {
+            background: rgba(139, 92, 246, 0.3);
+        }
+
+        /* Timeline */
+        .timeline-item {
+            position: relative;
+            padding-left: 3rem;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #8B5CF6, #A78BFA);
+        }
+
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            left: 5px;
+            top: 12px;
+            width: 2px;
+            height: calc(100% - 12px);
+            background: rgba(139, 92, 246, 0.3);
+        }
+
+        .timeline-item:last-child::after {
+            display: none;
+        }
+
+        /* Team Card */
+        .team-card {
+            transition: all 0.4s;
+        }
+
+        .team-card:hover {
+            transform: translateY(-8px);
+        }
+
+        .team-card:hover .team-image {
+            transform: scale(1.05);
+        }
+
+        .team-image {
+            transition: transform 0.4s;
+        }
+    </style>
+</head>
+
+<body class="antialiased selection:bg-lavender selection:text-white">
+
+    <!-- Floating Orbs -->
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+    <div class="orb orb-4"></div>
+
+    <!-- Particles Container -->
+    <div id="particles"></div>
+
+    <!-- Light Leaks -->
+    <div class="light-leak" id="lightLeak1" style="top: 20%; left: 10%;"></div>
+    <div class="light-leak" id="lightLeak2" style="top: 60%; right: 15%;"></div>
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 transition-all duration-300 py-6 px-6 lg:px-12">
+        <div class="max-w-7xl mx-auto glass-panel rounded-2xl px-6 py-4 flex justify-between items-center">
+            <a href="/Home" class="text-2xl font-display font-bold tracking-tight">
+                <img src="/img/logolight.png" class="h-12 w-auto" alt="PRVER Logo">
+            </a>
+
+            <div class="hidden lg:flex items-center gap-6 text-sm font-medium">
+                <a href="/Home" class="hover:text-lavender transition-colors relative group">
+                    Home
+                    <span
+                        class="absolute -bottom-1 left-0 w-0 h-0.5 bg-lavender transition-all group-hover:w-full"></span>
+                </a>
+                <a href="/services" class="hover:text-lavender transition-colors relative group">
+                    Services
+                    <span
+                        class="absolute -bottom-1 left-0 w-0 h-0.5 bg-lavender transition-all group-hover:w-full"></span>
+                </a>
+                <a href="/ai-agent" class="hover:text-lavender transition-colors relative group">
+                    AI Agents
+                    <span
+                        class="absolute -bottom-1 left-0 w-0 h-0.5 bg-lavender transition-all group-hover:w-full"></span>
+                </a>
+                <a href="/portfolio" class="hover:text-lavender transition-colors relative group">
+                    Portfolio
+                    <span
+                        class="absolute -bottom-1 left-0 w-0 h-0.5 bg-lavender transition-all group-hover:w-full"></span>
+                </a>
+                <a href="/products" class="hover:text-lavender transition-colors relative group">
+                    Products
+                    <span
+                        class="absolute -bottom-1 left-0 w-0 h-0.5 bg-lavender transition-all group-hover:w-full"></span>
+                </a>
+                <a href="/blog" class="hover:text-lavender transition-colors relative group">
+                    Blog
+                    <span
+                        class="absolute -bottom-1 left-0 w-0 h-0.5 bg-lavender transition-all group-hover:w-full"></span>
+                </a>
+                <a href="/About" class="hover:text-lavender transition-colors relative group text-lavender">
+                    About
+                    <span class="absolute -bottom-1 left-0 w-full h-0.5 bg-lavender transition-all"></span>
+                </a>
+                <a href="/Home#contact"
+                    class="px-5 py-2.5 rounded-full glass-btn text-sm font-semibold whitespace-nowrap">
+                    Let's Talk
+                </a>
+            </div>
+
+            <button id="mobileMenuBtn" class="lg:hidden text-2xl">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu - Dropdown Style -->
+    <div id="mobileMenu" class="mobile-nav fixed top-28 left-0 right-0 z-40 mx-4 rounded-2xl">
+        <a href="/Home"
+            class="mobile-link block hover:text-lavender w-full text-center py-3 border-b border-white/10">Home</a>
+        <a href="/services"
+            class="mobile-link block hover:text-lavender w-full text-center py-3 border-b border-white/10">Services</a>
+        <a href="/ai-agent"
+            class="mobile-link block hover:text-lavender w-full text-center py-3 border-b border-white/10">AI Agents</a>
+        <a href="/portfolio"
+            class="mobile-link block hover:text-lavender w-full text-center py-3 border-b border-white/10">Portfolio</a>
+        <a href="/products"
+            class="mobile-link block hover:text-lavender w-full text-center py-3 border-b border-white/10">Products</a>
+        <a href="/blog"
+            class="mobile-link block hover:text-lavender w-full text-center py-3 border-b border-white/10">Blog</a>
+        <a href="/About"
+            class="mobile-link block hover:text-lavender text-lavender w-full text-center py-3 border-b border-white/10">About</a>
+        <a href="/Home#contact" class="mobile-link block hover:text-lavender w-full text-center py-3">Contact</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="min-h-[60vh] flex items-center justify-center relative px-6 pt-32 overflow-hidden">
+        <div class="max-w-4xl mx-auto text-center relative z-10">
+            <div class="inline-block mb-6 px-6 py-2 rounded-full glass-panel text-sm font-medium text-lavender reveal">
+                <i class="fas fa-sparkles mr-2"></i> Meet the team behind the magic
+            </div>
+
+            <h1 class="text-5xl md:text-7xl lg:text-8xl font-serif font-bold mb-6 leading-tight reveal">
+                About <span class="text-gradient-soft">PRVER</span>
+            </h1>
+
+            <p
+                class="text-xl text-slate-600 dark:text-slate-300 max-w-2xl mx-auto mb-12 font-light leading-relaxed reveal">
+                We're not just building websites. We're crafting digital legacies for businesses that dare to stand out.
+            </p>
+    </section>
+
+    <!-- Our Story -->
+    <section class="py-32 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="reveal tilt-card">
+                    <div class="glass-panel p-4 rounded-[2rem]">
+                        <img src="/img/web.png" alt="Our Team"
+                            class="rounded-[1.5rem] w-full object-cover transition-transform duration-500 hover:scale-105">
+                    </div>
+                </div>
+                <div class="reveal">
+                    <h2 class="text-4xl md:text-5xl font-serif font-bold mb-6">Our Story</h2>
+                    <p class="text-lg text-slate-600 dark:text-slate-300 mb-6">
+                        PRVER was born from a simple belief: every business deserves a digital presence that reflects
+                        their unique value and vision. What started as a one-person operation has grown into a
+                        full-service digital architecture studio.
+                    </p>
+                    <p class="text-lg text-slate-600 dark:text-slate-300 mb-6">
+                        We've helped 72+ businesses transform from invisible to unforgettable. From local startups to
+                        established enterprises, we bring the same level of dedication, creativity, and technical
+                        excellence to every project.
+                    </p>
+                    <p class="text-lg text-slate-600 dark:text-slate-300">
+                        Our name, PRVER, represents our commitment to being your permanent partner in digital growth. We
+                        don't just build and leave, we build relationships that last.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission & Vision -->
+    <section class="py-32 px-6 relative">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="glass-panel p-8 rounded-3xl reveal tilt-card">
+                    <div
+                        class="w-16 h-16 rounded-2xl bg-gradient-to-br from-lavender/30 to-mint/30 flex items-center justify-center text-lavender text-3xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3 class="text-2xl font-display font-bold mb-4">Our Mission</h3>
+                    <p class="text-slate-600 dark:text-slate-300">
+                        To empower businesses with stunning, high-performance websites that drive real results. We
+                        believe great design should be accessible, not exclusive.
+                    </p>
+                </div>
+                <div class="glass-panel p-8 rounded-3xl reveal tilt-card" style="transition-delay: 100ms;">
+                    <div
+                        class="w-16 h-16 rounded-2xl bg-gradient-to-br from-sky/30 to-peach/30 flex items-center justify-center text-sky-500 text-3xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3 class="text-2xl font-display font-bold mb-4">Our Vision</h3>
+                    <p class="text-slate-600 dark:text-slate-300">
+                        To become the most trusted digital partner for businesses worldwide, known for delivering
+                        exceptional quality, transparent communication, and measurable results.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Values -->
+    <section class="py-32 px-6 relative">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-20 reveal">
+                <h2 class="text-4xl md:text-6xl font-serif font-bold mb-6">Our <span class="text-gradient-soft">Core
+                        Values</span></h2>
+                <p class="text-lg text-slate-600 dark:text-slate-300">The principles that guide everything we do</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="glass-panel p-6 rounded-3xl reveal tilt-card text-center">
+                    <div
+                        class="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-br from-lavender/30 to-mint/30 flex items-center justify-center text-lavender text-2xl">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3 class="text-xl font-display font-bold mb-3">Client-First</h3>
+                    <p class="text-slate-600 dark:text-slate-400 text-sm">Your success is our success. We listen, adapt,
+                        and deliver what you need.</p>
+                </div>
+                <div class="glass-panel p-6 rounded-3xl reveal tilt-card text-center" style="transition-delay: 100ms;">
+                    <div
+                        class="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-br from-mint/30 to-sky/30 flex items-center justify-center text-emerald-500 text-2xl">
+                        <i class="fas fa-gem"></i>
+                    </div>
+                    <h3 class="text-xl font-display font-bold mb-3">Quality</h3>
+                    <p class="text-slate-600 dark:text-slate-400 text-sm">We never cut corners. Every pixel, every line
+                        of code matters.</p>
+                </div>
+                <div class="glass-panel p-6 rounded-3xl reveal tilt-card text-center" style="transition-delay: 200ms;">
+                    <div
+                        class="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-br from-sky/30 to-peach/30 flex items-center justify-center text-sky-500 text-2xl">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3 class="text-xl font-display font-bold mb-3">Transparency</h3>
+                    <p class="text-slate-600 dark:text-slate-400 text-sm">No hidden fees, no surprises. Clear
+                        communication from start to finish.</p>
+                </div>
+                <div class="glass-panel p-6 rounded-3xl reveal tilt-card text-center" style="transition-delay: 300ms;">
+                    <div
+                        class="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-br from-peach/30 to-lavender/30 flex items-center justify-center text-orange-400 text-2xl">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3 class="text-xl font-display font-bold mb-3">Innovation</h3>
+                    <p class="text-slate-600 dark:text-slate-400 text-sm">We stay ahead of trends so your business stays
+                        ahead of competition.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline -->
+    <section class="py-32 px-6 relative bg-white/30 dark:bg-slate-900/30">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-20 reveal">
+                <h2 class="text-4xl md:text-6xl font-serif font-bold mb-6">Our <span
+                        class="text-gradient-soft">Journey</span></h2>
+                <p class="text-lg text-slate-600 dark:text-slate-300">Milestones that shaped who we are</p>
+            </div>
+            <div class="space-y-8">
+                <div class="timeline-item reveal">
+                    <div class="glass-panel p-6 rounded-2xl tilt-card">
+                        <span class="text-lavender font-bold text-sm">2019</span>
+                        <h3 class="text-xl font-display font-bold mt-2">The Beginning</h3>
+                        <p class="text-slate-600 dark:text-slate-400 mt-2">Started as a freelance web designer with a
+                            mission to make quality web design accessible to small businesses.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal" style="transition-delay: 100ms;">
+                    <div class="glass-panel p-6 rounded-2xl tilt-card">
+                        <span class="text-lavender font-bold text-sm">2022</span>
+                        <h3 class="text-xl font-display font-bold mt-2">PRVER Was Born</h3>
+                        <p class="text-slate-600 dark:text-slate-400 mt-2">Officially launched PRVER as a full-service
+                            digital agency. Completed our first 10 projects.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal" style="transition-delay: 200ms;">
+                    <div class="glass-panel p-6 rounded-2xl tilt-card">
+                        <span class="text-lavender font-bold text-sm">2023</span>
+                        <h3 class="text-xl font-display font-bold mt-2">Expansion</h3>
+                        <p class="text-slate-600 dark:text-slate-400 mt-2">Expanded services to include SEO,
+                            maintenance, and e-commerce solutions. Team grew to 5 members.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal" style="transition-delay: 300ms;">
+                    <div class="glass-panel p-6 rounded-2xl tilt-card">
+                        <span class="text-lavender font-bold text-sm">2026</span>
+                        <h3 class="text-xl font-display font-bold mt-2">Today</h3>
+                        <p class="text-slate-600 dark:text-slate-400 mt-2">65+ happy clients, 72+ projects delivered,
+                            and 100% satisfaction rate. The journey continues!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="py-20 px-6 relative">
+        <div class="max-w-6xl mx-auto">
+            <div class="glass-panel p-12 rounded-[2rem] reveal">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                    <div class="stat-item">
+                        <div class="text-5xl md:text-6xl font-display font-bold stat-number mb-2" data-target="72">0
+                        </div>
+                        <p class="text-slate-600 dark:text-slate-400 font-medium">Projects Delivered</p>
+                    </div>
+                    <div class="stat-item">
+                        <div class="text-5xl md:text-6xl font-display font-bold stat-number mb-2" data-target="65">0
+                        </div>
+                        <p class="text-slate-600 dark:text-slate-400 font-medium">Happy Clients</p>
+                    </div>
+                    <div class="stat-item">
+                        <div class="text-5xl md:text-6xl font-display font-bold stat-number mb-2" data-target="5">0
+                        </div>
+                        <p class="text-slate-600 dark:text-slate-400 font-medium">Years Experience</p>
+                    </div>
+                    <div class="stat-item">
+                        <div class="text-5xl md:text-6xl font-display font-bold stat-number mb-2" data-target="100">0
+                        </div>
+                        <p class="text-slate-600 dark:text-slate-400 font-medium">% Satisfaction</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="py-32 px-6 relative bg-white/30 dark:bg-slate-900/30">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-20 reveal">
+                <h2 class="text-4xl md:text-6xl font-serif font-bold mb-6">Meet The <span
+                        class="text-gradient-soft">Team</span></h2>
+                <p class="text-lg text-slate-600 dark:text-slate-300">The talented people behind the magic</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="glass-panel p-6 rounded-3xl team-card reveal tilt-card">
+                    <div class="aspect-square rounded-2xl overflow-hidden mb-6 team-image">
+                        <img src="/img/kenzy.jpg" alt="Prince Kwarteng" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-xl font-display font-bold">Prince Kwarteng</h3>
+                    <p class="text-lavender text-sm mb-3">Founder & Lead Developer</p>
+                    <p class="text-slate-600 dark:text-slate-400 text-sm">5+ years building digital experiences.
+                        Passionate about clean code and beautiful design.</p>
+                    <div class="flex gap-3 mt-4">
+                        <a href="#"
+                            class="w-8 h-8 rounded-full glass-btn flex items-center justify-center hover:text-lavender transition-colors">
+                            <i class="fab fa-linkedin-in text-sm"></i>
+                        </a>
+                        <a href="#"
+                            class="w-8 h-8 rounded-full glass-btn flex items-center justify-center hover:text-lavender transition-colors">
+                            <i class="fab fa-x-twitter text-sm"></i>
+                        </a>
+                        <a href="#"
+                            class="w-8 h-8 rounded-full glass-btn flex items-center justify-center hover:text-lavender transition-colors">
+                            <i class="fab fa-github text-sm"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="glass-panel p-6 rounded-3xl team-card reveal tilt-card" style="transition-delay: 100ms;">
+                    <div class="aspect-square rounded-2xl overflow-hidden mb-6 team-image">
+                        <img src="/img/vera.jpg" alt="Osei Vera" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-xl font-display font-bold">Osei Vera</h3>
+                    <p class="text-lavender text-sm mb-3">UI/UX Designer</p>
+                    <p class="text-slate-600 dark:text-slate-400 text-sm">Creating intuitive, beautiful interfaces that
+                        users love. 7+ years in design.</p>
+                    <div class="flex gap-3 mt-4">
+                        <a href="#"
+                            class="w-8 h-8 rounded-full glass-btn flex items-center justify-center hover:text-lavender transition-colors">
+                            <i class="fab fa-linkedin-in text-sm"></i>
+                        </a>
+                        <a href="#"
+                            class="w-8 h-8 rounded-full glass-btn flex items-center justify-center hover:text-lavender transition-colors">
+                            <i class="fab fa-dribbble text-sm"></i>
+                        </a>
+                        <a href="#"
+                            class="w-8 h-8 rounded-full glass-btn flex items-center justify-center hover:text-lavender transition-colors">
+                            <i class="fab fa-behance text-sm"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="glass-panel p-6 rounded-3xl team-card reveal tilt-card" style="transition-delay: 200ms;">
+                    <div class="aspect-square rounded-2xl overflow-hidden mb-6 team-image">
+                        <img src="/img/kobby.jpg" alt="Bright Appiah" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-xl font-display font-bold">Bright Appiah</h3>
+                    <p class="text-lavender text-sm mb-3">SEO Specialist</p>
+                    <p class="text-slate-600 dark:text-slate-400 text-sm">Helping businesses rank higher and get found.
+                        Data-driven SEO strategies.</p>
+                    <div class="flex gap-3 mt-4">
+                        <a href="#"
+                            class="w-8 h-8 rounded-full glass-btn flex items-center justify-center hover:text-lavender transition-colors">
+                            <i class="fab fa-linkedin-in text-sm"></i>
+                        </a>
+                        <a href="#"
+                            class="w-8 h-8 rounded-full glass-btn flex items-center justify-center hover:text-lavender transition-colors">
+                            <i class="fab fa-x-twitter text-sm"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-32 px-6 relative">
+        <div class="max-w-4xl mx-auto text-center glass-panel p-12 rounded-3xl reveal tilt-card">
+            <h2 class="text-4xl md:text-5xl font-serif font-bold mb-6">Ready to Work Together?</h2>
+            <p class="text-xl text-slate-600 dark:text-slate-300 mb-8">
+                Let's create something amazing. Your vision, our expertise, perfect match.
+            </p>
+            <a href="/Home#contact"
+                class="px-10 py-4 rounded-full glass-btn font-semibold text-lg inline-flex items-center gap-3 group">
+                Start Your Project <i class="fas fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 px-6 border-t border-white/30 dark:border-white/10">
+        <div class="max-w-7xl mx-auto">
+            <div class="glass-panel p-8 rounded-3xl mb-12">
+                <div class="grid md:grid-cols-4 gap-8">
+                    <div class="md:col-span-2">
+                        <div class="text-2xl font-display font-bold mb-4">
+                            <img src="/img/logolight.png" class="h-12 w-auto" alt="PRVER Logo">
+                        </div>
+                        <p class="text-slate-600 dark:text-slate-400 mb-6 max-w-sm">Creating digital experiences that
+                            inspire, engage, and deliver results.</p>
+                        <div class="flex gap-4">
+                            <a href="#"
+                                class="w-10 h-10 rounded-full glass-btn flex items-center justify-center hover:text-lavender transition-colors">
+                                <i class="fab fa-x-twitter"></i>
+                            </a>
+                            <a href="#"
+                                class="w-10 h-10 rounded-full glass-btn flex items-center justify-center hover:text-lavender transition-colors">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#"
+                                class="w-10 h-10 rounded-full glass-btn flex items-center justify-center hover:text-lavender transition-colors">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="#"
+                                class="w-10 h-10 rounded-full glass-btn flex items-center justify-center hover:text-lavender transition-colors">
+                                <i class="fab fa-tiktok"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h4 class="font-semibold mb-4">Quick Links</h4>
+                        <ul class="space-y-2 text-slate-600 dark:text-slate-400">
+                            <li><a href="/services" class="hover:text-lavender transition-colors">Services</a></li>
+                            <li><a href="/portfolio" class="hover:text-lavender transition-colors">Portfolio</a>
+                            </li>
+                            <li><a href="/About" class="hover:text-lavender transition-colors">About</a></li>
+                            <li><a href="/Home#contact" class="hover:text-lavender transition-colors">Contact</a>
+                            </li>
+                            <li><a href="/privacy" class="hover:text-lavender transition-colors">Privacy Policy</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h4 class="font-semibold mb-4">Newsletter</h4>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm mb-4">Get design insights delivered to your
+                            inbox.</p>
+                        <form id="newsletter-form" class="flex gap-2">
+    <input 
+        type="email" 
+        name="user_email"
+        placeholder="Your email"
+        required
+        class="flex-1 px-4 py-2 rounded-lg bg-white/50 dark:bg-slate-800/50 border border-white/30 dark:border-white/10 focus:outline-none focus:border-lavender text-sm" 
+    />
+    <button type="submit"
+        class="px-4 py-2 rounded-lg bg-lavender text-white hover:bg-lavender/80 transition-colors">
+        <i class="fas fa-arrow-right"></i>
+    </button>
+</form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center text-slate-500 text-sm">
+                <p>&copy; 2024 PRVER. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Theme Toggle -->
+    <button id="themeToggle"
+        class="theme-toggle w-14 h-14 rounded-full glass-btn flex items-center justify-center text-xl shadow-lg">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <!-- AI Chat Widget - Enhanced -->
+    <div class="chat-widget">
+        <button id="chatToggle"
+            class="w-14 h-14 rounded-full bg-gradient-to-r from-lavender to-purple-600 text-white shadow-lg hover:shadow-xl transition-all hover:scale-110 flex items-center justify-center">
+            <i class="fas fa-robot text-2xl"></i>
+        </button>
+
+        <div id="chatWindow" class="chat-window">
+            <div class="chat-header">
+                <div class="chat-header-info">
+                    <div class="chat-avatar">
+                        <i class="fas fa-robot text-xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg">PRVER AI Assistant</h3>
+                        <p class="text-sm opacity-90">Smart & Contextual Help</p>
+                    </div>
+                </div>
+                <button id="closeChat" class="text-white hover:opacity-80">
+                    <i class="fas fa-times text-xl"></i>
+                </button>
+            </div>
+
+            <div class="chat-messages" id="chatMessages">
+                <div class="chat-message bot">
+                    Hello! 👋 I'm the PRVER AI assistant. I can help you with information about our services, pricing,
+                    process, or any questions you have. What would you like to know?
+                </div>
+            </div>
+
+            <!-- Quick Suggestions -->
+            <div class="chat-suggestions" id="chatSuggestions">
+                <div class="chat-suggestion" onclick="sendSuggestion('What services do you offer?')">Services</div>
+                <div class="chat-suggestion" onclick="sendSuggestion('How much does a website cost?')">Pricing</div>
+                <div class="chat-suggestion" onclick="sendSuggestion('How long does a project take?')">Timeline</div>
+                <div class="chat-suggestion" onclick="sendSuggestion('Do you offer maintenance?')">Maintenance</div>
+            </div>
+
+            <div class="chat-input">
+                <input type="text" id="chatInput" placeholder="Type your message..."
+                    class="flex-1 px-4 py-2 rounded-lg border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 focus:outline-none focus:border-lavender">
+                <button id="sendChat"
+                    class="px-4 py-2 bg-lavender text-white rounded-lg hover:bg-lavender/90 transition-colors">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS Animation Library
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
+
+        // Check system preference for dark mode
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.body.classList.add('dark');
+            document.querySelector('#themeToggle i').classList.remove('fa-moon');
+            document.querySelector('#themeToggle i').classList.add('fa-sun');
+        }
+
+        // Theme Toggle
+        document.getElementById('themeToggle').addEventListener('click', () => {
+            document.body.classList.toggle('dark');
+            const icon = document.querySelector('#themeToggle i');
+            if (document.body.classList.contains('dark')) {
+                icon.classList.remove('fa-moon');
+                icon.classList.add('fa-sun');
+            } else {
+                icon.classList.remove('fa-sun');
+                icon.classList.add('fa-moon');
+            }
+        });
+
+        // Create Particles
+        const particlesContainer = document.getElementById('particles');
+        for (let i = 0; i < 30; i++) {
+            const particle = document.createElement('div');
+            particle.className = 'particle';
+            particle.style.left = Math.random() * 100 + 'vw';
+            particle.style.animationDelay = Math.random() * 15 + 's';
+            particle.style.animationDuration = (Math.random() * 10 + 10) + 's';
+            particlesContainer.appendChild(particle);
+        }
+
+        // Light Leaks on Scroll
+        window.addEventListener('scroll', () => {
+            const scrollPercent = window.scrollY / (document.body.scrollHeight - window.innerHeight);
+            const leak1 = document.getElementById('lightLeak1');
+            const leak2 = document.getElementById('lightLeak2');
+            leak1.style.opacity = Math.sin(scrollPercent * Math.PI) * 0.5;
+            leak2.style.opacity = Math.cos(scrollPercent * Math.PI) * 0.5;
+        });
+
+        // Reveal on Scroll
+        const revealElements = document.querySelectorAll('.reveal');
+        const revealOnScroll = () => {
+            revealElements.forEach((element) => {
+                const elementTop = element.getBoundingClientRect().top;
+                if (elementTop < window.innerHeight - 100) {
+                    element.classList.add('active');
+                }
+            });
+        };
+        window.addEventListener('scroll', revealOnScroll);
+        revealOnScroll();
+
+        // 3D Tilt Effect
+        const tiltCards = document.querySelectorAll('.tilt-card');
+        tiltCards.forEach(card => {
+            card.addEventListener('mousemove', (e) => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                const centerX = rect.width / 2;
+                const centerY = rect.height / 2;
+                const rotateX = ((y - centerY) / centerY) * -5;
+                const rotateY = ((x - centerX) / centerX) * 5;
+                card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.02, 1.02, 1.02)`;
+            });
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) scale3d(1, 1, 1)';
+            });
+        });
+
+        // Stats Counter Animation
+        const statNumbers = document.querySelectorAll('.stat-number');
+        const animateStats = () => {
+            statNumbers.forEach(stat => {
+                const target = parseInt(stat.getAttribute('data-target'));
+                const rect = stat.getBoundingClientRect();
+                if (rect.top < window.innerHeight && rect.bottom > 0 && !stat.classList.contains('counted')) {
+                    let current = 0;
+                    const increment = target / 50;
+                    const timer = setInterval(() => {
+                        current += increment;
+                        if (current >= target) {
+                            stat.textContent = target + (target === 100 ? '%' : '+');
+                            clearInterval(timer);
+                        } else {
+                            stat.textContent = Math.floor(current);
+                        }
+                    }, 30);
+                    stat.classList.add('counted');
+                }
+            });
+        };
+        window.addEventListener('scroll', animateStats);
+
+        // Mobile Menu - Dropdown Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+
+            // Toggle icon
+            const icon = mobileMenuBtn.querySelector('i');
+            if (mobileMenu.classList.contains('active')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+
+        // Close mobile menu when clicking a link
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('active');
+                mobileMenuBtn.querySelector('i').classList.remove('fa-times');
+                mobileMenuBtn.querySelector('i').classList.add('fa-bars');
+            });
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!mobileMenu.contains(e.target) && !mobileMenuBtn.contains(e.target)) {
+                mobileMenu.classList.remove('active');
+                mobileMenuBtn.querySelector('i').classList.remove('fa-times');
+                mobileMenuBtn.querySelector('i').classList.add('fa-bars');
+            }
+        });
+
+        // Smooth Scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // ============================================
+        // ENHANCED AI CHAT WIDGET
+        // ============================================
+
+        const chatToggle = document.getElementById('chatToggle');
+        const chatWindow = document.getElementById('chatWindow');
+        const closeChat = document.getElementById('closeChat');
+        const chatInput = document.getElementById('chatInput');
+        const sendChat = document.getElementById('sendChat');
+        const chatMessages = document.getElementById('chatMessages');
+        const chatSuggestions = document.getElementById('chatSuggestions');
+
+        // Page Knowledge Base (Extracted from page content)
+        const pageKnowledge = {
+            services: [
+                'Web Design',
+                'Development',
+                'SEO Setup',
+                'Maintenance',
+                'Brand Strategy',
+                'E-commerce'
+            ],
+            pricing: {
+                webDesign: '$1,500 - $5,000',
+                ecommerce: '$3,000 - $10,000',
+                maintenance: '$100 - $500/month',
+                seo: '$500 - $2,000/month'
+            },
+            timeline: {
+                simple: '1-2 weeks',
+                standard: '2-4 weeks',
+                complex: '4-6 weeks',
+                ecommerce: '4-8 weeks'
+            },
+            stats: {
+                projects: '72+',
+                clients: '65+',
+                experience: '5 years',
+                satisfaction: '100%'
+            },
+            contact: {
+                email: 'mail@prvertech.com',
+                phone: '+233 55 123 1300',
+                whatsapp: '+1 (646) 864-4239',
+                responseTime: '1 hour'
+            },
+            process: [
+                'Discovery',
+                'Design',
+                'Build',
+                'Launch'
+            ]
+        };
+
+        // Toggle Chat Window
+        chatToggle.addEventListener('click', () => {
+            chatWindow.classList.toggle('active');
+            if (chatWindow.classList.contains('active')) {
+                setTimeout(() => chatInput.focus(), 300);
+            }
+        });
+
+        closeChat.addEventListener('click', () => {
+            chatWindow.classList.remove('active');
+        });
+
+        // Send Suggestion
+        function sendSuggestion(text) {
+            chatInput.value = text;
+            sendMessage();
+        }
+
+        // Send Message
+        function sendMessage() {
+            const message = chatInput.value.trim();
+            if (!message) return;
+
+            // Add user message
+            addMessage(message, 'user');
+            chatInput.value = '';
+
+            // Hide suggestions after first message
+            chatSuggestions.style.display = 'none';
+
+            // Show typing indicator
+            showTypingIndicator();
+
+            // Get AI response with delay
+            setTimeout(() => {
+                hideTypingIndicator();
+                const response = getAIResponse(message);
+                addMessage(response, 'bot');
+            }, 1000 + Math.random() * 1000);
+        }
+
+        // Add Message to Chat
+        function addMessage(text, type) {
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `chat-message ${type}`;
+            messageDiv.innerHTML = text;
+            chatMessages.appendChild(messageDiv);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+
+        // Show Typing Indicator
+        function showTypingIndicator() {
+            const typingDiv = document.createElement('div');
+            typingDiv.className = 'chat-message typing';
+            typingDiv.id = 'typingIndicator';
+            typingDiv.innerHTML = `
+                <div class="typing-indicator">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            `;
+            chatMessages.appendChild(typingDiv);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+
+        // Hide Typing Indicator
+        function hideTypingIndicator() {
+            const typingIndicator = document.getElementById('typingIndicator');
+            if (typingIndicator) {
+                typingIndicator.remove();
+            }
+        }
+
+        // Enhanced AI Response Generator
+        function getAIResponse(message) {
+            const lowerMsg = message.toLowerCase();
+
+            // Service-related questions
+            if (lowerMsg.includes('service') || lowerMsg.includes('offer') || lowerMsg.includes('do')) {
+                return `We offer comprehensive digital solutions including:<br><br>
+                        ✨ <strong>${pageKnowledge.services.join('</strong><br>✨ <strong>')}</strong><br><br>
+                        Each service is tailored to your specific needs. Would you like to know more about any particular service?`;
+            }
+
+            // Pricing questions
+            if (lowerMsg.includes('price') || lowerMsg.includes('cost') || lowerMsg.includes('much') || lowerMsg.includes('budget')) {
+                return `Our pricing varies based on project scope:<br><br>
+                        💻 <strong>Web Design:</strong> ${pageKnowledge.pricing.webDesign}<br>
+                        🛒 <strong>E-commerce:</strong> ${pageKnowledge.pricing.ecommerce}<br>
+                        🔧 <strong>Maintenance:</strong> ${pageKnowledge.pricing.maintenance}<br>
+                        📈 <strong>SEO:</strong> ${pageKnowledge.pricing.seo}<br><br>
+                        Would you like a custom quote for your project?`;
+            }
+
+            // Timeline questions
+            if (lowerMsg.includes('time') || lowerMsg.includes('long') || lowerMsg.includes('week') || lowerMsg.includes('month')) {
+                return `Project timelines depend on complexity:<br><br>
+                        📋 <strong>Simple Site:</strong> ${pageKnowledge.timeline.simple}<br>
+                        📱 <strong>Standard Site:</strong> ${pageKnowledge.timeline.standard}<br>
+                        🏗️ <strong>Complex Site:</strong> ${pageKnowledge.timeline.complex}<br>
+                        🛍️ <strong>E-commerce:</strong> ${pageKnowledge.timeline.ecommerce}<br><br>
+                        We're known for delivering early, not late!`;
+            }
+
+            // Maintenance questions
+            if (lowerMsg.includes('maintenance') || lowerMsg.includes('support') || lowerMsg.includes('update')) {
+                return `Yes! We offer ongoing maintenance packages:<br><br>
+                        🔒 Security updates<br>
+                        📝 Content updates<br>
+                        🐛 Bug fixes<br>
+                        ⚡ Performance optimization<br><br>
+                        Starting at ${pageKnowledge.pricing.maintenance}. Want to learn more?`;
+            }
+
+            // Contact questions
+            if (lowerMsg.includes('contact') || lowerMsg.includes('email') || lowerMsg.includes('phone') || lowerMsg.includes('reach')) {
+                return `You can reach us through:<br><br>
+                        📧 <strong>Email:</strong> ${pageKnowledge.contact.email}<br>
+                        📞 <strong>Phone:</strong> ${pageKnowledge.contact.phone}<br>
+                        💬 <strong>WhatsApp:</strong> ${pageKnowledge.contact.whatsapp}<br><br>
+                        We typically respond within ${pageKnowledge.contact.responseTime}!`;
+            }
+
+            // Process questions
+            if (lowerMsg.includes('process') || lowerMsg.includes('step') || lowerMsg.includes('work') || lowerMsg.includes('how')) {
+                return `Our proven 4-step process:<br><br>
+                        🔍 <strong>1. Discovery</strong> - Understanding your goals<br>
+                        🎨 <strong>2. Design</strong> - Creating stunning visuals<br>
+                        💻 <strong>3. Build</strong> - Developing with clean code<br>
+                        🚀 <strong>4. Launch</strong> - Deploying & supporting<br><br>
+                        Want to start your project?`;
+            }
+
+            // Stats/Experience questions
+            if (lowerMsg.includes('experience') || lowerMsg.includes('year') || lowerMsg.includes('many') || lowerMsg.includes('client')) {
+                return `Our track record speaks for itself:<br><br>
+                        📊 <strong>${pageKnowledge.stats.projects}</strong> Projects Delivered<br>
+                        😊 <strong>${pageKnowledge.stats.clients}</strong> Happy Clients<br>
+                        🏆 <strong>${pageKnowledge.stats.experience}</strong> Years Experience<br>
+                        ⭐ <strong>${pageKnowledge.stats.satisfaction}</strong> Satisfaction Rate<br><br>
+                        Ready to be our next success story?`;
+            }
+
+            // SEO questions
+            if (lowerMsg.includes('seo') || lowerMsg.includes('rank') || lowerMsg.includes('google') || lowerMsg.includes('search')) {
+                return `Our SEO services include:<br><br>
+                        🔍 Keyword research & strategy<br>
+                        📝 On-page optimization<br>
+                        🔧 Technical SEO audit<br>
+                        📍 Local SEO optimization<br><br>
+                        Starting at ${pageKnowledge.pricing.seo}/month. Want to rank higher?`;
+            }
+
+            // E-commerce questions
+            if (lowerMsg.includes('ecommerce') || lowerMsg.includes('shop') || lowerMsg.includes('store') || lowerMsg.includes('sell')) {
+                return `Our e-commerce solutions include:<br><br>
+                        🛒 Custom online stores<br>
+                        💳 Payment gateway integration<br>
+                        📦 Inventory management<br>
+                        📱 Mobile-optimized design<br><br>
+                        Starting at ${pageKnowledge.pricing.ecommerce}. Ready to sell online?`;
+            }
+
+            // Technology questions
+            if (lowerMsg.includes('technology') || lowerMsg.includes('tech') || lowerMsg.includes('stack') || lowerMsg.includes('framework')) {
+                return `We use modern technologies:<br><br>
+                        💻 React, Vue, Next.js<br>
+                        🎨 Tailwind CSS, Custom CSS<br>
+                        ⚙️ Node.js, Python<br>
+                        🗄️ PostgreSQL, MongoDB<br><br>
+                        We choose the best tech for your needs!`;
+            }
+
+            // Revision/Change questions
+            if (lowerMsg.includes('revision') || lowerMsg.includes('change') || lowerMsg.includes('modify') || lowerMsg.includes('edit')) {
+                return `We include revisions in our process:<br><br>
+                        ✅ Multiple design concepts<br>
+                        ✅ Revision rounds included<br>
+                        ✅ Final approval before launch<br>
+                        ✅ Post-launch support<br><br>
+                        Your satisfaction is guaranteed!`;
+            }
+
+            // Mobile/Responsive questions
+            if (lowerMsg.includes('mobile') || lowerMsg.includes('phone') || lowerMsg.includes('responsive') || lowerMsg.includes('tablet')) {
+                return `100% Mobile-Responsive Guarantee:<br><br>
+                        📱 Perfect on all devices<br>
+                        📲 Touch-optimized interactions<br>
+                        ⚡ Fast loading on mobile<br>
+                        🧪 Tested on real devices<br><br>
+                        Over 60% of web traffic is mobile!`;
+            }
+
+            // Ownership questions
+            if (lowerMsg.includes('own') || lowerMsg.includes('mine') || lowerMsg.includes('yours') || lowerMsg.includes('transfer')) {
+                return `You own everything:<br><br>
+                        ✅ 100% ownership transferred<br>
+                        ✅ All files & logins<br>
+                        ✅ No lock-in contracts<br>
+                        ✅ Full source code<br><br>
+                        It's yours forever!`;
+            }
+
+            // Generic greeting
+            if (lowerMsg.includes('hello') || lowerMsg.includes('hi') || lowerMsg.includes('hey')) {
+                return `Hello! 👋 How can I help you today? I can answer questions about:<br><br>
+                        ✨ Our services<br>
+                        💰 Pricing<br>
+                        ⏱️ Timelines<br>
+                        📞 Contact info<br><br>
+                        Just ask!`;
+            }
+
+            // Thank you
+            if (lowerMsg.includes('thank') || lowerMsg.includes('thanks')) {
+                return `You're welcome! 😊 Is there anything else I can help you with? Feel free to ask about our services, pricing, or anything else!`;
+            }
+
+            // Default intelligent response
+            return `Great question! 🤔 Let me help you with that.<br><br>
+                    Based on what I know about PRVER, I'd recommend:<br><br>
+                    📞 <strong>Contact our team</strong> at ${pageKnowledge.contact.email}<br>
+                    💬 <strong>Or chat on WhatsApp</strong>: ${pageKnowledge.contact.whatsapp}<br><br>
+                    We typically respond within ${pageKnowledge.contact.responseTime} and can provide a detailed answer tailored to your specific needs!<br><br>
+                    Is there anything specific about our services you'd like to know?`;
+        }
+
+        // Event Listeners
+        sendChat.addEventListener('click', sendMessage);
+        chatInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') sendMessage();
+        });
+
+    </script>
+    <!-- PWA Service Worker -->
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/sw.js')
+      .then(registration => {
+        console.log('ServiceWorker registration successful:', registration.scope);
+      })
+      .catch(err => {
+        console.log('ServiceWorker registration failed:', err);
+      });
+  });
+}
+</script>
+
+<script>
+document.getElementById("newsletter-form").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    emailjs.sendForm(
+        "service_rc4r4yh",   // replace
+        "template_eix1qjd",  // replace
+        this
+    )
+    .then(function() {
+        alert("✅ Subscription successful!");
+    }, function(error) {
+        alert("❌ Failed to send. Try again.");
+        console.error(error);
+    });
+});
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<script>
+(function(){
+    emailjs.init("p1ayKbwfhZbC3Zakq"); // replace this
+})();
+</script>
+</body>
+
+</html>
