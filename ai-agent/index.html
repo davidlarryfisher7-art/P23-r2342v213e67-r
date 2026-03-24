@@ -634,10 +634,24 @@
             z-index: 1000;
         }
 
-        /* Mobile Nav */
-        .mobile-nav {
+         .mobile-nav {
             backdrop-filter: blur(20px);
-            background: rgba(255, 255, 255, 0.9);
+            -webkit-backdrop-filter: blur(20px);
+            background: rgba(255, 255, 255, 0.95);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+            transform: translateY(-20px);
+            opacity: 0;
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .mobile-nav.active {
+            transform: translateY(0);
+            opacity: 1;
+            max-height: 600px;
+            padding: 2rem 1.5rem;
         }
 
         body.dark .mobile-nav {
@@ -1216,19 +1230,22 @@
     </nav>
 
     <!-- Mobile Menu -->
-    <div id="mobileMenu"
-        class="mobile-nav fixed inset-0 z-50 hidden flex-col items-center justify-center gap-8 text-2xl font-display">
-        <button id="closeMenuBtn" class="absolute top-6 right-6 text-3xl">
-            <i class="fas fa-times"></i>
-        </button>
-        <a href="/Home" class="mobile-link hover:text-lavender text-lavender">Home</a>
-        <a href="/services" class="mobile-link hover:text-lavender">Services</a>
-        <a href="/ai-agent" class="mobile-link hover:text-lavender">AI Agent</a>
-        <a href="/portfolio" class="mobile-link hover:text-lavender">Portfolio</a>
-        <a href="/products" class="mobile-link hover:text-lavender">Products</a>
-        <a href="/blog" class="mobile-link hover:text-lavender">Blog</a>
-        <a href="/About" class="mobile-link hover:text-lavender">About</a>
-        <a href="/Home#contact" class="mobile-link hover:text-lavender">Contact</a>
+    <div id="mobileMenu" class="mobile-nav fixed top-28 left-0 right-0 z-40 mx-4 rounded-2xl">
+        <a href="/Home"
+            class="mobile-link block hover:text-lavender w-full text-center py-3 border-b border-white/10">Home</a>
+        <a href="/services"
+            class="mobile-link block hover:text-lavender w-full text-center py-3 border-b border-white/10">Services</a>
+        <a href="/ai-agent"
+            class="mobile-link block hover:text-lavender text-lavender w-full text-center py-3 border-b border-white/10">AI Agents</a>
+        <a href="/portfolio"
+            class="mobile-link block hover:text-lavender w-full text-center py-3 border-b border-white/10">Portfolio</a>
+        <a href="/products"
+            class="mobile-link block hover:text-lavender w-full text-center py-3 border-b border-white/10">Products</a>
+        <a href="/blog"
+            class="mobile-link block hover:text-lavender w-full text-center py-3 border-b border-white/10">Blog</a>
+        <a href="/about"
+            class="mobile-link block hover:text-lavender w-full text-center py-3 border-b border-white/10">About</a>
+        <a href="#contact" class="mobile-link block hover:text-lavender w-full text-center py-3">Contact</a>
     </div>
 
     <!-- Hero Section -->
@@ -2095,27 +2112,44 @@
             });
         });
 
-        // Mobile Menu
-        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
-        const closeMenuBtn = document.getElementById('closeMenuBtn');
-        const mobileMenu = document.getElementById('mobileMenu');
-        const mobileLinks = document.querySelectorAll('.mobile-link');
+         // Mobile Menu - Dropdown Toggle
+        const mobileMenuBtn = document.getElementById("mobileMenuBtn");
+        const mobileMenu = document.getElementById("mobileMenu");
+        const mobileLinks = document.querySelectorAll(".mobile-link");
 
-        mobileMenuBtn.addEventListener('click', () => {
-            mobileMenu.classList.remove('hidden');
-            mobileMenu.classList.add('flex');
+        mobileMenuBtn.addEventListener("click", () => {
+            mobileMenu.classList.toggle("active");
+
+            // Toggle icon
+            const icon = mobileMenuBtn.querySelector("i");
+            if (mobileMenu.classList.contains("active")) {
+                icon.classList.remove("fa-bars");
+                icon.classList.add("fa-times");
+            } else {
+                icon.classList.remove("fa-times");
+                icon.classList.add("fa-bars");
+            }
         });
 
-        closeMenuBtn.addEventListener('click', () => {
-            mobileMenu.classList.add('hidden');
-            mobileMenu.classList.remove('flex');
-        });
-
-        mobileLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                mobileMenu.classList.add('hidden');
-                mobileMenu.classList.remove('flex');
+        // Close mobile menu when clicking a link
+        mobileLinks.forEach((link) => {
+            link.addEventListener("click", () => {
+                mobileMenu.classList.remove("active");
+                mobileMenuBtn.querySelector("i").classList.remove("fa-times");
+                mobileMenuBtn.querySelector("i").classList.add("fa-bars");
             });
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener("click", (e) => {
+            if (
+                !mobileMenu.contains(e.target) &&
+                !mobileMenuBtn.contains(e.target)
+            ) {
+                mobileMenu.classList.remove("active");
+                mobileMenuBtn.querySelector("i").classList.remove("fa-times");
+                mobileMenuBtn.querySelector("i").classList.add("fa-bars");
+            }
         });
 
         // Smooth Scroll
