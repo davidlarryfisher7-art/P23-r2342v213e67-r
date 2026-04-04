@@ -2569,7 +2569,7 @@
             if (letterIndex < heroTitle.length) {
                 const letter = document.createElement("span");
                 letter.className = "letter";
-                letter.textContent = heroTitle[letterIndex];
+                letter.innerHTML = heroTitle[letterIndex] === " " ? "&nbsp;" : heroTitle[letterIndex];
                 letter.style.animationDelay = letterIndex * 0.05 + "s";
                 titleElement.appendChild(letter);
                 letterIndex++;
