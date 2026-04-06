@@ -2289,107 +2289,272 @@
             });
         });
 
-        // AI Chat Widget
-        const chatToggle = document.getElementById('chatToggle');
-        const chatWindow = document.getElementById('chatWindow');
-        const closeChat = document.getElementById('closeChat');
-        const chatInput = document.getElementById('chatInput');
-        const sendChat = document.getElementById('sendChat');
-        const chatMessages = document.getElementById('chatMessages');
-        const chatSuggestions = document.getElementById('chatSuggestions');
+       const chatToggle = document.getElementById("chatToggle");
+const chatWindow = document.getElementById("chatWindow");
+const closeChat = document.getElementById("closeChat");
+const chatInput = document.getElementById("chatInput");
+const sendChat = document.getElementById("sendChat");
+const chatMessages = document.getElementById("chatMessages");
+const chatSuggestions = document.getElementById("chatSuggestions");
 
-        chatToggle.addEventListener('click', () => {
-            chatWindow.classList.toggle('active');
-            if (chatWindow.classList.contains('active')) {
-                setTimeout(() => chatInput.focus(), 300);
-            }
-        });
+// 📚 Comprehensive Knowledge Base (Extracted from PRVER.txt)
+const KB = {
+  company: { name: "PRVER", founded: "2022", tagline: "Digital Architecture Studio" },
+  stats: { projects: "72+", clients: "65+", satisfaction: "100%", team: "5+ experts" },
+  contact: { email: "mail@prver.com", phone: "+233 55 123 1300", whatsapp: "+1 (646) 864-4239", response: "Within 1 hour" },
+  links: { portfolio: "/portfolio", services: "/services", pricing: "/products", ai: "/ai-agent", blog: "/blog", about: "/About", contact: "/Home#contact", privacy: "/privacy" },
+  guarantees: ["30-day money-back guarantee", "Lifetime updates", "24/7 support", "Full source code ownership", "No lock-in contracts"],
+  process: ["Discovery", "Design", "Build", "Launch"],
+  services: {
+    web: "Custom Web Design & Development ($497-$1,997)",
+    app: "Mobile Apps (iOS/Android) ($2,497-$9,997)",
+    shop: "E-commerce Stores ($1,497-$5,997)",
+    seo: "SEO & Marketing ($297-$997/mo)",
+    ai: "AI Agents & Automation (Custom Quote)",
+    brand: "Brand Strategy & Identity ($397-$1,997)",
+    maint: "Maintenance & Support ($97-$397/mo)"
+  },
+  aiCaps: ["Conversational AI", "Predictive Analytics", "Task Automation", "Intelligent Search", "Security & Compliance", "Custom AI Models"]
+};
 
-        closeChat.addEventListener('click', () => {
-            chatWindow.classList.remove('active');
-        });
+// 🧠 Conversation State & Context
+let convoState = { lastTopic: null, messageCount: 0 };
 
-        function sendSuggestion(text) {
-            chatInput.value = text;
-            sendMessage();
-        }
+// 🔤 Helper: Clean & normalize input
+function cleanInput(txt) { return txt.toLowerCase().replace(/[^\w\s]/g, '').trim(); }
 
-        function sendMessage() {
-            const message = chatInput.value.trim();
-            if (!message) return;
+// 🔍 Helper: Keyword matcher
+const has = (msg, ...words) => words.some(w => msg.includes(w));
 
-            const userMsg = document.createElement('div');
-            userMsg.className = 'chat-message user';
-            userMsg.textContent = message;
-            chatMessages.appendChild(userMsg);
-            chatInput.value = '';
-            chatMessages.scrollTop = chatMessages.scrollHeight;
+// 💡 Dynamic Quick Suggestions
+function updateSuggestions(topic) {
+  const map = {
+    default: ['What services do you offer?', 'How much does it cost?', 'How long does it take?', 'Do you offer maintenance?'],
+    pricing: ['Can I get a custom quote?', 'Do you offer payment plans?', 'What\'s included in the guarantee?'],
+    ai: ['What AI solutions do you offer?', 'Can AI automate my workflow?', 'How does predictive analytics work?'],
+    timeline: ['Can you rush my project?', 'Do you deliver early?', 'What\'s the fastest timeline?'],
+    services: ['Tell me about AI Agents', 'What\'s your SEO process?', 'Do you build mobile apps?']
+  };
+  const list = map[topic] || map.default;
+  chatSuggestions.innerHTML = list.map(s => `<div class="chat-suggestion" onclick="sendSuggestion('${s.replace(/'/g, "\\'")}')">${s}</div>`).join('');
+}
 
-            chatSuggestions.style.display = 'none';
+function sendSuggestion(text) {
+  chatInput.value = text;
+  sendMessage();
+}
 
-            showTypingIndicator();
+// 📨 Message Renderer
+function addMessage(text, type) {
+  const div = document.createElement("div");
+  div.className = `chat-message ${type}`;
+  div.innerHTML = text;
+  chatMessages.appendChild(div);
+  chatMessages.scrollTop = chatMessages.scrollHeight;
+}
 
-            setTimeout(() => {
-                hideTypingIndicator();
-                const response = getAIResponse(message);
-                addMessage(response, 'bot');
-            }, 1000 + Math.random() * 1000);
-        }
+function showTypingIndicator() {
+  const div = document.createElement("div");
+  div.className = "chat-message typing";
+  div.id = "typingIndicator";
+  div.innerHTML = `<div class="typing-indicator"><span></span><span></span><span></span></div>`;
+  chatMessages.appendChild(div);
+  chatMessages.scrollTop = chatMessages.scrollHeight;
+}
 
-        function addMessage(text, type) {
-            const messageDiv = document.createElement('div');
-            messageDiv.className = `chat-message ${type}`;
-            messageDiv.innerHTML = text;
-            chatMessages.appendChild(messageDiv);
-            chatMessages.scrollTop = chatMessages.scrollHeight;
-        }
+function hideTypingIndicator() {
+  const el = document.getElementById("typingIndicator");
+  if (el) el.remove();
+}
 
-        function showTypingIndicator() {
-            const typingDiv = document.createElement('div');
-            typingDiv.className = 'chat-message typing';
-            typingDiv.id = 'typingIndicator';
-            typingDiv.innerHTML = `
-                <div class="typing-indicator">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            `;
-            chatMessages.appendChild(typingDiv);
-            chatMessages.scrollTop = chatMessages.scrollHeight;
-        }
+// 🤖 Intelligent Response Generator
+function getAIResponse(rawMsg) {
+  const msg = cleanInput(rawMsg);
+  convoState.messageCount++;
 
-        function hideTypingIndicator() {
-            const typingIndicator = document.getElementById('typingIndicator');
-            if (typingIndicator) {
-                typingIndicator.remove();
-            }
-        }
+  // 1️⃣ Greetings
+  if (has(msg, 'hello', 'hi', 'hey', 'morning', 'afternoon', 'greetings')) {
+    return `Hello! 👋 Welcome to PRVER. I'm your AI assistant. I can help with services, pricing, project timelines, AI solutions, or answer any questions. What can I do for you today?`;
+  }
 
-        function getAIResponse(message) {
-            const lowerMsg = message.toLowerCase();
+  // 2️⃣ Services / Capabilities
+  if (has(msg, 'service', 'offer', 'do you do', 'what you do', 'capabilities', 'specialize')) {
+    convoState.lastTopic = 'services';
+    return `We offer a full suite of digital solutions:<br><br>
+    🎨 <strong>Web Design & Development</strong> (Custom, responsive, modern stacks)<br>
+    🛒 <strong>E-commerce Solutions</strong> (Shopify, WooCommerce, custom stores)<br>
+    📈 <strong>SEO & Marketing</strong> (On-page, technical, local, content)<br>
+    🤖 <strong>AI Agents & Automation</strong> (Chatbots, predictive analytics, workflow automation)<br>
+    🛠️ <strong>Maintenance & Support</strong> (Security, updates, 24/7 monitoring)<br>
+    ✨ <strong>Brand Strategy</strong> (Identity, logos, guidelines)<br><br>
+    Which one catches your interest?`;
+  }
 
-            if (lowerMsg.includes('hello') || lowerMsg.includes('hi')) {
-                return "Hello! 👋 How can I assist you today?";
-            } else if (lowerMsg.includes('blog') || lowerMsg.includes('post') || lowerMsg.includes('article')) {
-                return `We have 50+ blog posts covering web design, development, SEO, AI, business, and marketing. What topic interests you?`;
-            } else if (lowerMsg.includes('web design') || lowerMsg.includes('design')) {
-                return `We have 10+ blog posts on web design covering glassmorphism, mobile-first design, color theory, typography, and more. What specific topic would you like to explore?`;
-            } else if (lowerMsg.includes('seo')) {
-                return `We have 10+ SEO blog posts covering best practices, local SEO, technical SEO, content marketing, and link building. What would you like to know?`;
-            } else if (lowerMsg.includes('ai') || lowerMsg.includes('artificial intelligence')) {
-                return `We have 10+ AI blog posts covering AI tools, machine learning, chatbots, image generation, and content creation. What interests you?`;
-            } else if (lowerMsg.includes('contact') || lowerMsg.includes('email') || lowerMsg.includes('phone')) {
-                return "You can reach us at mail@prvertech.com or +233 55 123 1300. We typically respond within 1 hour!";
-            } else {
-                return "Thanks for your message! Our team will get back to you soon. You can also email us at mail@prvertech.com for faster response.";
-            }
-        }
+  // 3️⃣ Pricing / Budget
+  if (has(msg, 'price', 'cost', 'how much', 'budget', 'rates', 'pricing', 'quote', 'expensive', 'cheap')) {
+    convoState.lastTopic = 'pricing';
+    return `Our pricing is transparent and project-based:<br><br>
+    💻 <strong>Websites:</strong> $497 (Starter) to $1,997 (Enterprise)<br>
+    📱 <strong>Mobile Apps:</strong> $2,497 to $9,997<br>
+    🛒 <strong>E-commerce:</strong> $1,497 to $5,997<br>
+    🤖 <strong>AI Solutions:</strong> Custom quoted based on scope<br>
+    📈 <strong>SEO:</strong> $297 - $997/month<br>
+    🛠️ <strong>Maintenance:</strong> $97 - $397/month<br><br>
+    🎁 All packages include a <strong>30-day money-back guarantee</strong>, lifetime updates, and full source code ownership. Want a custom quote?`;
+  }
 
-        sendChat.addEventListener('click', sendMessage);
-        chatInput.addEventListener('keypress', (e) => {
-            if (e.key === 'Enter') sendMessage();
-        });    
+  // 4️⃣ Timeline / Delivery
+  if (has(msg, 'time', 'long', 'timeline', 'delivery', 'deadline', 'weeks', 'months', 'fast', 'rush')) {
+    convoState.lastTopic = 'timeline';
+    return `⏱️ <strong>Typical Timelines:</strong><br>
+    • Simple Brochure Site: 1-2 weeks<br>
+    • Professional/Corporate: 2-4 weeks<br>
+    • E-commerce/Complex: 3-6 weeks<br>
+    • Custom Apps/AI Solutions: 6-12 weeks<br><br>
+    We prioritize early delivery and keep you updated at every stage. Need it faster? Let's discuss!`;
+  }
+
+  // 5️⃣ AI / Automation
+  if (has(msg, 'ai', 'artificial intelligence', 'machine learning', 'bot', 'chatbot', 'automation', 'smart', 'predictive')) {
+    convoState.lastTopic = 'ai';
+    return `🤖 <strong>PRVER AI Solutions:</strong><br><br>
+    We build intelligent agents that actually work for your business:<br>
+    🔹 <strong>Conversational AI:</strong> 24/7 smart support, multi-language, human handoff<br>
+    🔹 <strong>Predictive Analytics:</strong> Forecast trends, optimize decisions<br>
+    🔹 <strong>Task Automation:</strong> Eliminate repetitive workflows, integrate APIs<br>
+    🔹 <strong>Security & Compliance:</strong> Real-time threat detection, GDPR/CCPA ready<br><br>
+    We serve E-commerce, Healthcare, Finance, Education, and more. Want to see how AI can save you 20+ hours/week?`;
+  }
+
+  // 6️⃣ Process / How it works
+  if (has(msg, 'process', 'how it work', 'step', 'workflow', 'get started', 'begin')) {
+    convoState.lastTopic = 'process';
+    return `🚀 <strong>Our 4-Step Process:</strong><br><br>
+    1️⃣ <strong>Discovery:</strong> We learn your goals, audience, and vision<br>
+    2️⃣ <strong>Design:</strong> Stunning mockups & prototypes aligned with your brand<br>
+    3️⃣ <strong>Build:</strong> Clean, scalable code with modern tech<br>
+    4️⃣ <strong>Launch:</strong> Deployment, testing, training & ongoing support<br><br>
+    Light involvement required from you. We handle the heavy lifting!`;
+  }
+
+  // 7️⃣ Revisions / Guarantees
+  if (has(msg, 'revision', 'change', 'edit', 'modify', 'unsatisfied', 'guarantee', 'refund', 'satisfied')) {
+    return `✅ <strong>Revisions & Satisfaction:</strong><br><br>
+    Every package includes multiple revision rounds. We don't launch until you're 100% happy. Plus, you're backed by our <strong>30-day money-back guarantee</strong>. Zero risk.`;
+  }
+
+  // 8️⃣ Ownership / Code
+  if (has(msg, 'own', 'ownership', 'source code', 'lock in', 'contract', 'files', 'login')) {
+    return `🔓 <strong>Full Ownership Guaranteed:</strong><br><br>
+    Once paid, you own 100% of the source code, assets, and logins. No licensing fees, no lock-in contracts. It's yours forever.`;
+  }
+
+  // 9️⃣ Mobile / Responsive
+  if (has(msg, 'mobile', 'phone', 'responsive', 'tablet', 'ios', 'android', 'device')) {
+    return `📱 <strong>100% Mobile-Responsive:</strong><br><br>
+    Every project is designed mobile-first and rigorously tested on real devices. Over 60% of traffic is mobile, so we never compromise here.`;
+  }
+
+  // 🔟 Payments
+  if (has(msg, 'payment', 'plan', 'installment', 'deposit', 'pay', 'card', 'bank')) {
+    return `💳 <strong>Flexible Payments:</strong><br><br>
+    Typically 50% upfront, 50% on delivery. For larger projects ($2k+), we offer 3-4 installment plans. Secure payment via card, bank transfer, or PayPal.`;
+  }
+
+  // 1️⃣1️⃣ Support / Maintenance
+  if (has(msg, 'support', 'maintenance', 'help', 'update', 'fix', 'after launch', 'keep running')) {
+    return `🛠️ <strong>Post-Launch Support:</strong><br><br>
+    All projects include initial support. We also offer monthly plans ($97-$397) covering security updates, backups, performance tuning, content edits, and 24/7 monitoring. We've got your back!`;
+  }
+
+  // 1️⃣2️⃣ SEO
+  if (has(msg, 'seo', 'rank', 'google', 'traffic', 'organic', 'search engine', 'visibility')) {
+    return `📈 <strong>SEO & Visibility:</strong><br><br>
+    We implement technical SEO, keyword strategy, on-page optimization, and content planning. Results typically show in 3-6 months. Monthly SEO packages start at $297.`;
+  }
+
+  // 1️⃣3️⃣ Portfolio
+  if (has(msg, 'portfolio', 'work', 'example', 'case study', 'showcase', 'past client')) {
+    return `📁 <strong>See Our Work:</strong><br><br>
+    We've delivered 72+ projects across 12 industries (E-commerce, Real Estate, Healthcare, Fitness, Restaurants, etc.). Check our portfolio: <a href="${KB.links.portfolio}" target="_blank" style="color:#8B5CF6; text-decoration:underline;">View Projects</a>`;
+  }
+
+  // 1️⃣4️⃣ About / Team
+  if (has(msg, 'team', 'about', 'company', 'who', 'founder', 'prver', 'history', 'journey')) {
+    return `👥 <strong>About PRVER:</strong><br><br>
+    Founded in 2022, PRVER is a digital architecture studio blending design, development, and AI. Led by Prince Kwarteng (Founder/Lead Dev), Osei Vera (UI/UX), and Bright Appiah (SEO). 65+ happy clients, 100% satisfaction. <a href="${KB.links.about}" target="_blank" style="color:#8B5CF6;">Learn More</a>`;
+  }
+
+  // 1️⃣5️⃣ Privacy / Security
+  if (has(msg, 'privacy', 'data', 'secure', 'gdpr', 'ccpa', 'safe', 'hack', 'breach')) {
+    return `🔒 <strong>Security & Privacy:</strong><br><br>
+    SSL encryption, secure servers, regular audits, and GDPR/CCPA compliance. We never sell your data. <a href="${KB.links.privacy}" target="_blank" style="color:#8B5CF6;">Full Policy</a>`;
+  }
+
+  // 1️⃣6️⃣ Contact
+  if (has(msg, 'contact', 'email', 'phone', 'call', 'whatsapp', 'reach', 'talk', 'meeting', 'schedule')) {
+    return `📞 <strong>Let's Connect:</strong><br><br>
+    📧 Email: ${KB.contact.email}<br>
+    📞 Phone: ${KB.contact.phone}<br>
+    💬 WhatsApp: ${KB.contact.whatsapp}<br>
+    ⏱️ Avg Response: < 1 hour<br><br>
+    Or fill out our <a href="${KB.links.contact}" target="_blank" style="color:#8B5CF6;">Contact Form</a>!`;
+  }
+
+  // 1️⃣7️⃣ Thanks / Goodbye
+  if (has(msg, 'thank', 'thanks', 'appreciate', 'bye', 'goodbye', 'see you')) {
+    return `You're welcome! 😊 Happy to help. Whenever you're ready to build something amazing, just say the word. Have a fantastic day! 🚀`;
+  }
+
+  // 1️⃣8️⃣ Contextual Follow-up
+  if (convoState.lastTopic === 'pricing' && has(msg, 'custom', 'quote', 'specific', 'my project')) {
+    return `📝 <strong>Custom Quote Process:</strong><br><br>
+    Just share your project details (goals, features, timeline) via our <a href="${KB.links.contact}" target="_blank" style="color:#8B5CF6;">contact form</a> or WhatsApp. We'll send a detailed proposal within 24 hours!`;
+  }
+
+  // 🆘 Intelligent Fallback
+  return `🤔 That's a great question! While I might not have the exact answer right now, I can connect you with our team for a detailed response within 1 hour.<br><br>
+  💡 <strong>Quick Options:</strong><br>
+  • <a href="${KB.links.services}" style="color:#8B5CF6;">Explore Services</a><br>
+  • <a href="${KB.links.pricing}" style="color:#8B5CF6;">View Pricing</a><br>
+  • <a href="${KB.links.contact}" style="color:#8B5CF6;">Contact Us Directly</a><br><br>
+  What else can I help with?`;
+}
+
+// 🎛️ Event Listeners
+chatToggle.addEventListener("click", () => {
+  chatWindow.classList.toggle("active");
+  if (chatWindow.classList.contains("active")) setTimeout(() => chatInput.focus(), 300);
+});
+
+closeChat.addEventListener("click", () => chatWindow.classList.remove("active"));
+sendChat.addEventListener("click", sendMessage);
+chatInput.addEventListener("keypress", (e) => { if (e.key === "Enter") sendMessage(); });
+
+function sendMessage() {
+  const message = chatInput.value.trim();
+  if (!message) return;
+
+  addMessage(message, "user");
+  chatInput.value = "";
+  chatSuggestions.style.display = "none";
+  showTypingIndicator();
+
+  // Realistic response delay
+  const delay = 800 + Math.random() * 1200;
+  setTimeout(() => {
+    hideTypingIndicator();
+    const response = getAIResponse(message);
+    addMessage(response, "bot");
+    
+    // Update suggestions based on context
+    if (convoState.lastTopic) updateSuggestions(convoState.lastTopic);
+    else chatSuggestions.style.display = "flex";
+  }, delay);
+}
+
+// Initialize
+updateSuggestions('default');
 
         // Initial render
         renderBlogPosts();
