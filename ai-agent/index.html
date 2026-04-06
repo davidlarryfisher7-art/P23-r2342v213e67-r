@@ -848,6 +848,100 @@
         }
 
         /* AI Chat Widget */
+
+        /* Quick Suggestions - Required for upgraded chatbot */
+.chat-suggestions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding: 0 1.25rem 1.25rem;
+}
+
+.chat-suggestion {
+    background: rgba(139, 92, 246, 0.1);
+    color: #8B5CF6;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    font-size: 0.875rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    border: 1px solid rgba(139, 92, 246, 0.2);
+}
+
+.chat-suggestion:hover {
+    background: rgba(139, 92, 246, 0.2);
+    transform: translateY(-2px);
+}
+
+body.dark .chat-suggestion {
+    background: rgba(139, 92, 246, 0.2);
+    border-color: rgba(139, 92, 246, 0.3);
+}
+
+body.dark .chat-suggestion:hover {
+    background: rgba(139, 92, 246, 0.3);
+}
+
+/* Chat Header Info Layout */
+.chat-header-info {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.chat-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Typing Indicator Animation */
+.chat-message.typing {
+    background: rgba(241, 245, 249, 0.8);
+    margin-right: auto;
+    border-bottom-left-radius: 0.25rem;
+}
+
+body.dark .chat-message.typing {
+    background: rgba(51, 65, 85, 0.8);
+}
+
+.typing-indicator {
+    display: flex;
+    gap: 4px;
+    padding: 0.5rem;
+}
+
+.typing-indicator span {
+    width: 8px;
+    height: 8px;
+    background: #8B5CF6;
+    border-radius: 50%;
+    animation: typingBounce 1.4s infinite;
+}
+
+.typing-indicator span:nth-child(2) { animation-delay: 0.2s; }
+.typing-indicator span:nth-child(3) { animation-delay: 0.4s; }
+
+@keyframes typingBounce {
+    0%, 60%, 100% { transform: translateY(0); }
+    30% { transform: translateY(-10px); }
+}
+
+/* Message Animation */
+@keyframes messageSlideIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.chat-message {
+    animation: messageSlideIn 0.3s ease-out;
+}
+        
         .chat-widget {
             position: fixed;
             bottom: 100px;
@@ -1934,40 +2028,50 @@
         <i class="fas fa-moon"></i>
     </button>
 
-    <!-- AI Chat Widget -->
-    <div class="chat-widget">
-        <button id="chatToggle"
-            class="w-14 h-14 rounded-full bg-gradient-to-r from-lavender to-purple-600 text-white shadow-lg hover:shadow-xl transition-all hover:scale-110 flex items-center justify-center">
-            <i class="fas fa-robot text-2xl"></i>
-        </button>
-
-        <div id="chatWindow" class="chat-window">
-            <div class="chat-header">
+    <!-- AI Chat Widget - ENHANCED VERSION -->
+<div class="chat-widget">
+    <button id="chatToggle" class="w-14 h-14 rounded-full bg-gradient-to-r from-lavender to-purple-600 text-white shadow-lg hover:shadow-xl transition-all hover:scale-110 flex items-center justify-center">
+        <i class="fas fa-robot text-2xl"></i>
+    </button>
+    
+    <div id="chatWindow" class="chat-window">
+        <div class="chat-header">
+            <div class="chat-header-info">
+                <div class="chat-avatar">
+                    <i class="fas fa-robot text-xl"></i>
+                </div>
                 <div>
                     <h3 class="font-bold text-lg">PRVER AI Assistant</h3>
-                    <p class="text-sm opacity-90">How can I help you today?</p>
-                </div>
-                <button id="closeChat" class="text-white hover:opacity-80">
-                    <i class="fas fa-times text-xl"></i>
-                </button>
-            </div>
-
-            <div class="chat-messages" id="chatMessages">
-                <div class="chat-message bot">
-                    Hello! I'm the PRVER AI assistant. How can I help you today?
+                    <p class="text-sm opacity-90">Smart & Contextual Help</p>
                 </div>
             </div>
-
-            <div class="chat-input">
-                <input type="text" id="chatInput" placeholder="Type your message..."
-                    class="flex-1 px-4 py-2 rounded-lg border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 focus:outline-none focus:border-lavender">
-                <button id="sendChat"
-                    class="px-4 py-2 bg-lavender text-white rounded-lg hover:bg-lavender/90 transition-colors">
-                    <i class="fas fa-paper-plane"></i>
-                </button>
+            <button id="closeChat" class="text-white hover:opacity-80">
+                <i class="fas fa-times text-xl"></i>
+            </button>
+        </div>
+        
+        <div class="chat-messages" id="chatMessages">
+            <div class="chat-message bot">
+                Hello! 👋 I'm the PRVER AI assistant. I can help with services, pricing, project timelines, AI solutions, or any questions. What can I do for you today?
             </div>
         </div>
+        
+        <!-- Quick Suggestions (NEW - Required for upgraded JS) -->
+        <div class="chat-suggestions" id="chatSuggestions">
+            <div class="chat-suggestion" onclick="sendSuggestion('What services do you offer?')">Services</div>
+            <div class="chat-suggestion" onclick="sendSuggestion('How much does it cost?')">Pricing</div>
+            <div class="chat-suggestion" onclick="sendSuggestion('How long does it take?')">Timeline</div>
+            <div class="chat-suggestion" onclick="sendSuggestion('Do you offer maintenance?')">Maintenance</div>
+        </div>
+        
+        <div class="chat-input">
+            <input type="text" id="chatInput" placeholder="Type your message..." class="flex-1 px-4 py-2 rounded-lg border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 focus:outline-none focus:border-lavender">
+            <button id="sendChat" class="px-4 py-2 bg-lavender text-white rounded-lg hover:bg-lavender/90 transition-colors">
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </div>
     </div>
+</div>
 
     <!-- Capability Modal -->
     <div id="capabilityModal" class="capability-modal-overlay">
